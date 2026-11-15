@@ -21,7 +21,7 @@ class Settings(BaseSettings):
 
     classificador: Literal["baseline", "bertimbau"] = "baseline"
     hf_model_id: str = "seu-usuario/bertimbau-tags-pratos"
-    embedding_model: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+    embedding_model: str = "intfloat/multilingual-e5-small"
 
     data_dir: Path = RAIZ / "data"
     artifacts_dir: Path = RAIZ / "artifacts"
