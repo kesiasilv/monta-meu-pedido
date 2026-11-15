@@ -61,3 +61,5 @@ select = ["E", "F", "I", "UP", "B", "SIM"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src", "."]
+# O teste do baseline usa dados mínimos de propósito; esse aviso do sklearn é esperado.
+filterwarnings = ["ignore:Label not .* is present in all training examples:UserWarning"]

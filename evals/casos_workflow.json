@@ -1,0 +1,35 @@
+[
+  {"id": "s01", "categoria": "simples", "texto": "Tô com R$ 40, quero algo leve que chegue em 40 min", "status": "ok", "orcamento": 40, "restricoes": [], "tempo_max_min": 40},
+  {"id": "s02", "categoria": "simples", "texto": "quero uma pizza, tenho 70 reais", "status": "ok", "orcamento": 70, "restricoes": [], "tempo_max_min": null},
+  {"id": "s03", "categoria": "simples", "texto": "Me vê um hambúrguer até R$ 50", "status": "ok", "orcamento": 50, "restricoes": [], "tempo_max_min": null},
+  {"id": "s04", "categoria": "simples", "texto": "comida japonesa por até 60 reais", "status": "ok", "orcamento": 60, "restricoes": [], "tempo_max_min": null},
+  {"id": "s05", "categoria": "simples", "texto": "um açaí até 45 reais", "status": "ok", "orcamento": 45, "restricoes": [], "tempo_max_min": null},
+  {"id": "s06", "categoria": "simples", "texto": "quero um prato caseiro brasileiro, gasto no máximo 50", "status": "ok", "orcamento": 50, "restricoes": [], "tempo_max_min": null},
+  {"id": "s07", "categoria": "simples", "texto": "algo bem apimentado até R$ 55", "status": "ok", "orcamento": 55, "restricoes": [], "tempo_max_min": null},
+  {"id": "s08", "categoria": "simples", "texto": "comida mexicana, 60 reais, que chegue em até 50 minutos", "status": "ok", "orcamento": 60, "restricoes": [], "tempo_max_min": 50},
+  {"id": "s09", "categoria": "simples", "texto": "um bowl saudável até 50 reais", "status": "ok", "orcamento": 50, "restricoes": [], "tempo_max_min": null},
+  {"id": "s10", "categoria": "simples", "texto": "comida árabe até 45 reais", "status": "ok", "orcamento": 45, "restricoes": [], "tempo_max_min": null},
+
+  {"id": "r01", "categoria": "restricoes", "texto": "sou vegana, quero algo gostoso até 50 reais", "status": "ok", "orcamento": 50, "restricoes": ["vegano"], "tempo_max_min": null},
+  {"id": "r02", "categoria": "restricoes", "texto": "tenho intolerância à lactose, quero uma pizza até 80", "status": "ok", "orcamento": 80, "restricoes": ["sem_lactose"], "tempo_max_min": null},
+  {"id": "r03", "categoria": "restricoes", "texto": "sou celíaca, quero um almoço até 60 reais", "status": "ok", "orcamento": 60, "restricoes": ["sem_gluten"], "tempo_max_min": null},
+  {"id": "r04", "categoria": "restricoes", "texto": "não como carne, quero algo japonês até 60", "status": "ok", "orcamento": 60, "restricoes": ["vegetariano"], "tempo_max_min": null},
+  {"id": "r05", "categoria": "restricoes", "texto": "preciso de algo vegano e sem glúten, até 60 reais", "status": "ok", "orcamento": 60, "restricoes": ["vegano", "sem_gluten"], "tempo_max_min": null},
+  {"id": "r06", "categoria": "restricoes", "texto": "sem lactose e sem glúten, algo leve até 55 reais em 45 min", "status": "ok", "orcamento": 55, "restricoes": ["sem_lactose", "sem_gluten"], "tempo_max_min": 45},
+  {"id": "r07", "categoria": "restricoes", "texto": "um hambúrguer vegano até 55", "status": "ok", "orcamento": 55, "restricoes": ["vegano"], "tempo_max_min": null},
+  {"id": "r08", "categoria": "restricoes", "texto": "sou vegetariana, quero uma massa até 70 reais", "status": "ok", "orcamento": 70, "restricoes": ["vegetariano"], "tempo_max_min": null},
+  {"id": "r09", "categoria": "restricoes", "texto": "quero algo picante e vegano até 60", "status": "ok", "orcamento": 60, "restricoes": ["vegano"], "tempo_max_min": null},
+  {"id": "r10", "categoria": "restricoes", "texto": "sou intolerante a lactose, quero comida mexicana até 65", "status": "ok", "orcamento": 65, "restricoes": ["sem_lactose"], "tempo_max_min": null},
+
+  {"id": "o01", "categoria": "sem_orcamento", "texto": "quero um poke", "status": "precisa_info", "orcamento": null, "restricoes": [], "tempo_max_min": null},
+  {"id": "o02", "categoria": "sem_orcamento", "texto": "sou vegana, me indica um prato", "status": "precisa_info", "orcamento": null, "restricoes": ["vegano"], "tempo_max_min": null},
+  {"id": "o03", "categoria": "sem_orcamento", "texto": "algo que chegue em 40 minutos", "status": "precisa_info", "orcamento": null, "restricoes": [], "tempo_max_min": 40},
+  {"id": "o04", "categoria": "sem_orcamento", "texto": "pizza sem glúten, por favor", "status": "precisa_info", "orcamento": null, "restricoes": ["sem_gluten"], "tempo_max_min": null},
+  {"id": "o05", "categoria": "sem_orcamento", "texto": "quero comer algo gostoso hoje", "status": "precisa_info", "orcamento": null, "restricoes": [], "tempo_max_min": null},
+
+  {"id": "i01", "categoria": "impossivel", "texto": "quero um prato completo por 5 reais", "status": "sem_opcao", "orcamento": 5, "restricoes": [], "tempo_max_min": null},
+  {"id": "i02", "categoria": "impossivel", "texto": "pizza que chegue em 10 minutos, até 100 reais", "status": "sem_opcao", "orcamento": 100, "restricoes": [], "tempo_max_min": 10},
+  {"id": "i03", "categoria": "impossivel", "texto": "algo vegano por R$ 8", "status": "sem_opcao", "orcamento": 8, "restricoes": ["vegano"], "tempo_max_min": null},
+  {"id": "i04", "categoria": "impossivel", "texto": "um hambúrguer até 3 reais", "status": "sem_opcao", "orcamento": 3, "restricoes": [], "tempo_max_min": null},
+  {"id": "i05", "categoria": "impossivel", "texto": "almoço vegano e sem glúten que chegue em 15 minutos, até 80 reais", "status": "sem_opcao", "orcamento": 80, "restricoes": ["vegano", "sem_gluten"], "tempo_max_min": 15}
+]
