@@ -1,0 +1,6134 @@
+[
+  {
+    "id": "p001",
+    "restaurante_id": "r01",
+    "nome": "Sashimi Misto Especial (15 fatias)",
+    "descricao": "Fatias nobres e frescas selecionadas pelo chef, servidas puras para realçar o frescor do mar.",
+    "ingredientes": [
+      "salmão fresco fatiado",
+      "atum fresco fatiado",
+      "peixe branco fatiado",
+      "fatias de pepino japonês",
+      "gengibre em conserva"
+    ],
+    "preco": 62.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p002",
+    "restaurante_id": "r01",
+    "nome": "Spicy Tuna Roll (8 unidades)",
+    "descricao": "Uramaki clássico recheado com atum fresco picado e temperado com molho apimentado da casa.",
+    "ingredientes": [
+      "atum fresco picado",
+      "arroz temperado para sushi",
+      "alga nori",
+      "molho sriracha",
+      "óleo de gergelim",
+      "cebolinha"
+    ],
+    "preco": 38.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p003",
+    "restaurante_id": "r01",
+    "nome": "Hot Roll Salmão Crocante (8 unidades)",
+    "descricao": "O queridinho do delivery: empanado em panko super crocante, recheio cremoso e toque de tarê.",
+    "ingredientes": [
+      "salmão fresco",
+      "cream cheese",
+      "arroz de sushi",
+      "alga nori",
+      "farinha panko",
+      "molho tarê tradicional"
+    ],
+    "preco": 34.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p004",
+    "restaurante_id": "r01",
+    "nome": "Veggie Poke Bowl",
+    "descricao": "Bowl colorido, nutritivo e refrescante com tofu grelhado, edamame e vegetais da estação.",
+    "ingredientes": [
+      "tofu em cubos marinado",
+      "arroz japonês gohan",
+      "edamame fresco",
+      "manga fresca picada",
+      "pepino japonês sunomono",
+      "cenoura ralada",
+      "gergelim torrado"
+    ],
+    "preco": 46.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p005",
+    "restaurante_id": "r01",
+    "nome": "Shoyu Ramen Especial",
+    "descricao": "Caldo artesanal cozido lentamente por 12 horas, servido fumegante com barriga de porco e ovo com gema cremosa.",
+    "ingredientes": [
+      "caldo concentrado de porco",
+      "macarrão ramen artesanal de trigo",
+      "barriga de porco chashu fatiada",
+      "ovo marinado cozido",
+      "alga nori",
+      "cebolinha",
+      "brotos de bambu menma"
+    ],
+    "preco": 52.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p006",
+    "restaurante_id": "r01",
+    "nome": "Yakisoba Tradicional Misto",
+    "descricao": "Macarrão selado na chapa com tiras de carne, frango e legumes crocantes envoltos em molho clássico.",
+    "ingredientes": [
+      "macarrão de trigo para yakisoba",
+      "filé de carne bovina",
+      "filé de peito de frango",
+      "repolho",
+      "cenoura",
+      "brócolis",
+      "molho à base de shoyu e óleo de gergelim"
+    ],
+    "preco": 44.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p007",
+    "restaurante_id": "r01",
+    "nome": "Teppanyaki de Salmão Fit",
+    "descricao": "Posta de salmão grelhada acompanhada de legumes frescos salteados no vapor e arroz gohan integral.",
+    "ingredientes": [
+      "filé de salmão grelhado",
+      "brócolis no vapor",
+      "cogumelos shimeji salteados no azeite",
+      "cenoura no vapor",
+      "arroz integral gohan",
+      "sal marinho"
+    ],
+    "preco": 58.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p008",
+    "restaurante_id": "r01",
+    "nome": "Katsu Karê Picante",
+    "descricao": "Arroz japonês com lombo empanado crocante banhado por nosso curry japonês espesso e bem apimentado.",
+    "ingredientes": [
+      "filé suíno empanado em farinha panko",
+      "arroz japonês gohan",
+      "caldo denso de curry japonês picante",
+      "pimenta vermelha togarashi",
+      "batata cozida",
+      "cenoura"
+    ],
+    "preco": 49.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "picante"
+    ]
+  },
+  {
+    "id": "p009",
+    "restaurante_id": "r01",
+    "nome": "Shimeji na Manteiga com Gohan",
+    "descricao": "Cogumelos shimeji salteados na manteiga e shoyu servidos sobre uma generosa tigela de arroz japonês.",
+    "ingredientes": [
+      "cogumelos shimeji pretos",
+      "manteiga sem sal",
+      "molho shoyu de trigo",
+      "cebolinha fatiada",
+      "arroz japonês gohan"
+    ],
+    "preco": 39.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano"
+    ]
+  },
+  {
+    "id": "p010",
+    "restaurante_id": "r01",
+    "nome": "Chá Verde Sencha Gelado (400ml)",
+    "descricao": "Chá verde japonês preparado por infusão a frio, aromático, revigorante e sem açúcar.",
+    "ingredientes": [
+      "água mineral purificada",
+      "folhas de chá verde sencha japonês",
+      "gelo"
+    ],
+    "preco": 11.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p011",
+    "restaurante_id": "r01",
+    "nome": "Suco de Yuzu com Frutas Vermelhas (350ml)",
+    "descricao": "Bebida refrescante e gaseificada com o aroma cítrico do yuzu e calda doce de frutas vermelhas.",
+    "ingredientes": [
+      "suco de fruta yuzu",
+      "xarope artesanal de amora e morango",
+      "água com gás",
+      "açúcar orgânico"
+    ],
+    "preco": 16.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p012",
+    "restaurante_id": "r01",
+    "nome": "Refrigerante Ramune Original (200ml)",
+    "descricao": "O clássico refrigerante japonês em garrafa tradicional com bolinha de gude, sabor suave de limão.",
+    "ingredientes": [
+      "água gaseificada",
+      "açúcar refinado",
+      "aroma natural cítrico de lima-limão"
+    ],
+    "preco": 18.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p013",
+    "restaurante_id": "r01",
+    "nome": "Mochi Artesanal de Azuki e Matchá (2 unidades)",
+    "descricao": "Massa elástica de arroz glutinoso recheada com doce tradicional de feijão azuki e finalizada com pó de matchá.",
+    "ingredientes": [
+      "farinha de arroz glutinoso mochiko",
+      "pasta doce de feijão azuki",
+      "açúcar cristal",
+      "pó de matchá puro"
+    ],
+    "preco": 22.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p014",
+    "restaurante_id": "r01",
+    "nome": "Cheesecake Soufflé Japonês",
+    "descricao": "Fatia do famoso cheesecake japonês, incrivelmente leve e aerado, servido com calda de morangos.",
+    "ingredientes": [
+      "cream cheese",
+      "leite integral pasteurizado",
+      "ovos frescos",
+      "farinha de trigo",
+      "açúcar",
+      "calda de morangos frescos"
+    ],
+    "preco": 24.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p015",
+    "restaurante_id": "r02",
+    "nome": "Poke Salmão Fresh",
+    "descricao": "O clássico do Havaí com cubos generosos de salmão fresco e acompanhamentos crocantes.",
+    "ingredientes": [
+      "arroz japonês temperado",
+      "salmão fresco cru em cubos",
+      "pepino japonês fatiado",
+      "edamame cozido",
+      "manga em cubos",
+      "gergelim torrado",
+      "molho shoyu tradicional"
+    ],
+    "preco": 54.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "fit"
+    ]
+  },
+  {
+    "id": "p016",
+    "restaurante_id": "r02",
+    "nome": "Spicy Tuna Volcano",
+    "descricao": "Tuna fresco envolto em tempero marcante e maionese sriracha picante para os amantes de pimenta.",
+    "ingredientes": [
+      "arroz integral",
+      "atum fresco em cubos",
+      "molho maionese com sriracha",
+      "cebolinha fresca",
+      "pimenta jalapeño fatiada",
+      "tobiko (ovas de peixe-voador)",
+      "tiras de nori"
+    ],
+    "preco": 56.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "picante"
+    ]
+  },
+  {
+    "id": "p017",
+    "restaurante_id": "r02",
+    "nome": "Poke Vegano Tofu & Cogumelos",
+    "descricao": "Opção leve e 100% vegetal com mix de cogumelos shimeji salteados e tofu grelhado em base de quinoa.",
+    "ingredientes": [
+      "quinoa cozida",
+      "tofu marinado grelhado",
+      "cogumelos shimeji salteados no azeite",
+      "abacate em fatias",
+      "cenoura ralada",
+      "repolho roxo",
+      "molho cítrico de tangerina e azeite"
+    ],
+    "preco": 46.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p018",
+    "restaurante_id": "r02",
+    "nome": "Poke Frango Crispy & Cream Cheese",
+    "descricao": "Deliciosa combinação com frango empanado crocante, cream cheese cremoso e toque agridoce de tarê.",
+    "ingredientes": [
+      "arroz japonês",
+      "peito de frango empanado em farinha panko e frito",
+      "cream cheese",
+      "milho torrado crocante",
+      "cenoura ralada",
+      "molho tarê"
+    ],
+    "preco": 42.9,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p019",
+    "restaurante_id": "r02",
+    "nome": "Poke Camarão Furai Especial",
+    "descricao": "Camarões crocantes empanados acompanhados de manga fresca, cream cheese e cebola crispy.",
+    "ingredientes": [
+      "arroz japonês",
+      "camarões empanados em farinha panko e fritos",
+      "cream cheese",
+      "manga fresca em cubos",
+      "crispy de couve frita",
+      "cebola roxa fatiada",
+      "molho teriyaki tradicional"
+    ],
+    "preco": 62.9,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p020",
+    "restaurante_id": "r02",
+    "nome": "Poke Low Carb Salmão & Atum",
+    "descricao": "Super leve e sem glúten, servido em cama de folhas frescas com dupla de peixes nobres e molho ponzu especial.",
+    "ingredientes": [
+      "mix de folhas (alface americana e rúcula)",
+      "salmão cru em cubos",
+      "atum cru em cubos",
+      "avocado",
+      "rabanete laminado",
+      "sementes de chia e gergelim",
+      "molho ponzu com tamari sem glúten e limão"
+    ],
+    "preco": 59.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p021",
+    "restaurante_id": "r02",
+    "nome": "Spicy Salmon Crunch",
+    "descricao": "Salmão com tempero togarashi e flocos de milho para uma explosão apimentada e crocante.",
+    "ingredientes": [
+      "arroz japonês",
+      "salmão fresco marinado em óleo de gergelim e pimenta togarashi",
+      "molho sriracha picante",
+      "cebola roxa",
+      "nachos de milho triturados",
+      "edamame"
+    ],
+    "preco": 55.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "picante"
+    ]
+  },
+  {
+    "id": "p022",
+    "restaurante_id": "r02",
+    "nome": "Poke Vegetariano Tropical",
+    "descricao": "Harmonia perfeita entre queijo minas frescal, frutas tropicais e crocância de castanhas de caju.",
+    "ingredientes": [
+      "arroz japonês",
+      "queijo minas frescal em cubos",
+      "abacaxi grelhado",
+      "edamame",
+      "tomate-cereja",
+      "castanha-de-caju tostada",
+      "molho de mostarda e mel sem glúten"
+    ],
+    "preco": 45.9,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p023",
+    "restaurante_id": "r02",
+    "nome": "Poke Tropical Atum Clássico",
+    "descricao": "Atum marinado fresco combinado com a acidez suave do sunomono e o dulçor da manga.",
+    "ingredientes": [
+      "arroz integral",
+      "atum fresco em cubos",
+      "shoyu",
+      "manga fresca picada",
+      "pepino sunomono",
+      "alga wakame hidratada",
+      "gergelim branco e preto"
+    ],
+    "preco": 53.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "fit"
+    ]
+  },
+  {
+    "id": "p024",
+    "restaurante_id": "r02",
+    "nome": "Suco Natural Abacaxi, Hortelã e Gengibre 400ml",
+    "descricao": "Suco batido na hora, super refrescante, termogênico e sem adição de açúcares.",
+    "ingredientes": [
+      "abacaxi in natura",
+      "folhas de hortelã fresca",
+      "gengibre fresco",
+      "água filtrada",
+      "gelo"
+    ],
+    "preco": 13.9,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p025",
+    "restaurante_id": "r02",
+    "nome": "Chá Gelado de Hibisco com Frutas Vermelhas 400ml",
+    "descricao": "Chá artesanal refrescante aromatizado com calda doce de frutas vermelhas.",
+    "ingredientes": [
+      "infusão de flor de hibisco",
+      "xarope artesanal de morango e amora",
+      "açúcar demerara",
+      "água filtrada",
+      "gelo"
+    ],
+    "preco": 11.9,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p026",
+    "restaurante_id": "r02",
+    "nome": "Refrigerante Guaraná Antarctica Lata 350ml",
+    "descricao": "Refrigerante clássico brasileiro bem gelado para acompanhar seu poke.",
+    "ingredientes": [
+      "água gaseificada",
+      "açúcar refinado",
+      "extrato de guaraná",
+      "aromatizante natural",
+      "acidulante ácido cítrico"
+    ],
+    "preco": 7.5,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p027",
+    "restaurante_id": "r02",
+    "nome": "Haupia Doce Havaiano de Coco",
+    "descricao": "Sobremesa tradicional do Havaí, um pudim firme e aveludado de coco servido com coco queimado.",
+    "ingredientes": [
+      "leite de coco puro",
+      "amido de milho",
+      "açúcar demerara",
+      "coco ralado tostado"
+    ],
+    "preco": 16.9,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p028",
+    "restaurante_id": "r02",
+    "nome": "Torta Mousse de Maracujá com Chocolate",
+    "descricao": "Mousse cremosa de maracujá sobre base crocante de biscoito com cobertura de ganache de chocolate.",
+    "ingredientes": [
+      "leite condensado",
+      "creme de leite",
+      "suco concentrado de maracujá",
+      "biscoito moído com farinha de trigo",
+      "manteiga",
+      "chocolate ao leite derretido"
+    ],
+    "preco": 19.9,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p029",
+    "restaurante_id": "r03",
+    "nome": "Feijoada Completa Individual",
+    "descricao": "Tradicional feijoada com carnes selecionadas, servida com arroz branco soltinho, couve refogada no alho, farofa de milho crocante com bacon e gomos de laranja.",
+    "ingredientes": [
+      "feijão preto",
+      "carne seca",
+      "costelinha suína",
+      "lombo suíno",
+      "paio",
+      "linguiça calabresa",
+      "arroz branco",
+      "couve",
+      "farinha de milho",
+      "bacon",
+      "laranja",
+      "alho",
+      "louro"
+    ],
+    "preco": 46.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p030",
+    "restaurante_id": "r03",
+    "nome": "Bife à Milanesa com Purê Caseiro",
+    "descricao": "Bife de alcatra empanado bem crocante, acompanhado de arroz branco, feijão carioca e nosso purê de batatas cremoso.",
+    "ingredientes": [
+      "alcatra bovina",
+      "farinha de trigo",
+      "farinha de rosca",
+      "ovo",
+      "leite integral",
+      "manteiga",
+      "batata",
+      "arroz branco",
+      "feijão carioca",
+      "alho",
+      "cebola"
+    ],
+    "preco": 39.9,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p031",
+    "restaurante_id": "r03",
+    "nome": "Frango Grelhado Fit com Legumes no Vapor",
+    "descricao": "Filé de peito de frango grelhado com ervas finas, servido com arroz integral, feijão carioca e mix de legumes cozidos no vapor com fio de azeite.",
+    "ingredientes": [
+      "peito de frango",
+      "azeite de oliva",
+      "arroz integral",
+      "feijão carioca",
+      "brócolis",
+      "cenoura",
+      "abobrinha",
+      "alho",
+      "ervas finas"
+    ],
+    "preco": 34.5,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p032",
+    "restaurante_id": "r03",
+    "nome": "Bobó Vegano de Palmito e Cogumelos",
+    "descricao": "Cremoso bobó feito com mandioca, leite de coco e azeite de dendê, recheado com palmito pupunha e cogumelos frescos, servido com arroz branco.",
+    "ingredientes": [
+      "mandioca",
+      "palmito pupunha",
+      "cogumelo paris",
+      "leite de coco",
+      "azeite de dendê",
+      "pimentão vermelho",
+      "tomate",
+      "cebola",
+      "coentro",
+      "arroz branco"
+    ],
+    "preco": 42.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p033",
+    "restaurante_id": "r03",
+    "nome": "Escondidinho de Carne Seca com Queijo Coalho",
+    "descricao": "Camadas generosas de carne seca desfiada bem temperada com cebola roxa, cobertas por purê de mandioca com manteiga e gratinadas com queijo coalho.",
+    "ingredientes": [
+      "carne seca",
+      "mandioca",
+      "leite integral",
+      "manteiga de garrafa",
+      "queijo coalho",
+      "cebola roxa",
+      "salsinha",
+      "arroz branco"
+    ],
+    "preco": 44.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p034",
+    "restaurante_id": "r03",
+    "nome": "Galinhada Caipira Picante",
+    "descricao": "Arroz cozido lentamente com frango desfiado, milho, açafrão-da-terra e toque marcante de pimenta dedo-de-moça e pimenta-de-cheiro fresca.",
+    "ingredientes": [
+      "arroz branco",
+      "frango desfiado",
+      "milho verde",
+      "açafrão-da-terra",
+      "pimenta dedo-de-moça",
+      "pimenta-de-cheiro",
+      "cebola",
+      "alho",
+      "cheiro-verde"
+    ],
+    "preco": 37.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p035",
+    "restaurante_id": "r03",
+    "nome": "Moqueca Baiana de Peixe Picante",
+    "descricao": "Postas de cação cozidas em rico molho de leite de coco, azeite de dendê, pimentões e pimenta malagueta, acompanhada de arroz branco e pirão de peixe.",
+    "ingredientes": [
+      "peixe cação",
+      "leite de coco",
+      "azeite de dendê",
+      "pimentão amarelo",
+      "pimentão vermelho",
+      "cebola",
+      "tomate",
+      "coentro",
+      "pimenta malagueta",
+      "farinha de mandioca",
+      "arroz branco"
+    ],
+    "preco": 49.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p036",
+    "restaurante_id": "r03",
+    "nome": "Virado à Paulista Vegetariano",
+    "descricao": "Releitura vegetariana com arroz branco, tutu de feijão carioca com farinha de mandioca, couve refogada no alho, ovo estalado e banana-da-terra grelhada.",
+    "ingredientes": [
+      "arroz branco",
+      "feijão carioca",
+      "farinha de mandioca",
+      "couve",
+      "ovo de galinha",
+      "banana-da-terra",
+      "azeite de oliva",
+      "alho",
+      "cebola"
+    ],
+    "preco": 36.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p037",
+    "restaurante_id": "r03",
+    "nome": "Nhoque Artesanal da Fortuna ao Sugo",
+    "descricao": "Massa caseira de batata macia, coberta com molho de tomate rústico cozido por horas, finalizada com queijo parmesão ralado e manjericão fresco.",
+    "ingredientes": [
+      "batata",
+      "farinha de trigo",
+      "ovo",
+      "tomate pelado",
+      "cebola",
+      "alho",
+      "azeite de oliva",
+      "queijo parmesão",
+      "manjericão"
+    ],
+    "preco": 38.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano"
+    ]
+  },
+  {
+    "id": "p038",
+    "restaurante_id": "r03",
+    "nome": "Suco Natural de Laranja 500ml",
+    "descricao": "Suco da fruta natural espremido na hora, geladinho, sem adição de água ou açúcares.",
+    "ingredientes": [
+      "laranja pera pura espremida"
+    ],
+    "preco": 11.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p039",
+    "restaurante_id": "r03",
+    "nome": "Chá Mate Gelado com Limão Caseiro 500ml",
+    "descricao": "Chá mate tostado batido com suco de limão taiti e adoçado com açúcar mascavo.",
+    "ingredientes": [
+      "água",
+      "erva-mate tostada",
+      "suco de limão taiti",
+      "açúcar mascavo"
+    ],
+    "preco": 9.5,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p040",
+    "restaurante_id": "r03",
+    "nome": "Guaraná Antarctica Lata 350ml",
+    "descricao": "Refrigerante de guaraná tradicional em lata 350ml gelada.",
+    "ingredientes": [
+      "água gaseificada",
+      "açúcar",
+      "extrato de guaraná",
+      "aromatizante"
+    ],
+    "preco": 7.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p041",
+    "restaurante_id": "r03",
+    "nome": "Pudim de Leite Condensado Tradicional",
+    "descricao": "Fatia generosa do pudim clássico lisinho e sem furinhos, regado com farta calda de caramelo caseira.",
+    "ingredientes": [
+      "leite condensado",
+      "leite integral",
+      "ovo",
+      "açúcar cristal"
+    ],
+    "preco": 14.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p042",
+    "restaurante_id": "r03",
+    "nome": "Doce de Abóbora Caseiro com Coco",
+    "descricao": "Pedaços macios de abóbora cozidos lentamente em calda aromatizada com cravo e canela, salpicados com lascas de coco fresco.",
+    "ingredientes": [
+      "abóbora de pescoço",
+      "coco fresco ralado",
+      "açúcar refinado",
+      "cravo-da-índia",
+      "canela em pau"
+    ],
+    "preco": 12.5,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p043",
+    "restaurante_id": "r04",
+    "nome": "Marmita Fit Frango & Batata Doce",
+    "descricao": "O clássico do treino: peito de frango suculento grelhado com purê rústico e legumes frescos.",
+    "ingredientes": [
+      "peito de frango grelhado",
+      "purê de batata-doce",
+      "brócolis no vapor",
+      "azeite de oliva extravirgem",
+      "ervas finas"
+    ],
+    "preco": 32.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p044",
+    "restaurante_id": "r04",
+    "nome": "Patinho Desfiado com Mandioca e Couve",
+    "descricao": "Carne bovina magra desfiada e bem temperada, acompanhada de aipim cozido macio e couve refogada.",
+    "ingredientes": [
+      "patinho bovino desfiado",
+      "mandioca cozida",
+      "couve refogada",
+      "alho",
+      "azeite de oliva",
+      "cebola roxa"
+    ],
+    "preco": 36.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p045",
+    "restaurante_id": "r04",
+    "nome": "Moqueca Vegana Apimentada de Grão-de-Bico",
+    "descricao": "Sabor marcante com tempero baiano, leite de coco cremoso e pimenta fresca na medida certa.",
+    "ingredientes": [
+      "grão-de-bico",
+      "leite de coco",
+      "pimentão vermelho",
+      "pimentão amarelo",
+      "azeite de dendê",
+      "coentro",
+      "pimenta dedo-de-moça",
+      "arroz integral"
+    ],
+    "preco": 34.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "picante"
+    ]
+  },
+  {
+    "id": "p046",
+    "restaurante_id": "r04",
+    "nome": "Salmão com Crosta de Ervas e Quinoa",
+    "descricao": "Filé de salmão grelhado na perfeição servido com mix de quinoa e abobrinha salteada.",
+    "ingredientes": [
+      "filé de salmão grelhado",
+      "quinoa real cozida",
+      "abobrinha em cubos",
+      "cenoura ralada",
+      "azeite de oliva",
+      "limão siciliano",
+      "ervas finas"
+    ],
+    "preco": 48.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p047",
+    "restaurante_id": "r04",
+    "nome": "Escondidinho Fit de Abóbora com Frango",
+    "descricao": "Massa cremosa de abóbora cabotiá recheada com peito de frango desfiado e toque de queijo cottage.",
+    "ingredientes": [
+      "abóbora cabotiá cozida",
+      "peito de frango desfiado",
+      "queijo cottage",
+      "requeijão light",
+      "noz-moscada",
+      "cebolinha"
+    ],
+    "preco": 33.5,
+    "tipo": "principal",
+    "tags": [
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p048",
+    "restaurante_id": "r04",
+    "nome": "Chili Vegano Proteico Mexicano",
+    "descricao": "Receita rica em fibras e proteína de soja, apimentada e servida com arroz integral quentinho.",
+    "ingredientes": [
+      "feijão-vermelho",
+      "proteína de soja texturizada",
+      "molho de tomate pelado",
+      "pimenta-chili",
+      "cominho",
+      "milho-verde",
+      "arroz integral"
+    ],
+    "preco": 31.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "picante"
+    ]
+  },
+  {
+    "id": "p049",
+    "restaurante_id": "r04",
+    "nome": "Bowl de Tofu Teriyaki com Cogumelos",
+    "descricao": "Cubos de tofu dourados envolvidos em molho teriyaki artesanal com shimeji e arroz cateto.",
+    "ingredientes": [
+      "tofu firme grelhado",
+      "cogumelo shimeji",
+      "molho teriyaki com shoyu tradicional",
+      "gergelim torrado",
+      "arroz cateto integral",
+      "óleo de gergelim"
+    ],
+    "preco": 37.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "fit"
+    ]
+  },
+  {
+    "id": "p050",
+    "restaurante_id": "r04",
+    "nome": "Lasanha Leve de Berinjela à Bolonhesa",
+    "descricao": "Camadas de berinjela grelhada com carne moída magra e muçarela gratinada ao forno.",
+    "ingredientes": [
+      "fatias de berinjela grelhada",
+      "carne moída de patinho",
+      "molho de tomate caseiro",
+      "queijo muçarela",
+      "queijo parmesão",
+      "orégano"
+    ],
+    "preco": 35.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p051",
+    "restaurante_id": "r04",
+    "nome": "Marmita Raiz: Frango Crocante com Farofa",
+    "descricao": "Para quem quer dar uma pausa na dieta restritiva: sobrecoxa crocante com farofa amanteigada e arroz branco.",
+    "ingredientes": [
+      "sobrecoxa de frango empanada com farinha de trigo frita",
+      "arroz branco",
+      "feijão carioca com bacon",
+      "farofa de milho amanteigada",
+      "manteiga"
+    ],
+    "preco": 29.9,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p052",
+    "restaurante_id": "r04",
+    "nome": "Suco Verde Prensado a Frio",
+    "descricao": "Revigorante e sem açúcar, feito com folhas verdes frescas e água de coco natural.",
+    "ingredientes": [
+      "couve manteiga",
+      "maçã verde",
+      "limão",
+      "gengibre fresco",
+      "água de coco"
+    ],
+    "preco": 12.9,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p053",
+    "restaurante_id": "r04",
+    "nome": "Suco de Laranja Integral com Mel",
+    "descricao": "A energia que seu dia precisa: suco fresco da fruta batido com mel silvestre.",
+    "ingredientes": [
+      "suco de laranja natural",
+      "mel puro de abelha"
+    ],
+    "preco": 11.5,
+    "tipo": "bebida",
+    "tags": [
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p054",
+    "restaurante_id": "r04",
+    "nome": "Kombucha Orgânica de Gengibre e Hibisco",
+    "descricao": "Bebida probiótica artesanal, levemente gaseificada e naturalmente refrescante.",
+    "ingredientes": [
+      "água filtrada fermentada por cultura simbiótica",
+      "chá-preto orgânico",
+      "flores de hibisco",
+      "extrato de gengibre",
+      "açúcar demerara residual da fermentação"
+    ],
+    "preco": 16.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p055",
+    "restaurante_id": "r04",
+    "nome": "Mousse Cremoso de Cacau Fit",
+    "descricao": "Textura aveludada à base de abacate com chocolate amargo e adoçado com xilitol.",
+    "ingredientes": [
+      "abacate maduro",
+      "cacau puro em pó 100%",
+      "adoçante xilitol",
+      "leite vegetal de amêndoas",
+      "extrato de baunilha"
+    ],
+    "preco": 14.5,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "doce"
+    ]
+  },
+  {
+    "id": "p056",
+    "restaurante_id": "r04",
+    "nome": "Pudim de Chia com Purê de Manga",
+    "descricao": "Sementes de chia hidratadas no leite de coco com cobertura fresca de manga palmer.",
+    "ingredientes": [
+      "sementes de chia",
+      "leite de coco vegetal",
+      "manga palmer fresca",
+      "raspas de limão tahiti"
+    ],
+    "preco": 15.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "doce"
+    ]
+  },
+  {
+    "id": "p057",
+    "restaurante_id": "r05",
+    "nome": "Moqueca Baiana de Banana-da-Terra e Pupunha",
+    "descricao": "Cozido aromático e cremoso em leite de coco e azeite de dendê, acompanhado de arroz soltinho e farofa crocante.",
+    "ingredientes": [
+      "banana-da-terra",
+      "palmito pupunha fresco",
+      "leite de coco artesanal",
+      "azeite de dendê",
+      "pimentão vermelho",
+      "pimentão amarelo",
+      "cebola",
+      "alho",
+      "coentro fresco",
+      "pimenta dedo-de-moça",
+      "arroz branco",
+      "farofa de farinha de mandioca"
+    ],
+    "preco": 48.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p058",
+    "restaurante_id": "r05",
+    "nome": "Feijoada Vegana da Casa",
+    "descricao": "Nossa versão rica e defumada do clássico brasileiro com embutidos vegetais e cogumelos.",
+    "ingredientes": [
+      "feijão-preto",
+      "linguiça vegetal à base de glúten",
+      "tofu defumado",
+      "cogumelo portobello",
+      "abóbora japonesa",
+      "couve refogada no alho",
+      "arroz branco",
+      "farofa de mandioca tostada",
+      "laranja em fatias"
+    ],
+    "preco": 46.5,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p059",
+    "restaurante_id": "r05",
+    "nome": "Smash Burger de Cogumelos com Fritas",
+    "descricao": "Burguer vegetal ultrassaboroso prensado na chapa com cheddar vegano cremoso e maionese artesanal defumada.",
+    "ingredientes": [
+      "pão brioche vegano de farinha de trigo",
+      "blend de cogumelos paris e lentilha",
+      "queijo cheddar vegetal à base de castanha-de-caju",
+      "cebola caramelizada",
+      "picles de pepino",
+      "maionese de leite de soja defumada",
+      "batata frita com páprica"
+    ],
+    "preco": 42.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p060",
+    "restaurante_id": "r05",
+    "nome": "Bowl Proteico de Quinoa e Cogumelos",
+    "descricao": "Uma refeição leve, colorida e equilibrada, repleta de proteínas vegetais e gorduras boas.",
+    "ingredientes": [
+      "quinoa tricolor cozida",
+      "cogumelo shimeji grelhado",
+      "edamame despeliculado cozido",
+      "abacate em cubos",
+      "cenoura ralada",
+      "repolho-roxo",
+      "molho de tahine com limão e azeite extravirgem"
+    ],
+    "preco": 44.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p061",
+    "restaurante_id": "r05",
+    "nome": "Pad Thai Vegano Picante",
+    "descricao": "Massa tradicional de arroz salteada na wok com molho agridoce picante e tofu crocante.",
+    "ingredientes": [
+      "talharim de arroz",
+      "tofu em cubos grelhado",
+      "broto de feijão",
+      "cenoura em tiras",
+      "cebolinha",
+      "amendoim torrado moído",
+      "molho de tamarindo",
+      "molho de soja sem glúten",
+      "pimenta sriracha",
+      "limão"
+    ],
+    "preco": 49.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p062",
+    "restaurante_id": "r05",
+    "nome": "Bobó Cremoso de Shimeji e Mandioca",
+    "descricao": "Creme aveludado de mandioca com leite de coco fresco e farto refogado de cogumelos.",
+    "ingredientes": [
+      "mandioca cozida batida",
+      "cogumelo shimeji preto refogado",
+      "leite de coco",
+      "azeite de dendê",
+      "tomate pelado",
+      "pimentão verde",
+      "arroz branco com gergelim",
+      "farofa crocante de mandioca"
+    ],
+    "preco": 47.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p063",
+    "restaurante_id": "r05",
+    "nome": "Lasanha Bolonhesa de Lentilhas",
+    "descricao": "Camadas generosas de massa artesanal intercaladas com bolonhesa rica e bechamel aveludado de castanhas.",
+    "ingredientes": [
+      "massa de trigo de sêmola",
+      "lentilha marrom cozida",
+      "molho de tomate caseiro",
+      "manjericão fresco",
+      "molho bechamel vegetal de leite de castanha-de-caju",
+      "queijo vegetal ralado"
+    ],
+    "preco": 45.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p064",
+    "restaurante_id": "r05",
+    "nome": "Curry Vermelho Tailandês com Tofu",
+    "descricao": "Curry perfumado e bem apimentado, cozido com vegetais crocantes e leite de coco cremoso.",
+    "ingredientes": [
+      "tofu marinado selado",
+      "pasta de curry vermelho tailandês",
+      "leite de coco",
+      "abobrinha italiana",
+      "berinjela",
+      "pimentão vermelho",
+      "manjericão tailandês",
+      "pimenta dedo-de-moça",
+      "arroz de jasmim"
+    ],
+    "preco": 52.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p065",
+    "restaurante_id": "r05",
+    "nome": "Salada Mediterrânea com Tofu Grelhado",
+    "descricao": "Refrescante, nutritiva e saciante, temperada com ervas finas e azeite extravirgem.",
+    "ingredientes": [
+      "grão-de-bico cozido",
+      "tofu marinado em ervas grelhado",
+      "rúcula fresca",
+      "pepino japonês",
+      "tomate-cereja",
+      "azeitona preta azapa",
+      "azeite de oliva extravirgem",
+      "suco de limão siciliano"
+    ],
+    "preco": 39.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p066",
+    "restaurante_id": "r05",
+    "nome": "Chá Gelado de Hibisco e Frutas Vermelhas",
+    "descricao": "Infusão gelada naturalmente aromática e adoçada com calda leve de açúcar demerara.",
+    "ingredientes": [
+      "flor de hibisco desidratada",
+      "água filtrada",
+      "morangos frescos",
+      "amoras",
+      "calda de açúcar demerara",
+      "rodelas de limão"
+    ],
+    "preco": 13.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p067",
+    "restaurante_id": "r05",
+    "nome": "Kombucha de Maracujá e Gengibre",
+    "descricao": "Bebida fermentada probiótica, naturalmente frisante, refrescante e revigorante.",
+    "ingredientes": [
+      "água filtrada",
+      "chá-verde orgânico fermentado por scoby",
+      "suco integral de maracujá",
+      "extrato natural de gengibre"
+    ],
+    "preco": 16.5,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p068",
+    "restaurante_id": "r05",
+    "nome": "Torta Viva de Chocolate e Frutas Vermelhas",
+    "descricao": "Sobremesa raw elaborada à base de castanhas nobres, tâmaras doces e puro cacau belga.",
+    "ingredientes": [
+      "tâmaras medjool",
+      "nozes",
+      "castanha-de-caju crua hidratada",
+      "cacau em pó 100%",
+      "óleo de coco extravirgem",
+      "xarope de bordo",
+      "geleia artesanal de framboesa"
+    ],
+    "preco": 23.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p069",
+    "restaurante_id": "r05",
+    "nome": "Brownie Fudgy com Nozes",
+    "descricao": "Textura densa e chocolatuda por dentro com casquinha crocante por fora e muitas nozes.",
+    "ingredientes": [
+      "farinha de trigo",
+      "cacau em pó",
+      "chocolate meio amargo sem leite",
+      "açúcar demerara",
+      "óleo de girassol",
+      "leite de aveia",
+      "nozes picadas"
+    ],
+    "preco": 19.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "doce"
+    ]
+  },
+  {
+    "id": "p070",
+    "restaurante_id": "r06",
+    "nome": "Moqueca Vegana de Banana-da-Terra e Palmito",
+    "descricao": "Deliciosa moqueca cremosa cozida com azeite de dendê, pimentões e leite de coco, servida com arroz integral soltinho.",
+    "ingredientes": [
+      "banana-da-terra",
+      "palmito pupunha",
+      "leite de coco",
+      "azeite de dendê",
+      "pimentão vermelho",
+      "pimentão amarelo",
+      "tomate",
+      "coentro",
+      "arroz integral"
+    ],
+    "preco": 48.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p071",
+    "restaurante_id": "r06",
+    "nome": "Curry Tailandês de Tofu com Arroz de Couve-Flor",
+    "descricao": "Cubos de tofu grelhados com legumes crocantes em um aromático e picante molho curry vermelho tailandês, acompanhado de arroz de couve-flor.",
+    "ingredientes": [
+      "tofu orgânico grelhado",
+      "curry vermelho picante",
+      "leite de coco light",
+      "pimenta dedo-de-moça",
+      "gengibre",
+      "brócolis",
+      "cenoura",
+      "arroz de couve-flor"
+    ],
+    "preco": 44.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "picante"
+    ]
+  },
+  {
+    "id": "p072",
+    "restaurante_id": "r06",
+    "nome": "Lasanha Quatro Queijos com Berinjela Grelhada",
+    "descricao": "Camadas generosas de massa artesanal fresca, fatias de berinjela grelhada, molho de tomate caseiro e uma seleção cremosa de quatro queijos.",
+    "ingredientes": [
+      "massa de trigo fresca",
+      "berinjela",
+      "molho de tomate",
+      "queijo mussarela",
+      "queijo gorgonzola",
+      "queijo provolone",
+      "queijo parmesão",
+      "manjericão"
+    ],
+    "preco": 49.9,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano"
+    ]
+  },
+  {
+    "id": "p073",
+    "restaurante_id": "r06",
+    "nome": "Burger de Cogumelos e Queijo Brie",
+    "descricao": "Hambúrguer empanado e frito de cogumelos shimeji e portobello, coberto por queijo brie derretido e cebola caramelizada no pão brioche dourado na manteiga.",
+    "ingredientes": [
+      "pão brioche de trigo",
+      "hambúrguer empanado de shimeji e portobello",
+      "farinha de rosca de trigo",
+      "óleo de algodão para fritura",
+      "queijo brie",
+      "manteiga",
+      "cebola caramelizada",
+      "maionese da casa com ovos"
+    ],
+    "preco": 46.5,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano"
+    ]
+  },
+  {
+    "id": "p074",
+    "restaurante_id": "r06",
+    "nome": "Risoto Cremoso de Cogumelos ao Azeite Trufado",
+    "descricao": "Clássico risoto de arroz arbóreo preparado com caldo de legumes caseiro, cogumelos frescos salteados na manteiga, queijo parmesão e toque trufado.",
+    "ingredientes": [
+      "arroz arbóreo",
+      "cogumelo paris",
+      "cogumelo shimeji",
+      "caldo de legumes",
+      "vinho branco",
+      "manteiga",
+      "queijo parmesão",
+      "azeite trufado"
+    ],
+    "preco": 54.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p075",
+    "restaurante_id": "r06",
+    "nome": "Bowl Proteico de Falafel Assado",
+    "descricao": "Prato completo e balanceado com bolinhos de falafel assados, quinoa perfumada com ervas, mix de folhas, pepino, tomate cereja e hommus cremoso.",
+    "ingredientes": [
+      "grão-de-bico",
+      "quinoa",
+      "folhas verdes variadas",
+      "tomate cereja",
+      "pepino",
+      "pasta de hommus com tahine",
+      "sementes de girassol",
+      "azeite de oliva extravirgem"
+    ],
+    "preco": 42.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p076",
+    "restaurante_id": "r06",
+    "nome": "Feijoada Vegana Completa",
+    "descricao": "Nossa versão especial da feijoada tradicional com tofu defumado, abóbora cabotiá e cogumelos, servida com arroz branco, couve refogada e farofa de milho.",
+    "ingredientes": [
+      "feijão preto",
+      "tofu defumado",
+      "abóbora cabotiá",
+      "cogumelo portobello",
+      "couve manteiga",
+      "arroz branco",
+      "farinha de milho",
+      "laranja fresca"
+    ],
+    "preco": 47.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p077",
+    "restaurante_id": "r06",
+    "nome": "Chili Picante de Feijão Vermelho com Tortilhas",
+    "descricao": "Refogado encorpado e apimentado de feijão vermelho e proteína de soja não transgênica com jalapeño, servido com tortilhas crocantes de trigo tostadas.",
+    "ingredientes": [
+      "feijão vermelho",
+      "proteína de soja texturizada",
+      "pimenta jalapeño",
+      "pimenta caiena",
+      "tomate pelado",
+      "milho verde",
+      "tortilha de farinha de trigo",
+      "óleo vegetal"
+    ],
+    "preco": 39.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "picante"
+    ]
+  },
+  {
+    "id": "p078",
+    "restaurante_id": "r06",
+    "nome": "Nhoque Fit de Batata-Doce ao Pesto com Ricota",
+    "descricao": "Nhoque leve feito artesanalmente com batata-doce e farinha de arroz, salteado em pesto fresco de manjericão e finalizado com ricota fresca esfarelada.",
+    "ingredientes": [
+      "batata-doce",
+      "farinha de arroz",
+      "manjericão fresco",
+      "azeite de oliva extravirgem",
+      "nozes",
+      "ricota fresca",
+      "tomate confitado"
+    ],
+    "preco": 45.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p079",
+    "restaurante_id": "r06",
+    "nome": "Suco Verde Revitalizante Prensado a Frio",
+    "descricao": "Bebida leve e revigorante extraída a frio, sem adição de água nem açúcar, com o frescor da couve e o toque cítrico do limão.",
+    "ingredientes": [
+      "couve manteiga",
+      "maçã verde",
+      "pepino",
+      "suco de limão",
+      "gengibre"
+    ],
+    "preco": 14.5,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p080",
+    "restaurante_id": "r06",
+    "nome": "Kombucha de Hibisco e Frutas Vermelhas",
+    "descricao": "Bebida fermentada gaseificada naturalmente, frutada e suavemente adocicada com infusão de hibisco, morango e amora.",
+    "ingredientes": [
+      "água mineral",
+      "chá verde fermentado",
+      "açúcar orgânico demerara",
+      "flores de hibisco",
+      "polpa de morango",
+      "polpa de amora"
+    ],
+    "preco": 16.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p081",
+    "restaurante_id": "r06",
+    "nome": "Golden Milk com Leite de Aveia e Melado",
+    "descricao": "Bebida aromática reconfortante servida gelada, à base de leite de aveia certificado sem glúten, cúrcuma, especiarias e adoçada com melado de cana.",
+    "ingredientes": [
+      "leite de aveia sem glúten",
+      "cúrcuma",
+      "canela em pó",
+      "gengibre em pó",
+      "melado de cana"
+    ],
+    "preco": 15.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "doce"
+    ]
+  },
+  {
+    "id": "p082",
+    "restaurante_id": "r06",
+    "nome": "Mousse Fit de Cacau com Frutas Vermelhas",
+    "descricao": "Textura aveludada à base de abacate e cacau 70%, adoçada com xarope de bordo puro e coberta com redução de amoras e framboesas.",
+    "ingredientes": [
+      "abacate maduro",
+      "cacau em pó 70%",
+      "leite de coco",
+      "xarope de bordo",
+      "framboesas frescas",
+      "amoras frescas"
+    ],
+    "preco": 22.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "doce"
+    ]
+  },
+  {
+    "id": "p083",
+    "restaurante_id": "r06",
+    "nome": "Cheesecake Clássico com Calda de Maracujá",
+    "descricao": "Fatia generosa do autêntico cheesecake assado com base amanteigada de biscoito e calda brilhante e doce de maracujá com sementes.",
+    "ingredientes": [
+      "biscoito de trigo triturado",
+      "manteiga",
+      "cream cheese",
+      "açúcar refinado",
+      "ovos",
+      "polpa de maracujá"
+    ],
+    "preco": 24.5,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p084",
+    "restaurante_id": "r07",
+    "nome": "Bacon Cheddar Melt",
+    "descricao": "Nosso clássico mais vendido com blend suculento e muito queijo derretido.",
+    "ingredientes": [
+      "Pão brioche tostado na manteiga",
+      "Blend bovino 180g",
+      "Queijo cheddar cremoso",
+      "Bacon crocante em fatias",
+      "Maionese defumada da casa"
+    ],
+    "preco": 38.9,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p085",
+    "restaurante_id": "r07",
+    "nome": "Smash Clássico Duplo",
+    "descricao": "Dois hambúrgueres fininhos com aquela crostinha perfeita e queijo derretido.",
+    "ingredientes": [
+      "Pão de batata",
+      "Dois smashes bovinos de 80g",
+      "Queijo prato derretido",
+      "Picles artesanal de pepino",
+      "Cebola roxa picada",
+      "Molho especial da casa"
+    ],
+    "preco": 32.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p086",
+    "restaurante_id": "r07",
+    "nome": "Habanero Inferno Burger",
+    "descricao": "Para quem ama intensidade: combinação potente de queijo e pimenta ardida.",
+    "ingredientes": [
+      "Pão brioche",
+      "Blend bovino 160g",
+      "Queijo monterey jack",
+      "Fatias de pimenta jalapeño",
+      "Geleia caseira de pimenta habanero",
+      "Bacon crocante"
+    ],
+    "preco": 39.5,
+    "tipo": "principal",
+    "tags": [
+      "picante"
+    ]
+  },
+  {
+    "id": "p087",
+    "restaurante_id": "r07",
+    "nome": "Fit Burger no Prato",
+    "descricao": "Opção leve e rica em proteínas, servida sem pão com uma salada farta.",
+    "ingredientes": [
+      "Hambúrguer artesanal de peito de frango grelhado 160g",
+      "Mix de folhas verdes (rúcula e alface americana)",
+      "Tomate caqui fatiado",
+      "Cenoura ralada",
+      "Azeite de oliva extravirgem"
+    ],
+    "preco": 34.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p088",
+    "restaurante_id": "r07",
+    "nome": "Veggie Melt Cogumelos",
+    "descricao": "Sanduíche vegetariano super saboroso com queijo provolone e cogumelos frescos.",
+    "ingredientes": [
+      "Pão australiano",
+      "Hambúrguer vegetal de lentilha e aveia",
+      "Queijo provolone derretido",
+      "Cogumelos paris salteados",
+      "Maionese verde de ervas"
+    ],
+    "preco": 36.9,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano"
+    ]
+  },
+  {
+    "id": "p089",
+    "restaurante_id": "r07",
+    "nome": "Vegan Garden Burger",
+    "descricao": "Versão totalmente vegana e aromática com queijo vegetal de castanhas.",
+    "ingredientes": [
+      "Pão vegano sem leite",
+      "Hambúrguer de grão-de-bico 150g",
+      "Queijo vegetal à base de castanha de caju",
+      "Rúcula fresca",
+      "Tomate seco marinado",
+      "Maionese vegana de alho confitado"
+    ],
+    "preco": 37.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p090",
+    "restaurante_id": "r07",
+    "nome": "Texas Spicy Crispy",
+    "descricao": "Frango crocante empanado com toque marcante de molho picante defumado.",
+    "ingredientes": [
+      "Pão brioche",
+      "Sobrecoxa de frango frita empanada",
+      "Queijo muçarela",
+      "Molho barbecue com pimenta chipotle",
+      "Salada coleslaw com pimenta sriracha"
+    ],
+    "preco": 36.0,
+    "tipo": "principal",
+    "tags": [
+      "picante"
+    ]
+  },
+  {
+    "id": "p091",
+    "restaurante_id": "r07",
+    "nome": "Smash Salad Fresco",
+    "descricao": "O equilíbrio exato entre carne suculenta e a crocância da salada.",
+    "ingredientes": [
+      "Pão brioche",
+      "Smash bovino 100g",
+      "Queijo muçarela derretido",
+      "Alface americana",
+      "Tomate maduro em fatias",
+      "Maionese caseira"
+    ],
+    "preco": 28.5,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p092",
+    "restaurante_id": "r07",
+    "nome": "Burger Zero Glúten & Lactose",
+    "descricao": "Sabor de hamburgueria artesanal pensado especialmente para restrições alimentares.",
+    "ingredientes": [
+      "Pão artesanal de mandioca sem glúten",
+      "Blend bovino 150g grelhado",
+      "Queijo muçarela zero lactose",
+      "Cebola roxa chapeada",
+      "Maionese caseira feita com azeite e ovos sem leite"
+    ],
+    "preco": 42.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p093",
+    "restaurante_id": "r07",
+    "nome": "Suco Verde Detox Funcional",
+    "descricao": "Prensado a frio e 100% natural, refrescante e sem conservantes.",
+    "ingredientes": [
+      "Suco de maçã",
+      "Couve manteiga",
+      "Suco de limão taiti",
+      "Gengibre fresco",
+      "Água mineral filtrada"
+    ],
+    "preco": 13.9,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p094",
+    "restaurante_id": "r07",
+    "nome": "Refrigerante Guaraná Lata 350ml",
+    "descricao": "O refrigerante brasileiro bem gelado para acompanhar o seu burger.",
+    "ingredientes": [
+      "Água gaseificada",
+      "Açúcar",
+      "Extrato de guaraná",
+      "Acidulante ácido cítrico"
+    ],
+    "preco": 7.5,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p095",
+    "restaurante_id": "r07",
+    "nome": "Milkshake Crocante de Avelã",
+    "descricao": "Super cremoso e indulgente, batido com creme de avelã e chocolate.",
+    "ingredientes": [
+      "Sorvete de baunilha",
+      "Leite integral",
+      "Creme de avelã com cacau",
+      "Chantilly fresco",
+      "Castanhas de caju picadas"
+    ],
+    "preco": 22.9,
+    "tipo": "bebida",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p096",
+    "restaurante_id": "r07",
+    "nome": "Pudim de Leite Condensado",
+    "descricao": "Receita de família com textura sedosa e bastante calda de caramelo.",
+    "ingredientes": [
+      "Leite condensado",
+      "Leite integral",
+      "Ovos frescos",
+      "Calda de caramelo de açúcar cristal"
+    ],
+    "preco": 14.9,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p097",
+    "restaurante_id": "r07",
+    "nome": "Mousse Vegana de Cacau 70%",
+    "descricao": "Sobremesa aerada intensa em chocolate, sem ingredientes de origem animal.",
+    "ingredientes": [
+      "Cacau em pó 70%",
+      "Leite de coco artesanal",
+      "Açúcar demerara",
+      "Raspas de chocolate amargo sem leite"
+    ],
+    "preco": 17.5,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p098",
+    "restaurante_id": "r08",
+    "nome": "Smash Plant Clássico",
+    "descricao": "O clássico do delivery em versão 100% vegetal com muito sabor e textura de smash burger tradicional.",
+    "ingredientes": [
+      "pão brioche vegano com gergelim",
+      "hambúrguer vegetal tipo carne grelhado 100g",
+      "queijo cheddar vegano à base de castanhas",
+      "picles de pepino agridoce",
+      "cebola roxa em cubinhos",
+      "ketchup artesanal",
+      "mostarda amarela"
+    ],
+    "preco": 32.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p099",
+    "restaurante_id": "r08",
+    "nome": "Duplo BBQ Smoked Bacon",
+    "descricao": "Dois suculentos discos vegetais com nosso bacon de soja crocante e molho barbecue defumado artesanal.",
+    "ingredientes": [
+      "pão australiano vegano",
+      "dois hambúrgueres vegetais 110g cada",
+      "bacon crocante de soja",
+      "queijo prato vegetal derretido",
+      "molho barbecue defumado",
+      "cebola frita crocante"
+    ],
+    "preco": 44.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p100",
+    "restaurante_id": "r08",
+    "nome": "Vulcão Jalapeño Picante",
+    "descricao": "Para quem adora intensidade: burger artesanal coberto com fatias de jalapeño e maionese sriracha da casa.",
+    "ingredientes": [
+      "pão de gergelim vegano",
+      "hambúrguer de feijão preto e cogumelos 130g",
+      "fatias de pimenta jalapeño em conserva",
+      "queijo cheddar vegano",
+      "maionese vegana picante de sriracha",
+      "alface americana crocante"
+    ],
+    "preco": 38.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "picante"
+    ]
+  },
+  {
+    "id": "p101",
+    "restaurante_id": "r08",
+    "nome": "Crispy Chick'n Spicy",
+    "descricao": "Empanado vegetal super crocante banhado em molho de pimenta caiena agridoce com coleslaw refrescante.",
+    "ingredientes": [
+      "pão brioche vegano",
+      "filé empanado crocante de soja e ervilha",
+      "molho de pimenta caiena agridoce",
+      "picles de jalapeño",
+      "salada coleslaw com maionese vegana de castanhas"
+    ],
+    "preco": 41.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "picante"
+    ]
+  },
+  {
+    "id": "p102",
+    "restaurante_id": "r08",
+    "nome": "Cogumelos & Trufas Burger",
+    "descricao": "Combinação sofisticada de mix de cogumelos salteados no azeite trufado e maionese de alho negro.",
+    "ingredientes": [
+      "pão brioche vegano",
+      "hambúrguer vegetal à base de ervilha 120g",
+      "shimeji e cogumelo paris salteados no azeite trufado",
+      "queijo muçarela vegano",
+      "rúcula fresca",
+      "maionese vegana de alho negro"
+    ],
+    "preco": 46.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p103",
+    "restaurante_id": "r08",
+    "nome": "Sweet Onion & Cheddar",
+    "descricao": "Smash burger suculento coberto por bastante cebola caramelizada lentamente e cheddar cremoso de castanhas.",
+    "ingredientes": [
+      "pão de gergelim vegano",
+      "hambúrguer vegetal grelhado 110g",
+      "queijo cheddar vegano cremoso",
+      "cebola caramelizada no açúcar mascavo",
+      "maionese vegana defumada",
+      "folhas de alface americana"
+    ],
+    "preco": 36.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p104",
+    "restaurante_id": "r08",
+    "nome": "Fit Burger no Bowl Sem Glúten",
+    "descricao": "Opção leve e nutritiva servida no bowl, com burger de grãos grelhado, guacamole fresca e folhas selecionadas.",
+    "ingredientes": [
+      "hambúrguer grelhado de quinoa, grão-de-bico e semente de abóbora",
+      "mix de rúcula e alface americana",
+      "tomates cereja grelhados",
+      "guacamole fresca",
+      "cenoura ralada",
+      "molho leve de tahine com limão"
+    ],
+    "preco": 37.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p105",
+    "restaurante_id": "r08",
+    "nome": "Fit Portobello Burger Sem Glúten",
+    "descricao": "Dois cogumelos portobello suculentos substituem o pão neste burger funcional, grelhado e cheio de sabor.",
+    "ingredientes": [
+      "dois cogumelos portobello inteiros grelhados",
+      "hambúrguer grelhado de lentilha e ervilha",
+      "queijo cremoso vegetal de castanha-de-caju",
+      "tomate seco artesanal",
+      "rúcula fresca",
+      "azeite de ervas"
+    ],
+    "preco": 42.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p106",
+    "restaurante_id": "r08",
+    "nome": "Fit Wrap de Falafel Sem Glúten",
+    "descricao": "Tortilha leve sem glúten recheada com bolinhos de falafel assados, homus cremoso e hortelã fresca.",
+    "ingredientes": [
+      "tortilha sem glúten de farinha de grão-de-bico e linhaça",
+      "falafel de grão-de-bico e ervas assado no forno",
+      "pasta de homus tradicional",
+      "pepino japonês em rodelas",
+      "tomate em cubos",
+      "hortelã fresca",
+      "molho de iogurte vegetal de coco e limão"
+    ],
+    "preco": 34.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p107",
+    "restaurante_id": "r08",
+    "nome": "Suco Natural Laranja e Morango 500ml",
+    "descricao": "Suco fresco da fruta batido na hora, fonte natural de vitamina C sem adição de açúcar.",
+    "ingredientes": [
+      "suco de laranja natural espremido",
+      "morangos frescos batidos",
+      "gelo"
+    ],
+    "preco": 14.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "doce"
+    ]
+  },
+  {
+    "id": "p108",
+    "restaurante_id": "r08",
+    "nome": "Kombucha Orgânica de Gengibre e Limão 300ml",
+    "descricao": "Bebida fermentada viva, refrescante, probiótica e naturalmente frisante com um toque cítrico.",
+    "ingredientes": [
+      "chá verde orgânico fermentado",
+      "suco de limão taiti",
+      "extrato natural de gengibre",
+      "cultura viva de kombucha"
+    ],
+    "preco": 16.5,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p109",
+    "restaurante_id": "r08",
+    "nome": "Cerveja IPA Artesanal Lata 473ml",
+    "descricao": "Cerveja artesanal aromática com notas florais e amargor marcante, perfeita para acompanhar burgers.",
+    "ingredientes": [
+      "água",
+      "malte de cevada",
+      "lúpulo aromático",
+      "levedura cervejeira"
+    ],
+    "preco": 18.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p110",
+    "restaurante_id": "r08",
+    "nome": "Brownie de Chocolate com Castanhas",
+    "descricao": "Massa densa e chocolatuda feita com cacau puro e pedacinhos crocantes de castanha-de-caju.",
+    "ingredientes": [
+      "farinha de trigo",
+      "chocolate amargo 70% sem leite",
+      "cacau em pó 100%",
+      "açúcar mascavo",
+      "óleo de coco",
+      "castanha-de-caju tostada"
+    ],
+    "preco": 17.9,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "doce"
+    ]
+  },
+  {
+    "id": "p111",
+    "restaurante_id": "r08",
+    "nome": "Mousse Fit de Abacate e Cacau Sem Glúten",
+    "descricao": "Cremoso, aveludado e funcional: sobremesa sem açúcar refinado e sem glúten adoçada com xilitol.",
+    "ingredientes": [
+      "abacate maduro",
+      "cacau em pó 100% puro",
+      "leite de coco caseiro",
+      "adoçante natural xilitol",
+      "raspas de chocolate amargo sem açúcar"
+    ],
+    "preco": 19.9,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "doce"
+    ]
+  },
+  {
+    "id": "p112",
+    "restaurante_id": "r09",
+    "nome": "Pizza Margherita Clássica",
+    "descricao": "A verdadeira clássica napolitana com queijo derretido e folhas frescas perfumadas de manjericão.",
+    "ingredientes": [
+      "massa de fermentação natural de farinha de trigo",
+      "molho de tomate pelado italiano",
+      "mussarela de búfala",
+      "manjericão fresco",
+      "azeite de oliva extravirgem"
+    ],
+    "preco": 62.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano"
+    ]
+  },
+  {
+    "id": "p113",
+    "restaurante_id": "r09",
+    "nome": "Pizza Calabresa Artesanal",
+    "descricao": "Generosas fatias de calabresa premium acebolada sobre molho rústico de tomates.",
+    "ingredientes": [
+      "massa tradicional de farinha de trigo",
+      "molho de tomate pelado",
+      "linguiça calabresa defumada artesanal fatiada",
+      "cebola roxa laminada",
+      "azeitonas pretas chilenas",
+      "orégano seco"
+    ],
+    "preco": 58.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p114",
+    "restaurante_id": "r09",
+    "nome": "Pizza Diavola Picante",
+    "descricao": "Para quem ama intensidade: salame curado levemente picante com flocos de pimenta calabresa.",
+    "ingredientes": [
+      "massa de farinha de trigo",
+      "molho de tomate italiano",
+      "mussarela fatiada",
+      "salame tipo ventricina picante",
+      "pimenta calabresa em flocos",
+      "azeite extravirgem"
+    ],
+    "preco": 68.0,
+    "tipo": "principal",
+    "tags": [
+      "picante"
+    ]
+  },
+  {
+    "id": "p115",
+    "restaurante_id": "r09",
+    "nome": "Pizza Vegana de Cogumelos",
+    "descricao": "Saborosa combinação de cogumelos salteados sobre base crocante e nosso creme vegetal da casa.",
+    "ingredientes": [
+      "massa de fermentação natural de trigo",
+      "molho de tomate pelado",
+      "creme de castanha-de-caju fermentado",
+      "cogumelos shimeji e paris salteados no azeite",
+      "cebolinha fresca laminada",
+      "azeite trufado"
+    ],
+    "preco": 74.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p116",
+    "restaurante_id": "r09",
+    "nome": "Pizza Fit de Couve-Flor com Frango",
+    "descricao": "Massa levinha e low carb à base de couve-flor, coberta com frango suculento e tomatinhos.",
+    "ingredientes": [
+      "massa sem glúten à base de couve-flor e farinha de amêndoas",
+      "molho de tomate caseiro sem açúcar",
+      "peito de frango desfiado temperado com ervas",
+      "tomates-cereja assados",
+      "queijo vegano à base de inhame",
+      "manjericão fresco"
+    ],
+    "preco": 69.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p117",
+    "restaurante_id": "r09",
+    "nome": "Pizza Quatro Queijos Tradicional",
+    "descricao": "O encontro cremoso e marcante dos queijos mais nobres em fatias irresistíveis.",
+    "ingredientes": [
+      "massa de farinha de trigo",
+      "molho de tomate pelado",
+      "mussarela especial",
+      "queijo gorgonzola",
+      "queijo provolone defumado",
+      "requeijão cremoso catupiry",
+      "orégano seco"
+    ],
+    "preco": 66.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano"
+    ]
+  },
+  {
+    "id": "p118",
+    "restaurante_id": "r09",
+    "nome": "Pizza Portuguesa Especial",
+    "descricao": "Recheio farto e sabor tradicional com presunto de alta qualidade e ovos cozidos no ponto.",
+    "ingredientes": [
+      "massa de farinha de trigo",
+      "molho de tomate",
+      "presunto cozido picado",
+      "mussarela",
+      "ovos cozidos picados",
+      "ervilhas frescas",
+      "cebola em rodelas",
+      "azeitonas pretas",
+      "azeite de oliva"
+    ],
+    "preco": 64.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p119",
+    "restaurante_id": "r09",
+    "nome": "Pizza Mexicana de Chilli e Jalapeño",
+    "descricao": "Inspirada no México: carne moída bem temperada e rodelas ardentes de pimenta jalapeño fresca.",
+    "ingredientes": [
+      "massa de trigo artesanal",
+      "molho de tomate rústico",
+      "mussarela ralada",
+      "carne moída temperada com cominho e páprica picante",
+      "fatias de pimenta jalapeño em conserva",
+      "pimentão vermelho picado"
+    ],
+    "preco": 67.0,
+    "tipo": "principal",
+    "tags": [
+      "picante"
+    ]
+  },
+  {
+    "id": "p120",
+    "restaurante_id": "r09",
+    "nome": "Pizza Zucchini e Parmesão",
+    "descricao": "Fatias finíssimas de abobrinha grelhada com azeite de alho e parmesão gratinado crocante.",
+    "ingredientes": [
+      "massa de farinha de trigo",
+      "molho de tomate pelado",
+      "mussarela de búfala",
+      "abobrinha italiana laminada e grelhada",
+      "queijo parmesão curado ralado",
+      "azeite com infusão de alho"
+    ],
+    "preco": 63.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano"
+    ]
+  },
+  {
+    "id": "p121",
+    "restaurante_id": "r09",
+    "nome": "Água Mineral com Gás 500ml",
+    "descricao": "Garrafa individual de água mineral límpida e refrescante, gaseificada na medida ideal.",
+    "ingredientes": [
+      "água mineral natural gaseificada"
+    ],
+    "preco": 6.5,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p122",
+    "restaurante_id": "r09",
+    "nome": "Chá Gelado de Pêssego Adoçado 450ml",
+    "descricao": "Chá preto gelado saborizado com polpa de pêssego e dulçor equilibrado.",
+    "ingredientes": [
+      "água",
+      "extrato aquoso de chá preto",
+      "suco concentrado de pêssego",
+      "açúcar refinado",
+      "ácido cítrico"
+    ],
+    "preco": 9.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p123",
+    "restaurante_id": "r09",
+    "nome": "Cerveja Artesanal IPA 500ml",
+    "descricao": "Cerveja puro malte com amargor marcante e notas cítricas de lúpulos nobres.",
+    "ingredientes": [
+      "água mineral",
+      "malte de cevada",
+      "lúpulo aromático",
+      "levedura cervejeira"
+    ],
+    "preco": 19.9,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p124",
+    "restaurante_id": "r09",
+    "nome": "Mini Pizza de Nutella com Morango",
+    "descricao": "Massa crocante coberta com camadas generosas de Nutella cremosa e morangos frescos.",
+    "ingredientes": [
+      "massa doce de farinha de trigo",
+      "creme de avelã com cacau e leite (Nutella)",
+      "morangos frescos picados",
+      "açúcar impalpável polvilhado"
+    ],
+    "preco": 34.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p125",
+    "restaurante_id": "r09",
+    "nome": "Mousse Cremoso de Cacau Vegano",
+    "descricao": "Sobremesa aveludada à base de leite de coco e cacau puro, 100% vegetal e naturalmente sem glúten.",
+    "ingredientes": [
+      "leite de coco integral",
+      "cacau em pó 70%",
+      "açúcar demerara orgânico",
+      "chocolate amargo sem leite picado"
+    ],
+    "preco": 22.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p126",
+    "restaurante_id": "r10",
+    "nome": "Lasanha Tradicional à Bolonhesa",
+    "descricao": "Massa artesanal intercalada com delicioso ragù de carne bovina, molho bechamel cremoso e gratinada com queijo parmesão e muçarela.",
+    "ingredientes": [
+      "massa fresca de sêmola",
+      "carne bovina moída",
+      "molho de tomate pomodoro",
+      "molho bechamel",
+      "leite",
+      "queijo muçarela",
+      "queijo parmesão",
+      "noz-moscada"
+    ],
+    "preco": 62.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p127",
+    "restaurante_id": "r10",
+    "nome": "Penne all'Arrabbiata",
+    "descricao": "Clássico romano com molho de tomates italianos salteados no azeite extravirgem, bastante alho e um toque marcante de pimenta calabresa.",
+    "ingredientes": [
+      "massa penne di grano duro",
+      "molho de tomate pelado italiano",
+      "alho",
+      "azeite de oliva extravirgem",
+      "pimenta calabresa em flocos",
+      "manjericão fresco"
+    ],
+    "preco": 54.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "picante"
+    ]
+  },
+  {
+    "id": "p128",
+    "restaurante_id": "r10",
+    "nome": "Risotto ai Funghi Porcini",
+    "descricao": "Arroz arbóreo cozido lentamente com mix de cogumelos frescos e funghi porcini seco, finalizado com manteiga e queijo grana padano.",
+    "ingredientes": [
+      "arroz arbóreo",
+      "funghi porcini seco",
+      "cogumelos paris",
+      "cogumelos shimeji",
+      "caldo de legumes caseiro",
+      "vinho branco seco",
+      "cebola",
+      "manteiga",
+      "queijo grana padano"
+    ],
+    "preco": 68.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p129",
+    "restaurante_id": "r10",
+    "nome": "Polenta Cremosa com Ragù de Costela",
+    "descricao": "Polenta italiana cremosa feita à base de milho, servida com suculento ragù de costela desfiada cozida lentamente ao vinho tinto.",
+    "ingredientes": [
+      "farinha de milho para polenta",
+      "costela bovina desfiada",
+      "molho de tomate rústico",
+      "vinho tinto seco",
+      "manteiga",
+      "queijo parmesão",
+      "ervas finas"
+    ],
+    "preco": 66.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p130",
+    "restaurante_id": "r10",
+    "nome": "Spaghetti alla Carbonara",
+    "descricao": "Receita tradicional italiana preparada com gemas frescas, guanciale artesanal crocante, bastante pecorino romano e pimenta-do-reino moída na hora.",
+    "ingredientes": [
+      "espaguete di grano duro",
+      "guanciale curado artesanal",
+      "gemas de ovo caipira pasteurizadas",
+      "queijo pecorino romano",
+      "pimenta-do-reino preta moída"
+    ],
+    "preco": 65.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p131",
+    "restaurante_id": "r10",
+    "nome": "Gnocchi de Batata ao Pesto Genovês",
+    "descricao": "Nhoque artesanal de batata muito leve, envolto em molho pesto aromático de manjericão fresco, nozes e queijo parmesão.",
+    "ingredientes": [
+      "nhoque de batata",
+      "farinha de trigo",
+      "manjericão fresco",
+      "azeite de oliva extravirgem",
+      "nozes trituradas",
+      "alho",
+      "queijo parmesão ralado"
+    ],
+    "preco": 58.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano"
+    ]
+  },
+  {
+    "id": "p132",
+    "restaurante_id": "r10",
+    "nome": "Filetto di Pesce com Caponata de Legumes",
+    "descricao": "Filé de peixe branco fresco grelhado no azeite com tomilho, guarnecido de caponata leve de abobrinha, berinjela e tomates confitados.",
+    "ingredientes": [
+      "filé de tilápia fresca",
+      "abobrinha italiana grelhada",
+      "berinjela grelhada",
+      "tomate-cereja",
+      "azeite de oliva extravirgem",
+      "tomilho fresco",
+      "sal marinho"
+    ],
+    "preco": 64.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p133",
+    "restaurante_id": "r10",
+    "nome": "Zoodles de Abobrinha alla Diavola Vegana",
+    "descricao": "Espaguete leve de abobrinha fresca salteado no azeite com molho de tomate pelado rústico, alcaparras, azeitonas pretas e pimenta dedo-de-moça.",
+    "ingredientes": [
+      "abobrinha em tiras finas",
+      "tomate pelado",
+      "azeitonas pretas azapa",
+      "alcaparras",
+      "alho",
+      "pimenta dedo-de-moça picada",
+      "azeite de oliva extravirgem",
+      "manjericão"
+    ],
+    "preco": 48.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "picante"
+    ]
+  },
+  {
+    "id": "p134",
+    "restaurante_id": "r10",
+    "nome": "Ravioli de Ricota e Espinafre ao Pomodoro",
+    "descricao": "Massa artesanal recheada com ricota temperada e folhas de espinafre, servida com molho de tomate caseiro e folhas de manjericão fresco.",
+    "ingredientes": [
+      "massa de farinha de trigo e ovos",
+      "ricota fresca",
+      "espinafre refogado",
+      "molho pomodoro italiano",
+      "azeite de oliva extravirgem",
+      "manjericão fresco"
+    ],
+    "preco": 56.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano"
+    ]
+  },
+  {
+    "id": "p135",
+    "restaurante_id": "r10",
+    "nome": "Água Mineral San Pellegrino (505ml)",
+    "descricao": "Famosa água mineral italiana gaseificada naturalmente na fonte dos Alpes Italianos.",
+    "ingredientes": [
+      "água mineral natural gaseificada"
+    ],
+    "preco": 16.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p136",
+    "restaurante_id": "r10",
+    "nome": "Soda Italiana de Maçã Verde (400ml)",
+    "descricao": "Bebida refrescante e adocicada preparada com água gaseificada, xarope francês de maçã verde e gelo.",
+    "ingredientes": [
+      "água mineral com gás",
+      "xarope de maçã verde com açúcar",
+      "gelo",
+      "fatia de maçã verde"
+    ],
+    "preco": 15.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p137",
+    "restaurante_id": "r10",
+    "nome": "Suco de Uva Tinto Integral Villa Piva (300ml)",
+    "descricao": "Suco de uva tinto 100% natural, sem adição de água, conservantes ou açúcares refinados, naturalmente doce e encorpado.",
+    "ingredientes": [
+      "suco de uva integral pasteurizado"
+    ],
+    "preco": 14.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p138",
+    "restaurante_id": "r10",
+    "nome": "Tiramisù Tradizionale",
+    "descricao": "Sobremesa clássica com camadas de biscoitos savoiardi embebidos em café espresso, creme suave de queijo mascarpone e cacau em pó.",
+    "ingredientes": [
+      "queijo mascarpone",
+      "biscoito champagne de trigo",
+      "café espresso",
+      "gemas pasteurizadas",
+      "açúcar refinado",
+      "cacau em pó 100%"
+    ],
+    "preco": 28.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p139",
+    "restaurante_id": "r10",
+    "nome": "Panna Cotta Vegana com Coulis de Frutas Vermelhas",
+    "descricao": "Panna cotta à base de leite de coco e fava de baunilha, servida com redução aveludada de morangos, amoras e framboesas.",
+    "ingredientes": [
+      "leite de coco",
+      "ágar-ágar",
+      "açúcar demerara",
+      "fava de baunilha",
+      "amoras",
+      "framboesas",
+      "morangos"
+    ],
+    "preco": 26.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p140",
+    "restaurante_id": "r11",
+    "nome": "Tacos al Pastor Clássicos",
+    "descricao": "Três autênticos tacos recheados com carne de porco marinada em urucum e especiarias, servidos com abacaxi e coentro.",
+    "ingredientes": [
+      "tortilha de milho",
+      "lombo de porco marinado em especiarias mexicanas",
+      "abacaxi grelhado",
+      "cebola roxa fatiada",
+      "coentro fresco",
+      "salsa de pimenta morita"
+    ],
+    "preco": 38.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p141",
+    "restaurante_id": "r11",
+    "nome": "Burrito Mega Costela e Cheddar",
+    "descricao": "Grande e bem recheado burrito com costela desfiada e muito queijo cheddar, enrolado na clássica tortilha de trigo.",
+    "ingredientes": [
+      "tortilha de trigo",
+      "costela bovina desfiada com molho barbecue",
+      "arroz mexicano",
+      "feijão refrito",
+      "queijo cheddar cremoso",
+      "sour cream"
+    ],
+    "preco": 44.5,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p142",
+    "restaurante_id": "r11",
+    "nome": "Bowl Mexicano Vegano Fit",
+    "descricao": "Opção leve e nutritiva com quinoa, vegetais frescos, feijão preto e uma deliciosa guacamole rústica.",
+    "ingredientes": [
+      "quinoa em grãos cozida",
+      "feijão-preto temperado",
+      "abobrinha grelhada",
+      "milho-verde cozido",
+      "guacamole fresca",
+      "pico de gallo",
+      "azeite de oliva",
+      "suco de limão"
+    ],
+    "preco": 39.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p143",
+    "restaurante_id": "r11",
+    "nome": "Quesadilla de Cogumelos e Queijo Oaxaca",
+    "descricao": "Tortilha dourada na chapa recheada com cogumelos salteados e queijo derretido, acompanhada de sour cream.",
+    "ingredientes": [
+      "tortilha de trigo",
+      "mix de queijo prato e muçarela derretidos",
+      "cogumelos-de-paris salteados no azeite",
+      "cebola caramelizada",
+      "sour cream"
+    ],
+    "preco": 36.9,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano"
+    ]
+  },
+  {
+    "id": "p144",
+    "restaurante_id": "r11",
+    "nome": "Enchiladas Rojas de Frango",
+    "descricao": "Tortilhas de milho enroladas com peito de frango desfiado, cobertas com molho vermelho picante de chiles e queijo fresco.",
+    "ingredientes": [
+      "tortilha de milho",
+      "peito de frango cozido e desfiado",
+      "molho artesanal de pimentas guajillo e chipotle",
+      "queijo minas padrão ralado",
+      "creme azedo",
+      "coentro"
+    ],
+    "preco": 42.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p145",
+    "restaurante_id": "r11",
+    "nome": "Chili con Carne com Totopos",
+    "descricao": "Gisado tradicional de carne bovina moída com feijão-vermelho e pimenta, servido com chips crocantes de milho.",
+    "ingredientes": [
+      "carne moída bovina",
+      "feijão-vermelho",
+      "tomate pelado",
+      "pimenta jalapeño",
+      "alho",
+      "cebola",
+      "totopos de milho fritos"
+    ],
+    "preco": 41.5,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p146",
+    "restaurante_id": "r11",
+    "nome": "Tacos Leves de Peixe Branco",
+    "descricao": "Tortilhas de milho com filé de peixe branco grelhado, repolho crocante e molho leve de abacate com limão.",
+    "ingredientes": [
+      "tortilha de milho",
+      "filé de tilápia grelhado",
+      "repolho roxo fatiado fino",
+      "iogurte natural desnatado batido com abacate",
+      "coentro fresco",
+      "gotas de limão"
+    ],
+    "preco": 40.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p147",
+    "restaurante_id": "r11",
+    "nome": "Fajitas Mistas de Carne e Frango",
+    "descricao": "Tiras de alcatra e frango grelhados com pimentões coloridos e cebola, acompanhadas de tortilhas macias e vinagrete pico de gallo.",
+    "ingredientes": [
+      "tiras de alcatra grelhadas",
+      "tiras de peito de frango grelhadas",
+      "pimentão vermelho",
+      "pimentão verde",
+      "cebola",
+      "tortilha de trigo",
+      "pico de gallo"
+    ],
+    "preco": 49.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p148",
+    "restaurante_id": "r11",
+    "nome": "Nachos Supremos Picantes",
+    "descricao": "Porção generosa de totopos crocantes com queijo derretido, carne moída bem temperada e jalapeños fatiados.",
+    "ingredientes": [
+      "totopos de milho fritos",
+      "molho de queijo cheddar cremoso",
+      "carne moída bovina",
+      "pimenta jalapeño em conserva fatiada",
+      "sour cream",
+      "pico de gallo"
+    ],
+    "preco": 46.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p149",
+    "restaurante_id": "r11",
+    "nome": "Água de Jamaica Gelada 400ml",
+    "descricao": "Bebida típica mexicana à base de infusão de flores de hibisco com limão, levemente adocicada e muito refrescante.",
+    "ingredientes": [
+      "infusão de flores de hibisco secas",
+      "água filtrada",
+      "suco de limão taiti",
+      "açúcar refinado",
+      "gelo"
+    ],
+    "preco": 12.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p150",
+    "restaurante_id": "r11",
+    "nome": "Suco de Manga com Toque de Tajín 400ml",
+    "descricao": "Suco natural e refrescante de manga batido na hora, finalizado com a clássica pimenta tajín mexicana na borda.",
+    "ingredientes": [
+      "polpa de manga fresca",
+      "água mineral",
+      "açúcar",
+      "pimenta tajín em pó"
+    ],
+    "preco": 14.5,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "picante",
+      "doce"
+    ]
+  },
+  {
+    "id": "p151",
+    "restaurante_id": "r11",
+    "nome": "Churros com Doce de Leite",
+    "descricao": "Porção com quatro mini churros fritos, polvilhados em açúcar e canela, servidos com pote de doce de leite artesanal.",
+    "ingredientes": [
+      "farinha de trigo",
+      "água",
+      "sal",
+      "óleo para fritar",
+      "açúcar",
+      "canela em pó",
+      "doce de leite cremoso"
+    ],
+    "preco": 19.9,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p152",
+    "restaurante_id": "r11",
+    "nome": "Pudim Tradicional de Milho",
+    "descricao": "Pudim macio feito com milho-verde batido e leite condensado, servido com uma rica calda de caramelo.",
+    "ingredientes": [
+      "leite condensado",
+      "leite integral",
+      "milho-verde",
+      "ovos",
+      "açúcar caramelizado"
+    ],
+    "preco": 16.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p153",
+    "restaurante_id": "r12",
+    "nome": "Kibe Cru Especial",
+    "descricao": "Tradicional kibe cru preparado na hora com carne magra selecionada, azeite e hortelã fresca.",
+    "ingredientes": [
+      "carne bovina moída magra",
+      "trigo para kibe",
+      "hortelã fresca",
+      "cebola",
+      "azeite de oliva extravirgem",
+      "pimenta síria"
+    ],
+    "preco": 38.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "fit"
+    ]
+  },
+  {
+    "id": "p154",
+    "restaurante_id": "r12",
+    "nome": "Shawarma de Frango com Toum",
+    "descricao": "Pão folha generosamente recheado com peito de frango marinado, pasta de alho toum artesanal e picles.",
+    "ingredientes": [
+      "pão folha de trigo",
+      "peito de frango marinado grelhado",
+      "pasta toum (alho, óleo vegetal, limão e sal)",
+      "picles de pepino",
+      "tomate fatiado",
+      "alface-romana"
+    ],
+    "preco": 34.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p155",
+    "restaurante_id": "r12",
+    "nome": "Prato Falafel com Homus",
+    "descricao": "Bolinhos dourados e crocantes de grão-de-bico com pasta cremosa de homus, salada fresca e pão sírio.",
+    "ingredientes": [
+      "grão-de-bico frito",
+      "tahine",
+      "alho",
+      "coentro",
+      "cominho",
+      "tomate picado",
+      "pepino",
+      "pão sírio"
+    ],
+    "preco": 39.5,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p156",
+    "restaurante_id": "r12",
+    "nome": "Kafta Grelhada com Arroz Mjadra",
+    "descricao": "Dois espetos de kafta bovina grelhada acompanhados de clássico arroz com lentilhas e cebolas douradas.",
+    "ingredientes": [
+      "carne bovina moída",
+      "arroz branco",
+      "lentilhas cozidas",
+      "cebola caramelizada",
+      "azeite de oliva",
+      "hortelã seca",
+      "especiarias árabes"
+    ],
+    "preco": 44.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p157",
+    "restaurante_id": "r12",
+    "nome": "Tabule Fresco da Casa",
+    "descricao": "Salada refrescante e leve com muita salsinha picada, tomates doces e toque cítrico de limão.",
+    "ingredientes": [
+      "salsinha fresca picada",
+      "hortelã",
+      "tomate",
+      "cebola",
+      "trigo fino para kibe",
+      "azeite de oliva extravirgem",
+      "suco de limão"
+    ],
+    "preco": 29.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "fit"
+    ]
+  },
+  {
+    "id": "p158",
+    "restaurante_id": "r12",
+    "nome": "Charutinho de Folha de Uva",
+    "descricao": "Delicadas folhas de uva recheadas com arroz temperado e cozidas lentamente no azeite e limão.",
+    "ingredientes": [
+      "folhas de uva em conserva",
+      "arroz agulhinha",
+      "tomate picado",
+      "cebola",
+      "hortelã fresca",
+      "azeite de oliva",
+      "suco de limão",
+      "sal"
+    ],
+    "preco": 42.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p159",
+    "restaurante_id": "r12",
+    "nome": "Esfiha Aberta de Carne Harissa",
+    "descricao": "Esfiha aberta com massa tradicional e recheio suculento de carne bovina temperada com pasta harissa picante.",
+    "ingredientes": [
+      "farinha de trigo",
+      "leite integral",
+      "manteiga",
+      "carne bovina moída",
+      "cebola",
+      "tomate",
+      "pasta harissa (pimenta vermelha, alho e especiarias)",
+      "sal"
+    ],
+    "preco": 9.5,
+    "tipo": "principal",
+    "tags": [
+      "picante"
+    ]
+  },
+  {
+    "id": "p160",
+    "restaurante_id": "r12",
+    "nome": "Esfiha Fechada de Queijo com Zátar",
+    "descricao": "Massa fofinha e dourada com recheio cremoso de queijos e azeite aromático com zátar.",
+    "ingredientes": [
+      "farinha de trigo",
+      "leite integral",
+      "fermento biológico",
+      "queijo minas padrão",
+      "ricota fresca",
+      "azeite de oliva",
+      "especiaria zátar"
+    ],
+    "preco": 8.9,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano"
+    ]
+  },
+  {
+    "id": "p161",
+    "restaurante_id": "r12",
+    "nome": "Combo Misto Árabe",
+    "descricao": "A combinação perfeita com kafta bovina, esfiha folhada de carne, arroz com aletria na manteiga e coalhada seca.",
+    "ingredientes": [
+      "carne bovina",
+      "farinha de trigo",
+      "manteiga",
+      "arroz agulhinha",
+      "macarrão aletria",
+      "coalhada seca de leite de vaca",
+      "pão sírio"
+    ],
+    "preco": 56.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p162",
+    "restaurante_id": "r12",
+    "nome": "Suco de Limão com Hortelã",
+    "descricao": "Limonada batida na hora com folhas frescas de hortelã e adoçada na medida certa.",
+    "ingredientes": [
+      "água filtrada",
+      "suco de limão taiti",
+      "folhas de hortelã fresca",
+      "açúcar cristal"
+    ],
+    "preco": 12.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p163",
+    "restaurante_id": "r12",
+    "nome": "Água Aromatizada com Cardamomo e Limão",
+    "descricao": "Bebida leve e gaseificada, refrescante e sem açúcar, aromatizada com cardamomo macerado e limão siciliano.",
+    "ingredientes": [
+      "água mineral gaseificada",
+      "suco de limão siciliano",
+      "sementes de cardamomo",
+      "hortelã fresca",
+      "gelo"
+    ],
+    "preco": 11.5,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p164",
+    "restaurante_id": "r12",
+    "nome": "Laban Tradicional Gelado",
+    "descricao": "Refrescante bebida salgada típica à base de iogurte natural batido com hortelã seca.",
+    "ingredientes": [
+      "iogurte natural integral",
+      "água mineral gelada",
+      "hortelã seca em flocos",
+      "sal refinado"
+    ],
+    "preco": 13.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p165",
+    "restaurante_id": "r12",
+    "nome": "Baklava de Pistache",
+    "descricao": "Camadas finíssimas de massa filo crocante recheadas com pistache e regadas com calda de flor de laranjeira.",
+    "ingredientes": [
+      "massa filo (farinha de trigo e água)",
+      "manteiga clarificada",
+      "pistache picado",
+      "xarope de açúcar",
+      "água de flor de laranjeira"
+    ],
+    "preco": 19.9,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p166",
+    "restaurante_id": "r12",
+    "nome": "Malabie com Calda de Damasco",
+    "descricao": "Manjar árabe delicado perfumado com água de flor de laranjeira, servido com calda caseira de damasco.",
+    "ingredientes": [
+      "leite integral",
+      "amido de milho",
+      "açúcar cristal",
+      "água de flor de laranjeira",
+      "damasco seco",
+      "amêndoas laminadas tostadas"
+    ],
+    "preco": 18.5,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p167",
+    "restaurante_id": "r13",
+    "nome": "Baião de Dois Tradicional",
+    "descricao": "Nosso clássico baião bem molhadinho com carne seca desfiada, bacon crocante, queijo coalho e toque de manteiga de garrafa.",
+    "ingredientes": [
+      "arroz branco",
+      "feijão fradinho",
+      "carne seca desfiada",
+      "bacon em cubos",
+      "queijo coalho",
+      "manteiga de garrafa",
+      "coentro",
+      "cebolinha"
+    ],
+    "preco": 48.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p168",
+    "restaurante_id": "r13",
+    "nome": "Filé de Carne de Sol à Parmegiana Sertaneja",
+    "descricao": "Generoso filé de carne de sol empanado e crocante, coberto com molho de tomate rústico e queijo coalho gratinado, servido com arroz e batata frita.",
+    "ingredientes": [
+      "filé de carne de sol empanado na farinha de trigo e farinha de rosca",
+      "molho de tomate",
+      "queijo coalho",
+      "arroz branco",
+      "batata frita"
+    ],
+    "preco": 58.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p169",
+    "restaurante_id": "r13",
+    "nome": "Moqueca Baiana Picante de Peixe e Camarão",
+    "descricao": "Moqueca encorpada no azeite de dendê e leite de coco fresco, com pedaços suculentos de robalo, camarões e pimenta dedo-de-moça marcante.",
+    "ingredientes": [
+      "filé de robalo",
+      "camarão",
+      "leite de coco",
+      "azeite de dendê",
+      "pimentão vermelho",
+      "pimentão amarelo",
+      "cebola",
+      "tomate",
+      "coentro",
+      "pimenta dedo-de-moça",
+      "arroz branco"
+    ],
+    "preco": 72.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p170",
+    "restaurante_id": "r13",
+    "nome": "Baião do Sertão Vegano",
+    "descricao": "Versão 100% vegetal e leve do clássico, com cubos de tofu defumado grelhado, abóbora assada e couve fresca refogada.",
+    "ingredientes": [
+      "arroz integral",
+      "feijão fradinho",
+      "tofu defumado grelhado",
+      "abóbora cabotiá assada",
+      "couve refogada no azeite",
+      "cheiro-verde",
+      "pimenta biquinho"
+    ],
+    "preco": 44.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p171",
+    "restaurante_id": "r13",
+    "nome": "Cuscuz Nordestino com Ovos e Queijo Coalho",
+    "descricao": "Cuscuz de milho fofinho vaporizado na hora, servido com ovos mexidos cremosos e fatias douradas de queijo coalho na chapa.",
+    "ingredientes": [
+      "farinha de milho flocada vaporizada",
+      "ovos mexidos",
+      "queijo coalho na chapa",
+      "manteiga de garrafa",
+      "pitada de sal"
+    ],
+    "preco": 32.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p172",
+    "restaurante_id": "r13",
+    "nome": "Bobó de Mandioca com Cogumelos",
+    "descricao": "Creme aveludado de mandioca com leite de coco e azeite de dendê, repleto de cogumelos shimeji e paris salteados.",
+    "ingredientes": [
+      "creme de mandioca",
+      "cogumelo shimeji",
+      "cogumelo paris",
+      "leite de coco",
+      "azeite de dendê",
+      "pimentões",
+      "coentro",
+      "cebola",
+      "arroz branco"
+    ],
+    "preco": 49.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p173",
+    "restaurante_id": "r13",
+    "nome": "Galinhada Sertaneja Apimentada",
+    "descricao": "Sobrecoxas de frango cozidas lentamente com arroz caldoso, açafrão da terra, milho verde e ardência especial da pimenta cumari.",
+    "ingredientes": [
+      "arroz",
+      "sobrecoxa de frango desossada",
+      "açafrão da terra",
+      "milho verde",
+      "pimenta cumari",
+      "pimenta-de-cheiro",
+      "cebola",
+      "tomate",
+      "cheiro-verde"
+    ],
+    "preco": 42.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p174",
+    "restaurante_id": "r13",
+    "nome": "Tilápia Grelhada com Purê de Mandioquinha Fit",
+    "descricao": "Filé de tilápia fresca grelhado no azeite extravirgem acompanhado de purê leve de mandioquinha sem lácteos e abobrinha no vapor.",
+    "ingredientes": [
+      "filé de tilápia grelhado",
+      "azeite de oliva extravirgem",
+      "purê de mandioquinha com caldo de legumes",
+      "abobrinha no vapor",
+      "limão"
+    ],
+    "preco": 46.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p175",
+    "restaurante_id": "r13",
+    "nome": "Escondidinho Tradicional de Carne Seca",
+    "descricao": "Purê denso de macaxeira bem temperado, recheado com carne seca desfiada acebolada e finalizado com queijo coalho maçaricado.",
+    "ingredientes": [
+      "mandioca cozida",
+      "leite",
+      "manteiga",
+      "carne seca desfiada",
+      "cebola",
+      "queijo coalho gratinado"
+    ],
+    "preco": 47.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p176",
+    "restaurante_id": "r13",
+    "nome": "Suco Natural de Caju 400ml",
+    "descricao": "Suco refrescante preparado puramente da polpa fresca do caju com água mineral, sem adição de açúcares.",
+    "ingredientes": [
+      "polpa de caju fresco",
+      "água mineral"
+    ],
+    "preco": 12.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p177",
+    "restaurante_id": "r13",
+    "nome": "Refrigerante Guaraná Jesus Lata 350ml",
+    "descricao": "O clássico e icônico refrigerante cor-de-rosa do Maranhão, com sabor doce e aroma suave de cravo e canela.",
+    "ingredientes": [
+      "água gaseificada",
+      "açúcar",
+      "extrato de guaraná",
+      "aromatizantes sintéticos",
+      "corantes alimentícios"
+    ],
+    "preco": 9.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p178",
+    "restaurante_id": "r13",
+    "nome": "Cajuína Nordestina Garrafa 300ml",
+    "descricao": "Bebida típica cristalina à base de suco clarificado de caju, naturalmente caramelizada e adocicada.",
+    "ingredientes": [
+      "suco de caju clarificado",
+      "açúcar"
+    ],
+    "preco": 14.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p179",
+    "restaurante_id": "r13",
+    "nome": "Cartola Pernambucana Tradicional",
+    "descricao": "Sobremesa pernambucana clássica feita com bananas douradas na manteiga, queijo manteiga derretido e farta cobertura de açúcar com canela.",
+    "ingredientes": [
+      "banana-da-terra",
+      "manteiga de garrafa",
+      "queijo manteiga",
+      "açúcar cristal",
+      "canela em pó"
+    ],
+    "preco": 22.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p180",
+    "restaurante_id": "r13",
+    "nome": "Cocada Mole Vegana de Colher",
+    "descricao": "Cocada cremosa artesanal elaborada com coco fresco ralado e calda suave de leite de coco com açúcar demerara.",
+    "ingredientes": [
+      "coco fresco ralado",
+      "leite de coco",
+      "açúcar demerara",
+      "raspas de limão tahiti"
+    ],
+    "preco": 18.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p181",
+    "restaurante_id": "r14",
+    "nome": "Feijão Tropeiro Tradicional",
+    "descricao": "Autêntico feijão tropeiro da roça com bacon crocante, lombo e ovos caipiras, acompanhado de arroz e couve fininha.",
+    "ingredientes": [
+      "feijão carioquinha",
+      "farinha de mandioca torrada",
+      "bacon defumado",
+      "linguiça calabresa artesanal",
+      "ovos mexidos",
+      "couve refogada no alho",
+      "arroz branco",
+      "torresmo crocante"
+    ],
+    "preco": 44.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p182",
+    "restaurante_id": "r14",
+    "nome": "Frango com Quiabo e Angu",
+    "descricao": "Frango caipira cozido lentamente no molho dourado, servido com quiabo sem baba e angu de milho cremoso.",
+    "ingredientes": [
+      "coxa e sobrecoxa de frango",
+      "quiabo fresco cozido",
+      "fubá de milho",
+      "alho",
+      "cebola",
+      "cheiro-verde",
+      "arroz branco"
+    ],
+    "preco": 42.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p183",
+    "restaurante_id": "r14",
+    "nome": "Costelinha com Canjiquinha Picante",
+    "descricao": "Costelinha suína macia dourada na banha com canjiquinha cremosa e um toque marcante de pimenta dedo-de-moça.",
+    "ingredientes": [
+      "costelinha de porco",
+      "canjiquinha de milho",
+      "pimenta dedo-de-moça picada",
+      "tomate",
+      "alho",
+      "cebolinha fresca"
+    ],
+    "preco": 48.5,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p184",
+    "restaurante_id": "r14",
+    "nome": "Vaca Atolada com Pimenta Cumari",
+    "descricao": "Costela bovina de primeira cozida até desmanchar junto com mandioca amanteigada e pimenta de cheiro cumari.",
+    "ingredientes": [
+      "costela bovina",
+      "mandioca cozida",
+      "pimenta cumari",
+      "caldo de carne caseiro",
+      "louro",
+      "cebola",
+      "cheiro-verde"
+    ],
+    "preco": 52.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p185",
+    "restaurante_id": "r14",
+    "nome": "Tutu de Feijão com Queijo Minas",
+    "descricao": "Tutu cremoso batido com farinha de mandioca e cubos de queijo minas curado, guarnecido com linguiça e arroz.",
+    "ingredientes": [
+      "feijão preto batido",
+      "farinha de mandioca",
+      "queijo minas curado",
+      "linguiça artesanal frita",
+      "couve no alho",
+      "arroz branco"
+    ],
+    "preco": 46.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p186",
+    "restaurante_id": "r14",
+    "nome": "Tropeiro Vegano dos Gerais",
+    "descricao": "Releitura vegetariana e vegana cheia de sabor com feijão fradinho, tofu artesanal defumado e farinha de milho em flocos.",
+    "ingredientes": [
+      "feijão fradinho",
+      "tofu defumado grelhado",
+      "farinha de milho flocada",
+      "couve refogada no azeite",
+      "cenoura em cubos",
+      "cebola roxa",
+      "salsinha"
+    ],
+    "preco": 39.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p187",
+    "restaurante_id": "r14",
+    "nome": "Prato Fit Caipira",
+    "descricao": "Opção leve com filé de frango caipira grelhado na chapa, purê rústico de abóbora e quiabo tostado sem gordura.",
+    "ingredientes": [
+      "peito de frango grelhado",
+      "purê rústico de abóbora cabotiá cozida no vapor",
+      "quiabo grelhado sem óleo",
+      "arroz integral",
+      "azeite de oliva"
+    ],
+    "preco": 38.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p188",
+    "restaurante_id": "r14",
+    "nome": "Moqueca Mineira Vegetariana com Queijo Canastra",
+    "descricao": "Palmito pupunha e banana-da-terra cozidos em molho aromático de tomate, finalizados com queijo canastra gratinado.",
+    "ingredientes": [
+      "palmito pupunha fresco",
+      "banana-da-terra",
+      "tomate",
+      "pimentão amarelo",
+      "azeite de dendê",
+      "leite de coco",
+      "fatias de queijo canastra"
+    ],
+    "preco": 49.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p189",
+    "restaurante_id": "r14",
+    "nome": "Empadão Mineiro Tradicional",
+    "descricao": "Generosa fatia do clássico empadão com massa amanteigada recheada de frango desfiado suculento, milho e catupiry.",
+    "ingredientes": [
+      "farinha de trigo",
+      "manteiga",
+      "frango desfiado ao molho de tomate",
+      "milho verde",
+      "requeijão cremoso tipo catupiry",
+      "azeitonas pretas"
+    ],
+    "preco": 36.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p190",
+    "restaurante_id": "r14",
+    "nome": "Suco de Limão Cravo com Rapadura",
+    "descricao": "Suco refrescante de limão capeta artesanal adoçado com pura rapadura mineira derretida.",
+    "ingredientes": [
+      "água mineral",
+      "suco de limão cravo fresco",
+      "calda de rapadura artesanal"
+    ],
+    "preco": 12.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p191",
+    "restaurante_id": "r14",
+    "nome": "Chá Gelado de Capim Santo e Gengibre",
+    "descricao": "Chá artesanal gelado, digestivo e sem açúcar, preparado com folhas frescas de capim santo e lascas de gengibre.",
+    "ingredientes": [
+      "infusão de capim-limão",
+      "suco de limão taiti",
+      "gengibre fresco macerado",
+      "gelo"
+    ],
+    "preco": 10.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p192",
+    "restaurante_id": "r14",
+    "nome": "Cerveja de Trigo Artesanal Mineira 500ml",
+    "descricao": "Cerveja estilo Weiss produzida na Serra da Mantiqueira, turva, encorpada e com notas leves de cravo e banana.",
+    "ingredientes": [
+      "água",
+      "malte de trigo",
+      "malte de cevada",
+      "lúpulo",
+      "levedura"
+    ],
+    "preco": 24.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p193",
+    "restaurante_id": "r14",
+    "nome": "Romeu e Julieta na Taça",
+    "descricao": "Creme leve de queijo minas e requeijão artesanal coberto com abundante calda de goiabada cascão cremosa.",
+    "ingredientes": [
+      "queijo minas padrão",
+      "requeijão artesanal",
+      "creme de leite",
+      "goiabada cascão em calda",
+      "queijo canastra ralado"
+    ],
+    "preco": 18.5,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p194",
+    "restaurante_id": "r14",
+    "nome": "Doce de Abóbora com Coco Caipira",
+    "descricao": "Doce caseiro tradicional em calda suave de cravo e canela com pedaços macios de abóbora e lascas de coco fresco.",
+    "ingredientes": [
+      "abóbora de pescoço",
+      "coco ralado fresco",
+      "açúcar cristal",
+      "cravo-da-índia",
+      "canela em pau"
+    ],
+    "preco": 15.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p195",
+    "restaurante_id": "r15",
+    "nome": "Yakisoba Especial da Casa",
+    "descricao": "Nosso clássico yakisoba com massa artesanal salteada com carne bovina, frango e legumes crocantes ao molho shoyu.",
+    "ingredientes": [
+      "macarrão de trigo artesanal",
+      "carne bovina em tiras",
+      "peito de frango em cubos",
+      "brócolis",
+      "couve-flor",
+      "acelga",
+      "cenoura",
+      "molho à base de shoyu e óleo de gergelim"
+    ],
+    "preco": 46.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p196",
+    "restaurante_id": "r15",
+    "nome": "Frango Xadrez Tradicional",
+    "descricao": "Cubos macios de peito de frango salteados com pimentões coloridos, cebola e amendoim torrado.",
+    "ingredientes": [
+      "peito de frango em cubos",
+      "pimentão verde",
+      "pimentão vermelho",
+      "cebola",
+      "amendoim torrado",
+      "molho de soja tradicional",
+      "amido de milho",
+      "óleo vegetal"
+    ],
+    "preco": 42.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p197",
+    "restaurante_id": "r15",
+    "nome": "Mapo Tofu Tradicional de Sichuan",
+    "descricao": "Autêntico prato de Sichuan com cubos sedosos de tofu e carne moída suína imersos em molho apimentado e aromático.",
+    "ingredientes": [
+      "tofu macio",
+      "carne suína moída",
+      "pasta de feijão fermentado com pimenta doubanjiang",
+      "óleo de pimenta",
+      "pimenta de Sichuan moída",
+      "cebolinha",
+      "alho",
+      "gengibre"
+    ],
+    "preco": 48.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "picante"
+    ]
+  },
+  {
+    "id": "p198",
+    "restaurante_id": "r15",
+    "nome": "Bifum de Legumes e Cogumelos",
+    "descricao": "Macarrão de arroz levíssimo salteado no wok com mix de legumes frescos e shiitake ao tamari sem glúten.",
+    "ingredientes": [
+      "macarrão de arroz bifum",
+      "cogumelo shiitake fresco",
+      "brócolis",
+      "cenoura em fios",
+      "acelga",
+      "broto de feijão (moyashi)",
+      "tamari sem glúten",
+      "óleo de gergelim torrado"
+    ],
+    "preco": 44.5,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p199",
+    "restaurante_id": "r15",
+    "nome": "Costelinha Suína Agridoce",
+    "descricao": "Pedaços crocantes de costelinha de porco envolvidos no tradicional e brilhante molho agridoce chinês com abacaxi.",
+    "ingredientes": [
+      "costelinha de porco",
+      "farinha de trigo",
+      "abacaxi fresco",
+      "pimentão verde",
+      "vinagre de arroz",
+      "extrato de tomate",
+      "açúcar",
+      "amido de milho",
+      "óleo de soja"
+    ],
+    "preco": 52.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p200",
+    "restaurante_id": "r15",
+    "nome": "Frango General Tso",
+    "descricao": "Clássico agridoce picante: pedaços crocantes de frango glaceados em molho encorpado com pimentas secas inteiras.",
+    "ingredientes": [
+      "peito de frango empanado",
+      "farinha de trigo",
+      "molho de soja",
+      "pimentas secas vermelhas",
+      "vinagre de arroz",
+      "alho picado",
+      "gengibre ralado",
+      "açúcar",
+      "cebolinha"
+    ],
+    "preco": 45.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "picante"
+    ]
+  },
+  {
+    "id": "p201",
+    "restaurante_id": "r15",
+    "nome": "Berinjela Chinesa ao Alho Picante",
+    "descricao": "Berinjelas chinesas tenras refogadas na wok com alho farto e molho perfumado ligeiramente picante.",
+    "ingredientes": [
+      "berinjela chinesa",
+      "alho triturado",
+      "pimenta dedo-de-moça picada",
+      "cebolinha verde",
+      "molho de soja",
+      "vinagre preto chinês",
+      "óleo de gergelim torrado"
+    ],
+    "preco": 39.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "picante"
+    ]
+  },
+  {
+    "id": "p202",
+    "restaurante_id": "r15",
+    "nome": "Tilápia no Vapor com Gengibre e Cebolinha",
+    "descricao": "Prato leve e delicado: filé de tilápia cozido no vapor perfumado com finas lâminas de gengibre fresco e broto de feijão.",
+    "ingredientes": [
+      "filé de tilápia fresco",
+      "gengibre fresco em tiras finas",
+      "cebolinha verde fresca",
+      "broto de feijão moyashi cozido no vapor",
+      "flor de sal",
+      "óleo de gergelim prensado a frio"
+    ],
+    "preco": 49.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p203",
+    "restaurante_id": "r15",
+    "nome": "Rolinho Primavera de Queijo e Carne",
+    "descricao": "Massa folhada crocante frita por imersão, recheada com carne moída temperada e queijo mussarela derretido.",
+    "ingredientes": [
+      "massa de farinha de trigo para rolinho",
+      "carne bovina moída",
+      "queijo mussarela",
+      "repolho picado",
+      "cenoura ralada",
+      "óleo vegetal para fritura"
+    ],
+    "preco": 24.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p204",
+    "restaurante_id": "r15",
+    "nome": "Chá de Jasmim Gelado Artesanal",
+    "descricao": "Infusão refrescante de chá verde com flores de jasmim naturais, servido gelado e sem adição de açúcares.",
+    "ingredientes": [
+      "água filtrada",
+      "chá verde com flores de jasmim naturais"
+    ],
+    "preco": 10.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p205",
+    "restaurante_id": "r15",
+    "nome": "Refrigerante Chinês de Lichia",
+    "descricao": "Bebida gaseificada suave e aromática, saborosa e adoçada na medida com suco de lichia.",
+    "ingredientes": [
+      "água carbonatada",
+      "suco concentrado de lichia",
+      "açúcar refinado",
+      "ácido cítrico",
+      "aroma natural de lichia"
+    ],
+    "preco": 14.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p206",
+    "restaurante_id": "r15",
+    "nome": "Cerveja Tsingtao Long Neck 330ml",
+    "descricao": "Cerveja chinesa do estilo pilsen, leve, aromática e com notas suaves de malte de cevada e arroz.",
+    "ingredientes": [
+      "água",
+      "malte de cevada",
+      "arroz",
+      "lúpulo"
+    ],
+    "preco": 18.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p207",
+    "restaurante_id": "r15",
+    "nome": "Banana Caramelizada Chinesa",
+    "descricao": "Quatro pedaços de banana empanada fritos e envolvidos em calda espessa de açúcar caramelizado e gergelim.",
+    "ingredientes": [
+      "banana nanica fatiada",
+      "massa de farinha de trigo",
+      "calda de açúcar caramelizado",
+      "sementes de gergelim branco tostadas",
+      "óleo vegetal"
+    ],
+    "preco": 22.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "doce"
+    ]
+  },
+  {
+    "id": "p208",
+    "restaurante_id": "r15",
+    "nome": "Rolinho Doce de Chocolate com Banana",
+    "descricao": "Massa crocante e dourada de rolinho primavera recheada com banana e chocolate ao leite cremoso.",
+    "ingredientes": [
+      "massa de farinha de trigo",
+      "chocolate ao leite com cacau e leite em pó",
+      "banana fresca fatiada",
+      "açúcar de confeiteiro e canela polvilhados",
+      "óleo para fritura"
+    ],
+    "preco": 23.5,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p209",
+    "restaurante_id": "r16",
+    "nome": "Pad Thai Tradicional de Camarão",
+    "descricao": "O clássico tailandês com talharim de arroz salteado, camarões médios, broto de feijão, amendoim torrado e molho artesanal de tamarindo.",
+    "ingredientes": [
+      "talharim de arroz",
+      "camarões",
+      "ovo",
+      "broto de feijão",
+      "molho de tamarindo",
+      "amendoim torrado",
+      "cebolinha",
+      "nam pla (molho de peixe)"
+    ],
+    "preco": 58.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p210",
+    "restaurante_id": "r16",
+    "nome": "Pad Thai Vegano com Tofu",
+    "descricao": "Versão 100% vegetal com fita de arroz, tofu grelhado, legumes frescos e redução cítrica de tamarindo e açúcar de palma.",
+    "ingredientes": [
+      "talharim de arroz",
+      "tofu firme em cubos",
+      "broto de feijão",
+      "cenoura",
+      "molho de tamarindo artesanal",
+      "amendoim tostado",
+      "cebolinha verde"
+    ],
+    "preco": 49.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p211",
+    "restaurante_id": "r16",
+    "nome": "Gaeng Kiew Wan (Curry Verde de Frango)",
+    "descricao": "Frango fatiado cozido lentamente em curry verde picante, leite de coco fresco, berinjela tailandesa e folhas de manjericão sagrado. Acompanha arroz jasmim.",
+    "ingredientes": [
+      "peito de frango em fatias",
+      "pasta de curry verde",
+      "leite de coco",
+      "berinjela thai",
+      "manjericão sagrado",
+      "pimenta dedo-de-moça",
+      "arroz jasmim"
+    ],
+    "preco": 54.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p212",
+    "restaurante_id": "r16",
+    "nome": "Tom Yum Goong",
+    "descricao": "Sopa aromática leve, picante e azedinha com camarões, cogumelos shimeji, capim-santo e galanga fresca. Acompanha porção de arroz jasmim.",
+    "ingredientes": [
+      "camarões frescos",
+      "cogumelo shimeji",
+      "caldo de ervas aromáticas",
+      "capim-santo",
+      "galanga",
+      "folhas de limão kaffir",
+      "pimenta thai",
+      "arroz jasmim"
+    ],
+    "preco": 56.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "picante"
+    ]
+  },
+  {
+    "id": "p213",
+    "restaurante_id": "r16",
+    "nome": "Pad Krapow Moo Saap",
+    "descricao": "Prato de rua clássico com carne suína moída e salteada com manjericão thai, pimentas, molho de soja escuro e ovo frito com gema mole por cima do arroz jasmim.",
+    "ingredientes": [
+      "carne de porco moída",
+      "manjericão tailandês",
+      "alho",
+      "pimenta chilli vermelha",
+      "molho de soja (shoyu com glúten)",
+      "molho de ostra",
+      "ovo frito",
+      "arroz jasmim"
+    ],
+    "preco": 48.0,
+    "tipo": "principal",
+    "tags": [
+      "picante"
+    ]
+  },
+  {
+    "id": "p214",
+    "restaurante_id": "r16",
+    "nome": "Som Tum com Frango Grelhado",
+    "descricao": "Salada refrescante e picante de mamão verde ralado, tomates-cereja, vagem e amendoim, servida com tiras de peito de frango grelhado.",
+    "ingredientes": [
+      "mamão verde ralado",
+      "peito de frango grelhado",
+      "tomate-cereja",
+      "vagem fresca",
+      "amendoim",
+      "suco de limão",
+      "alho",
+      "pimenta thai",
+      "molho de peixe"
+    ],
+    "preco": 46.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "picante"
+    ]
+  },
+  {
+    "id": "p215",
+    "restaurante_id": "r16",
+    "nome": "Por Piah Tod (Rolinhos Primavera Fritos)",
+    "descricao": "Quatro unidades crocantes de rolinhos recheados com carne suína, repolho e cenoura, servidos com molho agridoce tailandês.",
+    "ingredientes": [
+      "massa fina de trigo",
+      "carne suína",
+      "repolho",
+      "cenoura",
+      "cebola",
+      "molho agridoce thai artesanal",
+      "óleo de girassol para fritura"
+    ],
+    "preco": 32.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p216",
+    "restaurante_id": "r16",
+    "nome": "Massaman Curry de Alcatra",
+    "descricao": "Curry encorpado e aromático de especiarias quentes com tiras macias de alcatra, batatas douradas, amendoim e leite de coco. Acompanha arroz jasmim.",
+    "ingredientes": [
+      "alcatra bovina em cubos",
+      "pasta massaman curry",
+      "leite de coco",
+      "batata cozida",
+      "cebola roxa",
+      "amendoim",
+      "arroz jasmim"
+    ],
+    "preco": 59.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p217",
+    "restaurante_id": "r16",
+    "nome": "Pad See Ew Vegetariano",
+    "descricao": "Massa larga de arroz salteada na wok com molho de soja escuro, ovo caipira, brócolis chinês e fatias de cogumelo shitake.",
+    "ingredientes": [
+      "talharim largo de arroz",
+      "ovo caipira",
+      "brócolis chinês",
+      "cogumelo shitake",
+      "molho de soja escuro",
+      "molho à base de trigo",
+      "alho"
+    ],
+    "preco": 47.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano"
+    ]
+  },
+  {
+    "id": "p218",
+    "restaurante_id": "r16",
+    "nome": "Cha Yen (Chá Tailandês)",
+    "descricao": "Chá preto tailandês infusionado com especiarias doces, servido bem gelado e batido com leite condensado e leite evaporado.",
+    "ingredientes": [
+      "chá preto tailandês",
+      "anis-estrelado",
+      "baunilha",
+      "leite condensado",
+      "leite evaporado",
+      "gelo"
+    ],
+    "preco": 16.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p219",
+    "restaurante_id": "r16",
+    "nome": "Nam Manao (Limonada Tailandesa com Capim-Santo)",
+    "descricao": "Bebida cítrica e refrescante à base de limão tahiti, infusão gelada de capim-santo fresco e calda de açúcar simples.",
+    "ingredientes": [
+      "suco de limão tahiti",
+      "infusão de capim-santo fresco",
+      "xarope de açúcar simples",
+      "água filtrada",
+      "gelo"
+    ],
+    "preco": 14.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p220",
+    "restaurante_id": "r16",
+    "nome": "Água de Coco com Capim-Limão Natural",
+    "descricao": "Água de coco integral fresca levemente aromatizada a frio com talos de capim-limão, super hidratante e sem adição de açúcares.",
+    "ingredientes": [
+      "água de coco integral pasteurizada",
+      "infusão natural de capim-limão"
+    ],
+    "preco": 13.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p221",
+    "restaurante_id": "r16",
+    "nome": "Mango Sticky Rice (Khao Niew Mamuang)",
+    "descricao": "A sobremesa mais famosa da Tailândia: arroz glutinoso cozido no leite de coco aromatizado com pandan, coberto com manga palmer fresca fatiada e gergelim tostado.",
+    "ingredientes": [
+      "arroz glutinoso",
+      "leite de coco",
+      "açúcar refinado",
+      "sal",
+      "manga palmer madura",
+      "sementes de gergelim tostadas"
+    ],
+    "preco": 28.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p222",
+    "restaurante_id": "r16",
+    "nome": "Roti Thai de Banana com Leite Condensado",
+    "descricao": "Pão folhado crocante frito na manteiga, recheado com banana nanica e generosamente coberto com leite condensado.",
+    "ingredientes": [
+      "massa roti à base de farinha de trigo",
+      "manteiga",
+      "banana nanica",
+      "leite condensado"
+    ],
+    "preco": 24.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p223",
+    "restaurante_id": "r17",
+    "nome": "Picanha Nobre com Farofa de Ovos e Arroz",
+    "descricao": "Cortes macios de picanha grelhados no braseiro forte, acompanhados de farofa rica de ovos na manteiga, arroz branco e vinagrete clássico.",
+    "ingredientes": [
+      "picanha bovina",
+      "arroz branco",
+      "farofa com farinha de trigo e manteiga",
+      "ovos",
+      "cebola",
+      "tomate",
+      "vinagre",
+      "sal de parrilla"
+    ],
+    "preco": 84.9,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p224",
+    "restaurante_id": "r17",
+    "nome": "Costela Desmanchando com Chimichurri Picante",
+    "descricao": "Costela bovina defumada por 12 horas no fogo de chão, servida com mandioca cozida e chimichurri apimentado da casa.",
+    "ingredientes": [
+      "costela bovina defumada",
+      "mandioca cozida",
+      "azeite de oliva",
+      "alho",
+      "salsinha",
+      "pimenta calabresa",
+      "vinagre de maçã",
+      "sal grosso"
+    ],
+    "preco": 76.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p225",
+    "restaurante_id": "r17",
+    "nome": "Peito de Frango na Brasa com Legumes Fit",
+    "descricao": "Filé de peito de frango marinado em ervas frescas e assado na grelha, acompanhado de seleta de legumes assados no azeite.",
+    "ingredientes": [
+      "peito de frango",
+      "azeite de oliva",
+      "abobrinha",
+      "cenoura",
+      "brócolis",
+      "alecrim",
+      "sal rosa"
+    ],
+    "preco": 42.5,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p226",
+    "restaurante_id": "r17",
+    "nome": "Fraldinha ao Barbecue Habanero",
+    "descricao": "Fraldinha suculenta fatiada, glaceada com barbecue artesanal de pimenta habanero, guarnecida de batatas rústicas e farofa panko crocante.",
+    "ingredientes": [
+      "fraldinha bovina",
+      "molho barbecue",
+      "pimenta habanero",
+      "batata rústica",
+      "farinha panko de trigo",
+      "alho"
+    ],
+    "preco": 79.9,
+    "tipo": "principal",
+    "tags": [
+      "picante"
+    ]
+  },
+  {
+    "id": "p227",
+    "restaurante_id": "r17",
+    "nome": "Grelhado Vegano de Cogumelos e Tofu Defumado",
+    "descricao": "Espetos de cogumelos portobello frescos e tofu artesanal defumado na brasa, servidos com arroz de brócolis e vinagrete de tomate fresco.",
+    "ingredientes": [
+      "cogumelo portobello",
+      "tofu defumado",
+      "azeite de oliva",
+      "arroz branco",
+      "brócolis",
+      "tomate",
+      "cebola",
+      "vinagre"
+    ],
+    "preco": 54.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p228",
+    "restaurante_id": "r17",
+    "nome": "Galeto Desossado com Polenta e Maionese",
+    "descricao": "Meio galeto desossado temperado com sálvia e manteiga, acompanhado de polenta frita sequinha e maionese caseira cremosa.",
+    "ingredientes": [
+      "galeto",
+      "manteiga",
+      "polenta de milho com farinha de trigo",
+      "maionese à base de leite e ovo",
+      "alho",
+      "sálvia"
+    ],
+    "preco": 49.9,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p229",
+    "restaurante_id": "r17",
+    "nome": "Bife Ancho com Queijo Coalho Grelhado",
+    "descricao": "Corte alto de bife ancho bovino com espeto de queijo coalho tostado na brasa e arroz biro-biro tradicional.",
+    "ingredientes": [
+      "bife ancho bovino",
+      "queijo coalho",
+      "arroz branco",
+      "bacon",
+      "ovo",
+      "batata palha com trigo",
+      "cebolinha"
+    ],
+    "preco": 89.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p230",
+    "restaurante_id": "r17",
+    "nome": "Grelhada de Legumes com Queijo Minas Frescal",
+    "descricao": "Seleção de abobrinha, berinjela e palmito pupunha grelhados na brasa, cobertos com fatias de queijo minas aquecido e azeite de ervas.",
+    "ingredientes": [
+      "queijo minas frescal",
+      "palmito pupunha",
+      "abobrinha",
+      "berinjela",
+      "tomate cereja",
+      "azeite de oliva",
+      "tomilho",
+      "sal"
+    ],
+    "preco": 46.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p231",
+    "restaurante_id": "r17",
+    "nome": "Linguiça Artesanal Cuiabana Picante",
+    "descricao": "Linguiça bovina e suína recheada com queijo e pimenta dedo-de-moça picante, acompanhada de mandioca frita crocante.",
+    "ingredientes": [
+      "carne bovina",
+      "carne suína",
+      "queijo minas padrão",
+      "pimenta dedo-de-moça",
+      "mandioca frita",
+      "óleo vegetal"
+    ],
+    "preco": 48.0,
+    "tipo": "principal",
+    "tags": [
+      "picante"
+    ]
+  },
+  {
+    "id": "p232",
+    "restaurante_id": "r17",
+    "nome": "Suco de Laranja Integral 500ml",
+    "descricao": "Suco de laranja pera espremido na hora, gelado e sem adição de açúcares.",
+    "ingredientes": [
+      "suco de laranja puro"
+    ],
+    "preco": 12.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p233",
+    "restaurante_id": "r17",
+    "nome": "Cerveja Session IPA Artesanal 500ml",
+    "descricao": "Cerveja artesanal com aromas florais e cítricos, amargor presente e refrescante.",
+    "ingredientes": [
+      "água",
+      "malte de cevada",
+      "lúpulo",
+      "levedura cervejeira"
+    ],
+    "preco": 24.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p234",
+    "restaurante_id": "r17",
+    "nome": "Pudim de Leite Condensado na Taça",
+    "descricao": "Pudim de leite condensado super aveludado e cremoso, servido com calda farta de caramelo.",
+    "ingredientes": [
+      "leite condensado",
+      "leite integral",
+      "ovos",
+      "açúcar cristal caramelizado"
+    ],
+    "preco": 18.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p235",
+    "restaurante_id": "r17",
+    "nome": "Abacaxi Grelhado com Canela e Melado",
+    "descricao": "Rodelas de abacaxi assadas no braseiro, perfumadas com canela em pó e regadas com melado de cana-de-açúcar.",
+    "ingredientes": [
+      "abacaxi fresco",
+      "canela em pó",
+      "melado de cana"
+    ],
+    "preco": 16.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "doce"
+    ]
+  },
+  {
+    "id": "p236",
+    "restaurante_id": "r18",
+    "nome": "Bowl Salmão Fresh",
+    "descricao": "Tiras de salmão fresco sobre base leve de arroz negro, manga em cubos e molho cítrico refrescante.",
+    "ingredientes": [
+      "salmão cru",
+      "arroz negro cozido",
+      "edamame",
+      "manga",
+      "pepino japonês",
+      "gergelim",
+      "molho tamari cítrico sem glúten"
+    ],
+    "preco": 48.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p237",
+    "restaurante_id": "r18",
+    "nome": "Caesar Crispy Chicken Bowl",
+    "descricao": "A clássica salada caesar repaginada com frango empanado ultra crocante e molho cremoso artesanal.",
+    "ingredientes": [
+      "alface americana",
+      "alface romana",
+      "tiras de peito de frango empanado e frito na farinha de trigo",
+      "croutons de pão francês",
+      "lascas de queijo parmesão",
+      "molho caesar tradicional com maionese e queijo"
+    ],
+    "preco": 42.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p238",
+    "restaurante_id": "r18",
+    "nome": "Bowl Vegano Rainbow",
+    "descricao": "Uma explosão colorida de nutrientes com grão-de-bico assado, vegetais frescos e molho cremoso de tahine.",
+    "ingredientes": [
+      "quinoa cozida",
+      "grão-de-bico assado",
+      "cenoura ralada",
+      "repolho roxo",
+      "abacate",
+      "tomate-cereja",
+      "sementes de abóbora tostadas",
+      "molho de tahine e limão"
+    ],
+    "preco": 38.5,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p239",
+    "restaurante_id": "r18",
+    "nome": "Bowl Spicy Thai Beef",
+    "descricao": "Filé mignon em tiras salteado na wok com vegetais crocantes e toque picante asiático inconfundível.",
+    "ingredientes": [
+      "filé mignon em tiras grelhado",
+      "macarrão de arroz bifum",
+      "pimentão vermelho",
+      "acelga",
+      "amendoim torrado",
+      "pimenta dedo-de-moça",
+      "coentro",
+      "molho agridoce tailandês à base de pimenta"
+    ],
+    "preco": 49.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p240",
+    "restaurante_id": "r18",
+    "nome": "Bowl Caprese & Pesto",
+    "descricao": "Sabor marcante da Itália com folhas selecionadas, queijo de búfala e nosso pesto caseiro de manjericão.",
+    "ingredientes": [
+      "rúcula selvagem",
+      "mix de folhas verdes",
+      "mussarela de búfala fresca",
+      "tomate sweet grape",
+      "nozes picadas",
+      "molho pesto artesanal com azeite, manjericão e parmesão"
+    ],
+    "preco": 44.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p241",
+    "restaurante_id": "r18",
+    "nome": "Bowl Mexicano Picante",
+    "descricao": "Combinação quente e saborosa de feijão preto aromático, guacamole fresco e salsa de jalapeño.",
+    "ingredientes": [
+      "arroz integral",
+      "feijão preto cozido com especiarias",
+      "milho tostado",
+      "guacamole caseiro",
+      "tomate em cubos",
+      "pimenta jalapeño fatiada",
+      "coentro",
+      "molho salsa picante"
+    ],
+    "preco": 39.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "picante"
+    ]
+  },
+  {
+    "id": "p242",
+    "restaurante_id": "r18",
+    "nome": "Salada Grega Tradicional",
+    "descricao": "Clássica e equilibrada, com vegetais crocantes, queijo feta cremoso e azeite de oliva extravirgem.",
+    "ingredientes": [
+      "pepino japonês",
+      "tomate maduro em cubos",
+      "cebola roxa fatiada",
+      "queijo feta de cabra",
+      "azeitonas pretas kalamata",
+      "orégano seco",
+      "azeite de oliva extravirgem"
+    ],
+    "preco": 41.5,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p243",
+    "restaurante_id": "r18",
+    "nome": "Bowl Falafel Dourado",
+    "descricao": "Bolinhos artesanais de falafel fritos, acompanhados de homus aveludado e refrescante salada libanesa.",
+    "ingredientes": [
+      "bolinhos de falafel fritos de grão-de-bico com farinha de trigo",
+      "homus de grão-de-bico",
+      "tabule com trigo burgol",
+      "alface romana",
+      "tomate",
+      "pepino",
+      "picles de nabo",
+      "molho de gergelim vegano"
+    ],
+    "preco": 39.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose"
+    ]
+  },
+  {
+    "id": "p244",
+    "restaurante_id": "r18",
+    "nome": "Frango Grelhado Low Carb",
+    "descricao": "Opção leve e rica em proteínas com frango dourado, mix verde crocante e ovo cozido perfeito.",
+    "ingredientes": [
+      "peito de frango grelhado em tiras",
+      "mix de folhas verdes",
+      "brócolis cozido no vapor",
+      "ovo cozido",
+      "sementes de girassol",
+      "molho de azeite e limão siciliano"
+    ],
+    "preco": 37.9,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p245",
+    "restaurante_id": "r18",
+    "nome": "Suco Verde Prensado",
+    "descricao": "Combinação revigorante prensada a frio para desintoxicar e energizar o seu dia sem açúcar.",
+    "ingredientes": [
+      "couve manteiga",
+      "maçã verde",
+      "limão espremido",
+      "gengibre fresco",
+      "água filtrada"
+    ],
+    "preco": 14.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p246",
+    "restaurante_id": "r18",
+    "nome": "Kombucha de Maracujá e Cúrcuma",
+    "descricao": "Bebida fermentada naturalmente gaseificada, azedinha e docinha na medida certa.",
+    "ingredientes": [
+      "chá verde fermentado",
+      "polpa de maracujá",
+      "extrato de cúrcuma",
+      "açúcar demerara orgânico para fermentação"
+    ],
+    "preco": 16.5,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p247",
+    "restaurante_id": "r18",
+    "nome": "Chá Mate Batido com Limão e Melado",
+    "descricao": "O clássico mate gelado batido com toque cítrico e dulçor encorpado de melado de cana.",
+    "ingredientes": [
+      "chá mate tostado",
+      "suco de limão taiti",
+      "melado de cana",
+      "gelo"
+    ],
+    "preco": 12.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p248",
+    "restaurante_id": "r18",
+    "nome": "Chia Pudding de Frutas Vermelhas",
+    "descricao": "Sobremesa cremosa e leve feita com leite vegetal de coco, coberta por calda rústica de frutas vermelhas.",
+    "ingredientes": [
+      "sementes de chia",
+      "leite de coco caseiro",
+      "calda de morango, amora e mirtilo",
+      "adoçante eritritol"
+    ],
+    "preco": 18.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "doce"
+    ]
+  },
+  {
+    "id": "p249",
+    "restaurante_id": "r18",
+    "nome": "Cheesecake Fit de Maracujá",
+    "descricao": "Textura aveludada à base de ricota e amêndoas, finalizada com coulis aromático de maracujá fresco.",
+    "ingredientes": [
+      "farinha de amêndoas",
+      "manteiga",
+      "ricota fresca",
+      "cream cheese",
+      "adoçante xilitol",
+      "polpa de maracujá com sementes"
+    ],
+    "preco": 21.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p250",
+    "restaurante_id": "r19",
+    "nome": "Açaí Tradicional da Amazônia 500ml",
+    "descricao": "O clássico açaí batido com xarope de guaraná, acompanhado de frutas frescas e granola crocante.",
+    "ingredientes": [
+      "polpa de açaí puro",
+      "xarope de guaraná",
+      "banana fatiada",
+      "morango fresco",
+      "granola crocante de cereais"
+    ],
+    "preco": 32.9,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "doce"
+    ]
+  },
+  {
+    "id": "p251",
+    "restaurante_id": "r19",
+    "nome": "Açaí Fit Proteico 500ml",
+    "descricao": "Opção leve e nutritiva para recarregar as energias após o treino sem sair da dieta.",
+    "ingredientes": [
+      "polpa de açaí pura sem açúcar",
+      "proteína isolada de ervilha sabor baunilha",
+      "morango fresco",
+      "sementes de chia",
+      "pasta de amendoim integral"
+    ],
+    "preco": 38.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "doce"
+    ]
+  },
+  {
+    "id": "p252",
+    "restaurante_id": "r19",
+    "nome": "Açaí Turbinado com Ninho e Nutella 500ml",
+    "descricao": "Uma explosão irresistível de doçura com muito leite Ninho, Nutella e wafer crocante.",
+    "ingredientes": [
+      "polpa de açaí com xarope de guaraná",
+      "leite condensado",
+      "leite em pó Ninho",
+      "creme de avelã Nutella",
+      "morango fresco",
+      "tubetes de wafer"
+    ],
+    "preco": 39.9,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p253",
+    "restaurante_id": "r19",
+    "nome": "Tapioca de Frango com Queijo Minas",
+    "descricao": "Massa levinha e crocante recheada com frango desfiado bem temperado e queijo derretido.",
+    "ingredientes": [
+      "goma de mandioca hidratada",
+      "peito de frango cozido e desfiado",
+      "queijo minas padrão",
+      "tomate picado",
+      "orégano",
+      "azeite de oliva"
+    ],
+    "preco": 26.5,
+    "tipo": "principal",
+    "tags": [
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p254",
+    "restaurante_id": "r19",
+    "nome": "Toast de Avocado com Grão-de-Bico Picante",
+    "descricao": "Fatia rústica de sourdough tostada com guacamole cremoso e grão-de-bico assado crocante e temperado.",
+    "ingredientes": [
+      "pão de fermentação natural",
+      "avocado fresco amassado",
+      "grão-de-bico assado",
+      "flocos de pimenta calabresa",
+      "sementes de girassol tostadas",
+      "azeite extravirgem"
+    ],
+    "preco": 28.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "fit",
+      "picante"
+    ]
+  },
+  {
+    "id": "p255",
+    "restaurante_id": "r19",
+    "nome": "Wrap de Atum com Maionese de Jalapeño",
+    "descricao": "Sanduíche enrolado em tortilha fina com pasta picante de atum e folhas frescas crocantes.",
+    "ingredientes": [
+      "tortilha de trigo",
+      "atum sólido em conserva",
+      "maionese artesanal com pimenta jalapeño",
+      "cebola roxa marinada",
+      "rúcula fresca"
+    ],
+    "preco": 29.9,
+    "tipo": "principal",
+    "tags": [
+      "picante"
+    ]
+  },
+  {
+    "id": "p256",
+    "restaurante_id": "r19",
+    "nome": "Sanduíche Rústico de Bacon e Cheddar",
+    "descricao": "Para quem quer sair da rotina: ciabatta crocante com fatias generosas de bacon frito e cheddar cremoso.",
+    "ingredientes": [
+      "pão ciabatta",
+      "bacon frito crocante",
+      "queijo cheddar derretido",
+      "molho barbecue",
+      "cebola caramelizada"
+    ],
+    "preco": 34.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p257",
+    "restaurante_id": "r19",
+    "nome": "Salada Tropical de Frango Grelhado",
+    "descricao": "Refrescante combinação de folhas verdes, manga fresca e tiras suculentas de peito de frango grelhado.",
+    "ingredientes": [
+      "peito de frango grelhado",
+      "mix de alface e rúcula",
+      "manga fresca em cubos",
+      "tomate cereja",
+      "molho cítrico de maracujá e mel",
+      "azeite extravirgem"
+    ],
+    "preco": 33.5,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p258",
+    "restaurante_id": "r19",
+    "nome": "Crepioca Funcional de Ricota e Espinafre",
+    "descricao": "Preparada na hora com ovos caipiras, recheada com ricota temperada e folhas de espinafre refogadas.",
+    "ingredientes": [
+      "goma de mandioca",
+      "ovo caipira",
+      "creme de ricota light",
+      "espinafre fresco refogado",
+      "gergelim branco tostado",
+      "azeite de oliva"
+    ],
+    "preco": 24.9,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p259",
+    "restaurante_id": "r19",
+    "nome": "Suco Termogênico Detox 400ml",
+    "descricao": "Bebida revigorante com abacaxi, couve fresca e um toque marcante de gengibre e pimenta caiena.",
+    "ingredientes": [
+      "suco de abacaxi natural",
+      "água de coco",
+      "couve manteiga fresca",
+      "gengibre ralado",
+      "hortelã",
+      "pimenta caiena"
+    ],
+    "preco": 16.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "picante"
+    ]
+  },
+  {
+    "id": "p260",
+    "restaurante_id": "r19",
+    "nome": "Smoothie de Açaí com Leite de Amêndoas 400ml",
+    "descricao": "Batido cremoso e aveludado de açaí puro, banana e bebida vegetal de amêndoas com melado.",
+    "ingredientes": [
+      "polpa de açaí puro",
+      "banana congelada",
+      "leite de amêndoas",
+      "melado de cana",
+      "sementes de chia"
+    ],
+    "preco": 19.5,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "doce"
+    ]
+  },
+  {
+    "id": "p261",
+    "restaurante_id": "r19",
+    "nome": "Suco de Laranja com Morango 400ml",
+    "descricao": "O clássico cítrico e adocicado preparado na hora com laranjas frescas e morangos selecionados.",
+    "ingredientes": [
+      "suco de laranja pera espremido",
+      "morango fresco batido",
+      "açúcar cristal orgânico"
+    ],
+    "preco": 15.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p262",
+    "restaurante_id": "r19",
+    "nome": "Pudim de Chia com Manga e Coco",
+    "descricao": "Sobremesa funcional cremosa à base de leite de coco com sementes de chia e purê artesanal de manga.",
+    "ingredientes": [
+      "leite de coco artesanal",
+      "sementes de chia",
+      "purê de manga fresca",
+      "raspas de coco tostado",
+      "adoçante xilitol"
+    ],
+    "preco": 18.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "doce"
+    ]
+  },
+  {
+    "id": "p263",
+    "restaurante_id": "r19",
+    "nome": "Taça Ninho com Morangos e Ganache",
+    "descricao": "Camadas generosas de creme de leite condensado, Ninho, morangos frescos e cobertura de chocolate ao leite.",
+    "ingredientes": [
+      "leite condensado",
+      "leite em pó Ninho",
+      "morango fresco picado",
+      "ganache de chocolate ao leite",
+      "wafer de baunilha triturado"
+    ],
+    "preco": 22.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p264",
+    "restaurante_id": "r20",
+    "nome": "Pote Gelato Baunilha Bourbon & Chocolate Belga (500ml)",
+    "descricao": "Combinação clássica e cremosa do nosso autêntico gelato de fava de baunilha com chocolate belga intenso.",
+    "ingredientes": [
+      "leite integral pasteurizado",
+      "creme de leite fresco",
+      "açúcar cristal",
+      "favas de baunilha bourbon",
+      "cacau em pó belga 70%"
+    ],
+    "preco": 38.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p265",
+    "restaurante_id": "r20",
+    "nome": "Sorbet de Manga Palmer com Pimenta Habanero (500ml)",
+    "descricao": "Refrescância exótica com toque picante da pimenta habanero macerada com mangas frescas.",
+    "ingredientes": [
+      "polpa de manga palmer",
+      "água mineral",
+      "açúcar orgânico",
+      "pimenta habanero fresca",
+      "suco de limão siciliano"
+    ],
+    "preco": 39.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "picante",
+      "doce"
+    ]
+  },
+  {
+    "id": "p266",
+    "restaurante_id": "r20",
+    "nome": "Bowl de Açaí Cremoso Puro com Frutas (400ml)",
+    "descricao": "Açaí batido sem xarope de guaraná, super nutritivo, acompanhado de fatias de banana, morango e chia.",
+    "ingredientes": [
+      "polpa de açaí pura",
+      "banana prata fresca",
+      "morango fresco",
+      "sementes de chia"
+    ],
+    "preco": 28.5,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "doce"
+    ]
+  },
+  {
+    "id": "p267",
+    "restaurante_id": "r20",
+    "nome": "Copo Sundae Brownie Fudge",
+    "descricao": "Camadas generosas de sorvete de creme, cubos de brownie artesanal e calda quente de chocolate.",
+    "ingredientes": [
+      "sorvete de creme",
+      "brownie com farinha de trigo",
+      "calda de chocolate ao leite",
+      "chantilly fresco",
+      "nozes picadas"
+    ],
+    "preco": 26.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p268",
+    "restaurante_id": "r20",
+    "nome": "Pote Gelato Vegano de Morango Silvestre (500ml)",
+    "descricao": "Leve, frutado e naturalmente doce, feito exclusivamente com morangos frescos e água pura.",
+    "ingredientes": [
+      "morango fresco",
+      "água mineral",
+      "açúcar demerara",
+      "fibra vegetal cítrica",
+      "suco de limão taiti"
+    ],
+    "preco": 36.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "doce"
+    ]
+  },
+  {
+    "id": "p269",
+    "restaurante_id": "r20",
+    "nome": "Pote Gelato Pistache Siciliano Puro (500ml)",
+    "descricao": "Nosso carro-chefe feito com pasta de pistache 100% pura importada da região de Bronte.",
+    "ingredientes": [
+      "leite integral pasteurizado",
+      "creme de leite fresco",
+      "pasta pura de pistache siciliano",
+      "açúcar cristal"
+    ],
+    "preco": 49.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p270",
+    "restaurante_id": "r20",
+    "nome": "Pote Gelato Vegano de Coco com Flocos de Cacau (500ml)",
+    "descricao": "Base cremosa de leite de coco fresco salpicada com crocantes raspas de chocolate 70% sem leite.",
+    "ingredientes": [
+      "leite de coco artesanal",
+      "açúcar demerara",
+      "chocolate 70% sem lactose",
+      "água mineral"
+    ],
+    "preco": 38.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p271",
+    "restaurante_id": "r20",
+    "nome": "Copo Gelato Cookies & Cream Crocante",
+    "descricao": "Sorvete cremoso de baunilha mesclado com pedaços crocantes do clássico biscoito recheado de chocolate.",
+    "ingredientes": [
+      "leite integral",
+      "creme de leite",
+      "açúcar",
+      "biscoito recheado de chocolate com farinha de trigo",
+      "calda de baunilha"
+    ],
+    "preco": 23.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p272",
+    "restaurante_id": "r20",
+    "nome": "Waffle Salgado de Frango Crispy com Molho Ranch",
+    "descricao": "Waffle dourado quentinho coberto por pedaços de frango empanado crocante, cubos de bacon e molho da casa.",
+    "ingredientes": [
+      "waffle com farinha de trigo",
+      "peito de frango frito empanado",
+      "bacon crocante",
+      "manteiga",
+      "molho ranch com creme de leite"
+    ],
+    "preco": 32.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p273",
+    "restaurante_id": "r20",
+    "nome": "Milkshake de Nutella Clássico (400ml)",
+    "descricao": "Batido cremoso do nosso gelato de leite com generosa dose de creme de avelã e cobertura de chantilly.",
+    "ingredientes": [
+      "gelato artesanal de leite",
+      "leite integral",
+      "creme de avelã com cacau nutella",
+      "chantilly de creme de leite"
+    ],
+    "preco": 24.5,
+    "tipo": "bebida",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p274",
+    "restaurante_id": "r20",
+    "nome": "Smoothie Tropical Antioxidante (400ml)",
+    "descricao": "Bebida leve, energizante e sem adição de açúcares, batida com frutas vermelhas frescas e água de coco.",
+    "ingredientes": [
+      "morango",
+      "amora",
+      "framboesa",
+      "água de coco"
+    ],
+    "preco": 19.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit",
+      "doce"
+    ]
+  },
+  {
+    "id": "p275",
+    "restaurante_id": "r20",
+    "nome": "Milkshake Vegano de Amendoim (400ml)",
+    "descricao": "Delicioso batido sem lácteos feito com leite vegetal de amêndoas, gelato de coco e pasta de amendoim integral.",
+    "ingredientes": [
+      "gelato vegano de leite de coco",
+      "bebida vegetal de amêndoas",
+      "pasta de amendoim pura",
+      "açúcar demerara"
+    ],
+    "preco": 25.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p276",
+    "restaurante_id": "r20",
+    "nome": "Petit Gâteau Quente com Gelato de Baunilha",
+    "descricao": "Bolinho tradicional de chocolate com recheio cremoso e escorrendo, servido com gelato de baunilha fresca.",
+    "ingredientes": [
+      "bolo de chocolate com farinha de trigo",
+      "ovos",
+      "manteiga",
+      "açúcar",
+      "gelato artesanal de baunilha bourbon"
+    ],
+    "preco": 27.9,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "doce"
+    ]
+  },
+  {
+    "id": "p277",
+    "restaurante_id": "r20",
+    "nome": "Torta Mousse Raw Vegana de Cacau e Castanhas",
+    "descricao": "Fatia de torta gelada artesanal com base de castanhas e tâmaras e recheio sedoso de cacau 100%.",
+    "ingredientes": [
+      "castanha-de-caju",
+      "tâmaras secas",
+      "cacau em pó puro",
+      "óleo de coco extravirgem",
+      "melaço de cana",
+      "farinha de amêndoas"
+    ],
+    "preco": 22.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p278",
+    "restaurante_id": "r21",
+    "nome": "Risoto de Filé Mignon e Cogumelos",
+    "descricao": "Arroz arbóreo cremoso com tiras macias de filé mignon, cogumelos frescos salteados e finalizado com parmesão.",
+    "ingredientes": [
+      "arroz arbóreo",
+      "tiras de filé mignon",
+      "cogumelo paris fresco",
+      "manteiga",
+      "queijo parmesão",
+      "caldo de carne caseiro"
+    ],
+    "preco": 68.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p279",
+    "restaurante_id": "r21",
+    "nome": "Bowl Vegano Funcional",
+    "descricao": "Combinação nutritiva e leve de quinoa real, grão-de-bico tostado, legumes grelhados e molho cremoso de tahine.",
+    "ingredientes": [
+      "quinoa cozida",
+      "grão-de-bico assado",
+      "abobrinha grelhada",
+      "cenoura ralada",
+      "tahine",
+      "azeite de oliva",
+      "sementes de girassol"
+    ],
+    "preco": 46.0,
+    "tipo": "principal",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p280",
+    "restaurante_id": "r21",
+    "nome": "Moqueca Baiana Picante de Robalo",
+    "descricao": "Posta de robalo fresca cozida em leite de coco artesanal, azeite de dendê, pimentões e pimenta dedo-de-moça, acompanhada de arroz.",
+    "ingredientes": [
+      "filé de robalo",
+      "leite de coco",
+      "azeite de dendê",
+      "pimentão vermelho",
+      "tomate",
+      "coentro",
+      "pimenta dedo-de-moça",
+      "arroz branco"
+    ],
+    "preco": 74.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p281",
+    "restaurante_id": "r21",
+    "nome": "Gnocchi de Mandioquinha ao Pesto Genovês",
+    "descricao": "Nhoque artesanal leve de mandioquinha servido com autêntico molho pesto de manjericão e castanhas.",
+    "ingredientes": [
+      "mandioquinha",
+      "fécula de batata",
+      "farinha de arroz",
+      "manjericão fresco",
+      "azeite extravirgem",
+      "castanha-de-caju",
+      "queijo parmesão"
+    ],
+    "preco": 56.0,
+    "tipo": "principal",
+    "tags": [
+      "vegetariano",
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p282",
+    "restaurante_id": "r21",
+    "nome": "Frango Fit com Purê de Batata-Doce e Brócolis",
+    "descricao": "Peito de frango grelhado marinado em ervas frescas, servido com purê rústico de batata-doce e brócolis cozidos no vapor.",
+    "ingredientes": [
+      "peito de frango grelhado",
+      "batata-doce cozida",
+      "brócolis no vapor",
+      "azeite de oliva",
+      "alecrim",
+      "sal marinho"
+    ],
+    "preco": 42.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p283",
+    "restaurante_id": "r21",
+    "nome": "Tacos Crocantes de Milho com Carne Louca Picante",
+    "descricao": "Três tortilhas crocantes de puro milho recheadas com carne desfiada suculenta, cebola roxa marinada e molho jalapeño.",
+    "ingredientes": [
+      "tortilha 100% milho",
+      "fraldinha desfiada",
+      "cebola roxa",
+      "tomate picado",
+      "coentro",
+      "pimenta jalapeño",
+      "azeite"
+    ],
+    "preco": 49.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_lactose",
+      "sem_gluten",
+      "picante"
+    ]
+  },
+  {
+    "id": "p284",
+    "restaurante_id": "r21",
+    "nome": "Escondidinho Tradicional de Mandioca com Carne-Seca",
+    "descricao": "Carne-seca desfiada salteada na manteiga de garrafa, coberta com purê aveludado de mandioca e gratinada com queijo coalho.",
+    "ingredientes": [
+      "mandioca cozida",
+      "carne-seca desfiada",
+      "manteiga de garrafa",
+      "cebola",
+      "queijo coalho"
+    ],
+    "preco": 52.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_gluten"
+    ]
+  },
+  {
+    "id": "p285",
+    "restaurante_id": "r21",
+    "nome": "Lasanha Bolonhesa Especial (Opção Convencional)",
+    "descricao": "Opção clássica da casa para quem não tem restrições alimentares, feita com massa fresca de trigo e bechamel cremoso.",
+    "ingredientes": [
+      "massa fresca com farinha de trigo",
+      "carne bovina moída",
+      "molho de tomate",
+      "molho bechamel com farinha de trigo",
+      "queijo muçarela",
+      "presunto cozido"
+    ],
+    "preco": 54.0,
+    "tipo": "principal",
+    "tags": []
+  },
+  {
+    "id": "p286",
+    "restaurante_id": "r21",
+    "nome": "Salada Caesar Funcional com Tiras de Frango",
+    "descricao": "Folhas de alface-romana crocantes com peito de frango em tiras, lascas de parmesão, croutons de tapioca e molho leve de iogurte.",
+    "ingredientes": [
+      "alface-romana",
+      "peito de frango grelhado",
+      "croutons de tapioca com amêndoas",
+      "iogurte natural desnatado",
+      "queijo parmesão",
+      "mostarda dijon"
+    ],
+    "preco": 44.0,
+    "tipo": "principal",
+    "tags": [
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p287",
+    "restaurante_id": "r21",
+    "nome": "Chá Verde Gelado com Limão e Gengibre",
+    "descricao": "Infusão refrescante de chá verde com raspas de gengibre fresco e suco de limão taiti, sem adição de açúcares.",
+    "ingredientes": [
+      "infusão de chá verde",
+      "suco de limão taiti",
+      "gengibre fresco",
+      "água filtrada",
+      "gelo"
+    ],
+    "preco": 12.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "fit"
+    ]
+  },
+  {
+    "id": "p288",
+    "restaurante_id": "r21",
+    "nome": "Refrigerante Artesanal de Guaraná",
+    "descricao": "Refrigerante natural produzido na casa com extrato orgânico da Amazônia e dulçor equilibrado.",
+    "ingredientes": [
+      "água gaseificada",
+      "extrato de guaraná natural",
+      "açúcar demerara",
+      "suco de limão"
+    ],
+    "preco": 14.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p289",
+    "restaurante_id": "r21",
+    "nome": "Smoothie Doce de Frutas Vermelhas",
+    "descricao": "Bebida aveludada e docinha batida com morango, amora, leite vegetal de amêndoas e toque de melaço de cana.",
+    "ingredientes": [
+      "morango",
+      "amora",
+      "leite de amêndoas artesanal",
+      "melaço de cana"
+    ],
+    "preco": 22.0,
+    "tipo": "bebida",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p290",
+    "restaurante_id": "r21",
+    "nome": "Brownie de Chocolate com Farinha de Amêndoas",
+    "descricao": "Fatia generosa de brownie molhadinho feito com cacau nobre, farinha de amêndoas e nozes crocantes.",
+    "ingredientes": [
+      "chocolate meio amargo",
+      "farinha de amêndoas",
+      "manteiga",
+      "ovos",
+      "açúcar mascavo",
+      "nozes picadas"
+    ],
+    "preco": 24.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegetariano",
+      "sem_gluten",
+      "doce"
+    ]
+  },
+  {
+    "id": "p291",
+    "restaurante_id": "r21",
+    "nome": "Cocada Cremosa Vegana de Colher",
+    "descricao": "Sobremesa reconfortante feita com coco fresco ralado, cozido lentamente no leite de coco artesanal com especiarias.",
+    "ingredientes": [
+      "coco ralado fresco",
+      "leite de coco",
+      "açúcar demerara",
+      "cravo-da-índia",
+      "canela em pau"
+    ],
+    "preco": 20.0,
+    "tipo": "sobremesa",
+    "tags": [
+      "vegano",
+      "vegetariano",
+      "sem_lactose",
+      "sem_gluten",
+      "doce"
+    ]
+  }
+]

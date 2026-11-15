@@ -1,0 +1,17 @@
+{
+  "itens_brutos": 294,
+  "invalidos": 0,
+  "duplicados": 3,
+  "correcoes_de_tag": 0,
+  "restaurantes": 21,
+  "pratos": 291,
+  "pratos_por_tag": {
+    "vegano": 132,
+    "vegetariano": 187,
+    "sem_lactose": 190,
+    "sem_gluten": 185,
+    "fit": 90,
+    "picante": 49,
+    "doce": 87
+  }
+}

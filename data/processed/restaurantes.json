@@ -1,0 +1,149 @@
+[
+  {
+    "id": "r01",
+    "nome": "Haru Sushi & Cozinha Japonesa",
+    "categoria": "japonesa",
+    "taxa_entrega": 7.9,
+    "tempo_entrega_min": 40
+  },
+  {
+    "id": "r02",
+    "nome": "Mahalo Island Poke",
+    "categoria": "poke havaiano",
+    "taxa_entrega": 6.9,
+    "tempo_entrega_min": 35
+  },
+  {
+    "id": "r03",
+    "nome": "Dona Cida Sabores do Brasil",
+    "categoria": "brasileira caseira",
+    "taxa_entrega": 6.9,
+    "tempo_entrega_min": 45
+  },
+  {
+    "id": "r04",
+    "nome": "Equilíbrio & Sabor Marmitaria Fit",
+    "categoria": "marmita fit",
+    "taxa_entrega": 7.5,
+    "tempo_entrega_min": 40
+  },
+  {
+    "id": "r05",
+    "nome": "Verde Raiz Cozinha Vegana",
+    "categoria": "vegana",
+    "taxa_entrega": 7.5,
+    "tempo_entrega_min": 35
+  },
+  {
+    "id": "r06",
+    "nome": "Botânica Cozinha Vegetariana",
+    "categoria": "vegetariana",
+    "taxa_entrega": 8.5,
+    "tempo_entrega_min": 40
+  },
+  {
+    "id": "r07",
+    "nome": "Brasa & Pão Hamburgueria Artesanal",
+    "categoria": "hamburgueria",
+    "taxa_entrega": 7.5,
+    "tempo_entrega_min": 35
+  },
+  {
+    "id": "r08",
+    "nome": "Verdant Burger - Hamburgueria Vegana",
+    "categoria": "hamburgueria vegana",
+    "taxa_entrega": 8.5,
+    "tempo_entrega_min": 35
+  },
+  {
+    "id": "r09",
+    "nome": "Forneria & Pizzaria Da Mooca",
+    "categoria": "pizzaria",
+    "taxa_entrega": 8.5,
+    "tempo_entrega_min": 40
+  },
+  {
+    "id": "r10",
+    "nome": "Trattoria & Ristorante Da Campagnola",
+    "categoria": "italiana",
+    "taxa_entrega": 8.5,
+    "tempo_entrega_min": 45
+  },
+  {
+    "id": "r11",
+    "nome": "Taquería Viva México",
+    "categoria": "mexicana",
+    "taxa_entrega": 7.5,
+    "tempo_entrega_min": 35
+  },
+  {
+    "id": "r12",
+    "nome": "Sultan Culinária Árabe",
+    "categoria": "árabe",
+    "taxa_entrega": 7.5,
+    "tempo_entrega_min": 35
+  },
+  {
+    "id": "r13",
+    "nome": "Mandacaru Sabores do Nordeste",
+    "categoria": "nordestina",
+    "taxa_entrega": 7.9,
+    "tempo_entrega_min": 45
+  },
+  {
+    "id": "r14",
+    "nome": "Fogão de Minas Express",
+    "categoria": "mineira",
+    "taxa_entrega": 7.5,
+    "tempo_entrega_min": 45
+  },
+  {
+    "id": "r15",
+    "nome": "Muralha Imperial Wok",
+    "categoria": "chinesa",
+    "taxa_entrega": 8.5,
+    "tempo_entrega_min": 45
+  },
+  {
+    "id": "r16",
+    "nome": "Siam Thai Cozinha & Wok",
+    "categoria": "tailandesa",
+    "taxa_entrega": 7.9,
+    "tempo_entrega_min": 45
+  },
+  {
+    "id": "r17",
+    "nome": "Fogo de Chão Nobre - Delivery",
+    "categoria": "churrascaria",
+    "taxa_entrega": 8.9,
+    "tempo_entrega_min": 45
+  },
+  {
+    "id": "r18",
+    "nome": "Verde Raiz Bowls & Saladas",
+    "categoria": "saladas e bowls",
+    "taxa_entrega": 6.5,
+    "tempo_entrega_min": 35
+  },
+  {
+    "id": "r19",
+    "nome": "Amazônia Real Açaí & Sucos Naturais",
+    "categoria": "açaí e sucos",
+    "taxa_entrega": 7.9,
+    "tempo_entrega_min": 35
+  },
+  {
+    "id": "r20",
+    "nome": "Gelateria & Officina do Sorvete",
+    "categoria": "sorveteria",
+    "taxa_entrega": 7.5,
+    "tempo_entrega_min": 35
+  },
+  {
+    "id": "r21",
+    "nome": "Viver Bem Bistrô Sem Glúten",
+    "categoria": "sem glúten",
+    "taxa_entrega": 7.5,
+    "tempo_entrega_min": 40
+  }
+]

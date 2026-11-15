@@ -1,0 +1,51 @@
+id,nome,ingredientes,tags_llm,vegano,vegetariano,sem_lactose,sem_gluten,fit,picante,doce
+p058,Feijoada Vegana da Casa,feijão-preto; linguiça vegetal à base de glúten; tofu defumado; cogumelo portobello; abóbora japonesa; couve refogada no alho; arroz branco; farofa de mandioca tostada; laranja em fatias,vegano vegetariano sem_lactose,1,1,1,0,0,0,0
+p013,Mochi Artesanal de Azuki e Matchá (2 unidades),farinha de arroz glutinoso mochiko; pasta doce de feijão azuki; açúcar cristal; pó de matchá puro,vegano vegetariano sem_lactose sem_gluten doce,1,1,1,1,0,0,1
+p141,Burrito Mega Costela e Cheddar,tortilha de trigo; costela bovina desfiada com molho barbecue; arroz mexicano; feijão refrito; queijo cheddar cremoso; sour cream,,0,0,0,0,0,0,0
+p126,Lasanha Tradicional à Bolonhesa,massa fresca de sêmola; carne bovina moída; molho de tomate pomodoro; molho bechamel; leite; queijo muçarela; queijo parmesão; noz-moscada,,0,0,0,0,0,0,0
+p115,Pizza Vegana de Cogumelos,massa de fermentação natural de trigo; molho de tomate pelado; creme de castanha-de-caju fermentado; cogumelos shimeji e paris salteados no azeite; cebolinha fresca laminada; azeite trufado,vegano vegetariano sem_lactose,1,1,1,0,0,0,0
+p072,Lasanha Quatro Queijos com Berinjela Grelhada,massa de trigo fresca; berinjela; molho de tomate; queijo mussarela; queijo gorgonzola; queijo provolone; queijo parmesão; manjericão,vegetariano,0,1,0,0,0,0,0
+p053,Suco de Laranja Integral com Mel,suco de laranja natural; mel puro de abelha,vegetariano sem_lactose sem_gluten doce,0,1,1,1,0,0,1
+p280,Moqueca Baiana Picante de Robalo,filé de robalo; leite de coco; azeite de dendê; pimentão vermelho; tomate; coentro; pimenta dedo-de-moça; arroz branco,sem_lactose sem_gluten picante,0,0,1,1,0,1,0
+p045,Moqueca Vegana Apimentada de Grão-de-Bico,grão-de-bico; leite de coco; pimentão vermelho; pimentão amarelo; azeite de dendê; coentro; pimenta dedo-de-moça; arroz integral,vegano vegetariano sem_lactose sem_gluten fit picante,1,1,1,1,1,1,0
+p217,Pad See Ew Vegetariano,talharim largo de arroz; ovo caipira; brócolis chinês; cogumelo shitake; molho de soja escuro; molho à base de trigo; alho,vegetariano,0,1,0,0,0,0,0
+p017,Poke Vegano Tofu & Cogumelos,quinoa cozida; tofu marinado grelhado; cogumelos shimeji salteados no azeite; abacate em fatias; cenoura ralada; repolho roxo; molho cítrico de tangerina e azeite,vegano vegetariano sem_lactose sem_gluten fit,1,1,1,1,1,0,0
+p016,Spicy Tuna Volcano,arroz integral; atum fresco em cubos; molho maionese com sriracha; cebolinha fresca; pimenta jalapeño fatiada; tobiko (ovas de peixe-voador); tiras de nori,sem_lactose picante,0,0,1,0,0,1,0
+p048,Chili Vegano Proteico Mexicano,feijão-vermelho; proteína de soja texturizada; molho de tomate pelado; pimenta-chili; cominho; milho-verde; arroz integral,vegano vegetariano sem_lactose sem_gluten fit picante,1,1,1,1,1,1,0
+p112,Pizza Margherita Clássica,massa de fermentação natural de farinha de trigo; molho de tomate pelado italiano; mussarela de búfala; manjericão fresco; azeite de oliva extravirgem,vegetariano,0,1,0,0,0,0,0
+p120,Pizza Zucchini e Parmesão,massa de farinha de trigo; molho de tomate pelado; mussarela de búfala; abobrinha italiana laminada e grelhada; queijo parmesão curado ralado; azeite com infusão de alho,vegetariano,0,1,0,0,0,0,0
+p259,Suco Termogênico Detox 400ml,suco de abacaxi natural; água de coco; couve manteiga fresca; gengibre ralado; hortelã; pimenta caiena,vegano vegetariano sem_lactose sem_gluten fit picante,1,1,1,1,1,1,0
+p014,Cheesecake Soufflé Japonês,cream cheese; leite integral pasteurizado; ovos frescos; farinha de trigo; açúcar; calda de morangos frescos,vegetariano doce,0,1,0,0,0,0,1
+p288,Refrigerante Artesanal de Guaraná,água gaseificada; extrato de guaraná natural; açúcar demerara; suco de limão,vegano vegetariano sem_lactose sem_gluten doce,1,1,1,1,0,0,1
+p102,Cogumelos & Trufas Burger,pão brioche vegano; hambúrguer vegetal à base de ervilha 120g; shimeji e cogumelo paris salteados no azeite trufado; queijo muçarela vegano; rúcula fresca; maionese vegana de alho negro,vegano vegetariano sem_lactose,1,1,1,0,0,0,0
+p215,Por Piah Tod (Rolinhos Primavera Fritos),massa fina de trigo; carne suína; repolho; cenoura; cebola; molho agridoce thai artesanal; óleo de girassol para fritura,,0,0,0,0,0,0,0
+p113,Pizza Calabresa Artesanal,massa tradicional de farinha de trigo; molho de tomate pelado; linguiça calabresa defumada artesanal fatiada; cebola roxa laminada; azeitonas pretas chilenas; orégano seco,,0,0,0,0,0,0,0
+p230,Grelhada de Legumes com Queijo Minas Frescal,queijo minas frescal; palmito pupunha; abobrinha; berinjela; tomate cereja; azeite de oliva; tomilho; sal,vegetariano sem_gluten fit,0,1,0,1,1,0,0
+p143,Quesadilla de Cogumelos e Queijo Oaxaca,tortilha de trigo; mix de queijo prato e muçarela derretidos; cogumelos-de-paris salteados no azeite; cebola caramelizada; sour cream,vegetariano,0,1,0,0,0,0,0
+p004,Veggie Poke Bowl,tofu em cubos marinado; arroz japonês gohan; edamame fresco; manga fresca picada; pepino japonês sunomono; cenoura ralada; gergelim torrado,vegano vegetariano sem_lactose sem_gluten fit,1,1,1,1,1,0,0
+p082,Mousse Fit de Cacau com Frutas Vermelhas,abacate maduro; cacau em pó 70%; leite de coco; xarope de bordo; framboesas frescas; amoras frescas,vegano vegetariano sem_lactose sem_gluten fit doce,1,1,1,1,1,0,1
+p175,Escondidinho Tradicional de Carne Seca,mandioca cozida; leite; manteiga; carne seca desfiada; cebola; queijo coalho gratinado,sem_gluten,0,0,0,1,0,0,0
+p080,Kombucha de Hibisco e Frutas Vermelhas,água mineral; chá verde fermentado; açúcar orgânico demerara; flores de hibisco; polpa de morango; polpa de amora,vegano vegetariano sem_lactose sem_gluten doce,1,1,1,1,0,0,1
+p111,Mousse Fit de Abacate e Cacau Sem Glúten,abacate maduro; cacau em pó 100% puro; leite de coco caseiro; adoçante natural xilitol; raspas de chocolate amargo sem açúcar,vegano vegetariano sem_lactose sem_gluten fit doce,1,1,1,1,1,0,1
+p173,Galinhada Sertaneja Apimentada,arroz; sobrecoxa de frango desossada; açafrão da terra; milho verde; pimenta cumari; pimenta-de-cheiro; cebola; tomate; cheiro-verde,sem_lactose sem_gluten picante,0,0,1,1,0,1,0
+p195,Yakisoba Especial da Casa,macarrão de trigo artesanal; carne bovina em tiras; peito de frango em cubos; brócolis; couve-flor; acelga; cenoura; molho à base de shoyu e óleo de gergelim,sem_lactose,0,0,1,0,0,0,0
+p050,Lasanha Leve de Berinjela à Bolonhesa,fatias de berinjela grelhada; carne moída de patinho; molho de tomate caseiro; queijo muçarela; queijo parmesão; orégano,sem_gluten fit,0,0,0,1,1,0,0
+p184,Vaca Atolada com Pimenta Cumari,costela bovina; mandioca cozida; pimenta cumari; caldo de carne caseiro; louro; cebola; cheiro-verde,sem_lactose sem_gluten picante,0,0,1,1,0,1,0
+p177,Refrigerante Guaraná Jesus Lata 350ml,água gaseificada; açúcar; extrato de guaraná; aromatizantes sintéticos; corantes alimentícios,vegano vegetariano sem_lactose sem_gluten doce,1,1,1,1,0,0,1
+p136,Soda Italiana de Maçã Verde (400ml),água mineral com gás; xarope de maçã verde com açúcar; gelo; fatia de maçã verde,vegano vegetariano sem_lactose sem_gluten doce,1,1,1,1,0,0,1
+p023,Poke Tropical Atum Clássico,arroz integral; atum fresco em cubos; shoyu; manga fresca picada; pepino sunomono; alga wakame hidratada; gergelim branco e preto,sem_lactose fit,0,0,1,0,1,0,0
+p236,Bowl Salmão Fresh,salmão cru; arroz negro cozido; edamame; manga; pepino japonês; gergelim; molho tamari cítrico sem glúten,sem_lactose sem_gluten fit,0,0,1,1,1,0,0
+p275,Milkshake Vegano de Amendoim (400ml),gelato vegano de leite de coco; bebida vegetal de amêndoas; pasta de amendoim pura; açúcar demerara,vegano vegetariano sem_lactose sem_gluten doce,1,1,1,1,0,0,1
+p064,Curry Vermelho Tailandês com Tofu,tofu marinado selado; pasta de curry vermelho tailandês; leite de coco; abobrinha italiana; berinjela; pimentão vermelho; manjericão tailandês; pimenta dedo-de-moça; arroz de jasmim,vegano vegetariano sem_lactose sem_gluten picante,1,1,1,1,0,1,0
+p194,Doce de Abóbora com Coco Caipira,abóbora de pescoço; coco ralado fresco; açúcar cristal; cravo-da-índia; canela em pau,vegano vegetariano sem_lactose sem_gluten doce,1,1,1,1,0,0,1
+p041,Pudim de Leite Condensado Tradicional,leite condensado; leite integral; ovo; açúcar cristal,vegetariano sem_gluten doce,0,1,0,1,0,0,1
+p283,Tacos Crocantes de Milho com Carne Louca Picante,tortilha 100% milho; fraldinha desfiada; cebola roxa; tomate picado; coentro; pimenta jalapeño; azeite,sem_lactose sem_gluten picante,0,0,1,1,0,1,0
+p151,Churros com Doce de Leite,farinha de trigo; água; sal; óleo para fritar; açúcar; canela em pó; doce de leite cremoso,vegetariano doce,0,1,0,0,0,0,1
+p186,Tropeiro Vegano dos Gerais,feijão fradinho; tofu defumado grelhado; farinha de milho flocada; couve refogada no azeite; cenoura em cubos; cebola roxa; salsinha,vegano vegetariano sem_lactose sem_gluten,1,1,1,1,0,0,0
+p099,Duplo BBQ Smoked Bacon,pão australiano vegano; dois hambúrgueres vegetais 110g cada; bacon crocante de soja; queijo prato vegetal derretido; molho barbecue defumado; cebola frita crocante,vegano vegetariano sem_lactose,1,1,1,0,0,0,0
+p036,Virado à Paulista Vegetariano,arroz branco; feijão carioca; farinha de mandioca; couve; ovo de galinha; banana-da-terra; azeite de oliva; alho; cebola,vegetariano sem_lactose sem_gluten,0,1,1,1,0,0,0
+p024,"Suco Natural Abacaxi, Hortelã e Gengibre 400ml",abacaxi in natura; folhas de hortelã fresca; gengibre fresco; água filtrada; gelo,vegano vegetariano sem_lactose sem_gluten fit,1,1,1,1,1,0,0
+p117,Pizza Quatro Queijos Tradicional,massa de farinha de trigo; molho de tomate pelado; mussarela especial; queijo gorgonzola; queijo provolone defumado; requeijão cremoso catupiry; orégano seco,vegetariano,0,1,0,0,0,0,0
+p149,Água de Jamaica Gelada 400ml,infusão de flores de hibisco secas; água filtrada; suco de limão taiti; açúcar refinado; gelo,vegano vegetariano sem_lactose sem_gluten doce,1,1,1,1,0,0,1
+p052,Suco Verde Prensado a Frio,couve manteiga; maçã verde; limão; gengibre fresco; água de coco,vegano vegetariano sem_lactose sem_gluten fit,1,1,1,1,1,0,0
+p233,Cerveja Session IPA Artesanal 500ml,água; malte de cevada; lúpulo; levedura cervejeira,vegano vegetariano sem_lactose,1,1,1,0,0,0,0
