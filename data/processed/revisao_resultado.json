@@ -1,0 +1,14 @@
+{
+  "pratos_revisados": 50,
+  "pratos_sem_nenhum_erro": 46,
+  "taxa_pratos_corretos": 0.92,
+  "concordancia_por_tag": {
+    "vegano": 1.0,
+    "vegetariano": 1.0,
+    "sem_lactose": 0.94,
+    "sem_gluten": 0.98,
+    "fit": 1.0,
+    "picante": 1.0,
+    "doce": 1.0
+  }
+}

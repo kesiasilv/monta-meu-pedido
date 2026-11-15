@@ -8,9 +8,9 @@ p072,Lasanha Quatro Queijos com Berinjela Grelhada,massa de trigo fresca; berinj
 p053,Suco de Laranja Integral com Mel,suco de laranja natural; mel puro de abelha,vegetariano sem_lactose sem_gluten doce,0,1,1,1,0,0,1
 p280,Moqueca Baiana Picante de Robalo,filé de robalo; leite de coco; azeite de dendê; pimentão vermelho; tomate; coentro; pimenta dedo-de-moça; arroz branco,sem_lactose sem_gluten picante,0,0,1,1,0,1,0
 p045,Moqueca Vegana Apimentada de Grão-de-Bico,grão-de-bico; leite de coco; pimentão vermelho; pimentão amarelo; azeite de dendê; coentro; pimenta dedo-de-moça; arroz integral,vegano vegetariano sem_lactose sem_gluten fit picante,1,1,1,1,1,1,0
-p217,Pad See Ew Vegetariano,talharim largo de arroz; ovo caipira; brócolis chinês; cogumelo shitake; molho de soja escuro; molho à base de trigo; alho,vegetariano,0,1,0,0,0,0,0
+p217,Pad See Ew Vegetariano,talharim largo de arroz; ovo caipira; brócolis chinês; cogumelo shitake; molho de soja escuro; molho à base de trigo; alho,vegetariano,0,1,1,0,0,0,0
 p017,Poke Vegano Tofu & Cogumelos,quinoa cozida; tofu marinado grelhado; cogumelos shimeji salteados no azeite; abacate em fatias; cenoura ralada; repolho roxo; molho cítrico de tangerina e azeite,vegano vegetariano sem_lactose sem_gluten fit,1,1,1,1,1,0,0
-p016,Spicy Tuna Volcano,arroz integral; atum fresco em cubos; molho maionese com sriracha; cebolinha fresca; pimenta jalapeño fatiada; tobiko (ovas de peixe-voador); tiras de nori,sem_lactose picante,0,0,1,0,0,1,0
+p016,Spicy Tuna Volcano,arroz integral; atum fresco em cubos; molho maionese com sriracha; cebolinha fresca; pimenta jalapeño fatiada; tobiko (ovas de peixe-voador); tiras de nori,sem_lactose picante,0,0,1,1,0,1,0
 p048,Chili Vegano Proteico Mexicano,feijão-vermelho; proteína de soja texturizada; molho de tomate pelado; pimenta-chili; cominho; milho-verde; arroz integral,vegano vegetariano sem_lactose sem_gluten fit picante,1,1,1,1,1,1,0
 p112,Pizza Margherita Clássica,massa de fermentação natural de farinha de trigo; molho de tomate pelado italiano; mussarela de búfala; manjericão fresco; azeite de oliva extravirgem,vegetariano,0,1,0,0,0,0,0
 p120,Pizza Zucchini e Parmesão,massa de farinha de trigo; molho de tomate pelado; mussarela de búfala; abobrinha italiana laminada e grelhada; queijo parmesão curado ralado; azeite com infusão de alho,vegetariano,0,1,0,0,0,0,0
@@ -18,8 +18,8 @@ p259,Suco Termogênico Detox 400ml,suco de abacaxi natural; água de coco; couve
 p014,Cheesecake Soufflé Japonês,cream cheese; leite integral pasteurizado; ovos frescos; farinha de trigo; açúcar; calda de morangos frescos,vegetariano doce,0,1,0,0,0,0,1
 p288,Refrigerante Artesanal de Guaraná,água gaseificada; extrato de guaraná natural; açúcar demerara; suco de limão,vegano vegetariano sem_lactose sem_gluten doce,1,1,1,1,0,0,1
 p102,Cogumelos & Trufas Burger,pão brioche vegano; hambúrguer vegetal à base de ervilha 120g; shimeji e cogumelo paris salteados no azeite trufado; queijo muçarela vegano; rúcula fresca; maionese vegana de alho negro,vegano vegetariano sem_lactose,1,1,1,0,0,0,0
-p215,Por Piah Tod (Rolinhos Primavera Fritos),massa fina de trigo; carne suína; repolho; cenoura; cebola; molho agridoce thai artesanal; óleo de girassol para fritura,,0,0,0,0,0,0,0
-p113,Pizza Calabresa Artesanal,massa tradicional de farinha de trigo; molho de tomate pelado; linguiça calabresa defumada artesanal fatiada; cebola roxa laminada; azeitonas pretas chilenas; orégano seco,,0,0,0,0,0,0,0
+p215,Por Piah Tod (Rolinhos Primavera Fritos),massa fina de trigo; carne suína; repolho; cenoura; cebola; molho agridoce thai artesanal; óleo de girassol para fritura,,0,0,1,0,0,0,0
+p113,Pizza Calabresa Artesanal,massa tradicional de farinha de trigo; molho de tomate pelado; linguiça calabresa defumada artesanal fatiada; cebola roxa laminada; azeitonas pretas chilenas; orégano seco,,0,0,1,0,0,0,0
 p230,Grelhada de Legumes com Queijo Minas Frescal,queijo minas frescal; palmito pupunha; abobrinha; berinjela; tomate cereja; azeite de oliva; tomilho; sal,vegetariano sem_gluten fit,0,1,0,1,1,0,0
 p143,Quesadilla de Cogumelos e Queijo Oaxaca,tortilha de trigo; mix de queijo prato e muçarela derretidos; cogumelos-de-paris salteados no azeite; cebola caramelizada; sour cream,vegetariano,0,1,0,0,0,0,0
 p004,Veggie Poke Bowl,tofu em cubos marinado; arroz japonês gohan; edamame fresco; manga fresca picada; pepino japonês sunomono; cenoura ralada; gergelim torrado,vegano vegetariano sem_lactose sem_gluten fit,1,1,1,1,1,0,0
