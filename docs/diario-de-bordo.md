@@ -177,3 +177,16 @@ só os pedidos com restrição; a tabela foi regerada a partir dos mesmos dados,
 - **Conclusão:** o modelo sozinho aprovou 3 pratos que violavam restrições. A trava, uma regra
   de ~80 linhas escrita a partir das definições, eliminou as 3 violações sem barrar nenhum prato
   correto do cardápio. Mesma filosofia do orçamento: regra crítica fica em código.
+
+### Publicação
+- **Hugging Face Spaces:** o código da demo foi enviado (39 arquivos) e as chaves configuradas,
+  mas o Space não inicia: *"You've reached your cpu-basic quota limit"*. A conta tem um único
+  Space, então não há outro para pausar; a conta gratuita está sem cota de CPU.
+- **Decisão:** a demo vai em vídeo no README, gravada rodando localmente. O Space fica publicado
+  com o código, para rodar se a cota for liberada.
+- **Alternativas avaliadas para uma demo pública gratuita:** Streamlit Community Cloud e Render
+  têm de 512 MB a 1 GB de RAM no plano gratuito, pouco para PyTorch + BERTimbau +
+  multilingual-e5 (~2 GB). Uma versão leve (baseline TF-IDF + trava, embeddings pela API do
+  Gemini, sem PyTorch) caberia; fica como melhoria futura.
+- **Interface da demo refeita:** pedido em cima, conversa embaixo, painel com o carrinho e com
+  os bastidores (o que o LLM entendeu e o tempo de cada etapa).

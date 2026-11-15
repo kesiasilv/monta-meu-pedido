@@ -4,8 +4,8 @@
 
 ## Resumo
 
-Construímos um assistente que monta pedidos de comida respeitando orçamento, restrições
-alimentares e tempo de entrega. Para decidir se um prato atende a uma restrição, comparamos três
+Construí um assistente que monta pedidos de comida respeitando orçamento, restrições
+alimentares e tempo de entrega. Para decidir se um prato atende a uma restrição, comparei três
 classificadores multi-label em 7 tags: um baseline TF-IDF, um BERTimbau ajustado (fine-tuning)
 e um LLM zero-shot (Gemini). Em 291 pratos sintéticos, o LLM foi o mais preciso (F1 macro 0,94),
 mas ~1.000x mais lento que o baseline e com custo por uso. O BERTimbau (0,884) empatou com o
@@ -144,7 +144,7 @@ falhou uma vez; repetido 3 vezes, deu certo nas 3.
 - Conjuntos de validação e teste pequenos (44 pratos cada).
 - Revisão dos rótulos feita por outro LLM, não por uma pessoa.
 - As regras de falsos amigos da trava foram ajustadas olhando o cardápio inteiro.
-- 30 pedidos de avaliação escritos pela equipe do projeto, não por usuários reais.
+- 30 pedidos de avaliação escritos por mim, não por usuários reais.
 - O custo do LLM depende da tabela de preços vigente; o número exato não foi verificado.
 
 ## 8. Próximos passos

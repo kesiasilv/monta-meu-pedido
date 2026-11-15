@@ -11,10 +11,21 @@ tempo de entrega**, com um classificador alimentar próprio treinado e publicado
 > Verde Sencha Gelado (R$ 11,00). Total R$ 64,90 (entrega R$ 7,90), chega em 40 min.
 > Como não levam trigo nem laticínios, a refeição respeita suas restrições.
 
-**Demo:** [huggingface.co/spaces/KesiaSilva/monta-meu-pedido](https://huggingface.co/spaces/KesiaSilva/monta-meu-pedido) ·
 **Modelo:** [KesiaSilva/bertimbau-tags-pratos](https://huggingface.co/KesiaSilva/bertimbau-tags-pratos) ·
 **Dataset:** [KesiaSilva/cardapios-delivery-ptbr](https://huggingface.co/datasets/KesiaSilva/cardapios-delivery-ptbr) ·
 **Relatório técnico:** [RELATORIO.md](RELATORIO.md)
+
+## Demonstração
+
+![Demo: três pedidos com o carrinho e os bastidores de cada etapa](docs/demo.gif)
+
+A demo mostra o pedido, a conversa com o assistente, o carrinho montado e os bastidores: o que
+o LLM entendeu e quanto tempo levou cada etapa. Para rodar na sua máquina, veja
+[Como rodar](#como-rodar) (precisa de uma chave gratuita do Google AI Studio).
+
+O código da demo também está publicado no
+[Hugging Face Spaces](https://huggingface.co/spaces/KesiaSilva/monta-meu-pedido), mas o Space
+fica pausado: a conta gratuita não tem cota de CPU para mantê-lo rodando.
 
 ## Resultados
 
