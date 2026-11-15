@@ -1,4 +1,4 @@
-.PHONY: setup lint format test data revisao concordancia baseline index eval eval-rapida api demo space
+.PHONY: setup lint format test data revisao concordancia baseline index eval eval-rapida api demo space dataset
 
 setup:          ## cria o ambiente e instala todas as dependências
 	uv sync --all-extras
@@ -42,3 +42,6 @@ demo:           ## sobe a demo Gradio
 
 space:          ## monta a pasta dist/space para publicar no Hugging Face Spaces
 	bash scripts/preparar_space.sh
+
+dataset:        ## monta a pasta dist/dataset para o HF Datasets e o Kaggle
+	bash scripts/preparar_dataset.sh
