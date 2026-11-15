@@ -92,6 +92,15 @@ sem_gluten 0,40 · fit 0,55 · picante 0,50 · doce 0,70.
 - **Classificador do workflow: BERTimbau.** Escolhido pela validação, que é o critério do
   protocolo, e não pelo teste.
 
+### CI
+- **Teste que passava no Mac e falhava no GitHub:** `test_pedido_longo_demais_e_recusado` não
+  trocava o workflow real pelo falso. O FastAPI monta as dependências antes de validar o corpo
+  da requisição, então o teste criava o workflow de verdade, que precisa da chave do Gemini.
+  No Mac a chave existia (e o teste levava ~8 s carregando modelos); na CI não.
+- **Correção:** uma fixture troca o workflow por um falso em todos os testes da API. Conferido
+  rodando a suíte com o `.env` escondido, como na CI: 37 testes em ~1 s.
+- **Lição:** teste que depende do ambiente de quem roda não é teste. A CI existe para pegar isso.
+
 - **Por que a rodada 2:** a **validação** já mostrava o BERTimbau abaixo do baseline
   (0,853 contra 0,890). Com 203 exemplos e lote 16, a rodada 1 fez só ~100 atualizações de
   pesos. A decisão de ajustar foi tomada pela validação, não pelo teste.
