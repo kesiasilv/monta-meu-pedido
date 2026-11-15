@@ -1,0 +1,19 @@
+# Segredos
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Artefatos gerados (modelos ficam no Hugging Face Hub, não no Git)
+artifacts/
+dist/
+wandb/
+
+# Sistema
+.DS_Store
+.ipynb_checkpoints/

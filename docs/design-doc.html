@@ -1,0 +1,846 @@
+<title>Monta Meu Pedido</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: design doc em coluna única de leitura, com índice no topo; seções numeradas porque a ordem segue o modelo de design doc */
+:root {
+  --bg: #f6f8f5;
+  --surface: #ffffff;
+  --fg: #17211b;
+  --muted: #5a6a60;
+  --line: #dde4de;
+  --accent: #2c7a4b;
+  --accent-soft: #e3f1e8;
+  --study: #a86a00;
+  --study-soft: #fbf0d9;
+  --off: #7c4ddb;
+  --off-soft: #efe9fe;
+  --cut: #a33b3b;
+  --cut-soft: #f8e6e4;
+  --code-bg: #eef2ee;
+  --font-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1511; --surface: #18201b; --fg: #e6ede8; --muted: #9aaba0; --line: #2a362e;
+    --accent: #5cc58a; --accent-soft: #173323; --study: #f0b44c; --study-soft: #33270f;
+    --off: #b49bff; --off-soft: #261d3d; --cut: #f08a80; --cut-soft: #3a1c1a; --code-bg: #121a15; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1511; --surface: #18201b; --fg: #e6ede8; --muted: #9aaba0; --line: #2a362e;
+  --accent: #5cc58a; --accent-soft: #173323; --study: #f0b44c; --study-soft: #33270f;
+  --off: #b49bff; --off-soft: #261d3d; --cut: #f08a80; --cut-soft: #3a1c1a; --code-bg: #121a15; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-body); font-size: 15.5px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 40px 80px;
+}
+.wrap { max-width: 880px; margin: 0 auto; display: flex; flex-direction: column; gap: 60px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; line-height: 1.2; margin: 0; }
+h1 { font-size: clamp(2rem, 6vw, 2.9rem); letter-spacing: -0.02em; }
+h2 { font-size: 1.55rem; letter-spacing: -0.01em; }
+h3 { font-size: 1.08rem; }
+p { margin: 0; max-width: 70ch; }
+a { color: var(--accent); }
+code, .mono { font-family: var(--font-mono); font-size: 0.86em; }
+code { background: var(--accent-soft); padding: 1px 6px; border-radius: 4px; overflow-wrap: anywhere; }
+.eyebrow { font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+section { display: flex; flex-direction: column; gap: 18px; scroll-margin-top: 16px; }
+.sub { display: flex; flex-direction: column; gap: 12px; }
+.lead { font-size: 1.12rem; color: var(--muted); }
+ul.plain { margin: 0; padding-left: 20px; display: grid; gap: 4px; max-width: 70ch; }
+
+header { display: flex; flex-direction: column; gap: 16px; }
+.meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.meta div { background: var(--surface); padding: 10px 14px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.meta span { font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.example { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; display: grid; gap: 10px; }
+.bubble b { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); display: block; margin-bottom: 2px; font-weight: 500; }
+
+.toc { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; }
+.toc ol { margin: 8px 0 0; padding-left: 22px; columns: 2 240px; column-gap: 28px; }
+.toc li { break-inside: avoid; padding: 2px 0; }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+
+.rule { background: var(--accent-soft); border-radius: 12px; padding: 16px 20px; display: flex; flex-direction: column; gap: 10px; }
+.rule ol { margin: 0; padding-left: 22px; display: grid; gap: 4px; }
+
+.callout { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.warn { border-left-color: var(--cut); }
+
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: 0.92rem; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 500; }
+tr:last-child td { border-bottom: 0; }
+td.nw { white-space: nowrap; }
+td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr.group td { background: var(--bg); font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); padding-block: 7px; }
+.tag { display: inline-block; font-family: var(--font-mono); font-size: 0.7rem; padding: 1px 7px; border-radius: 99px; margin: 1px 3px 1px 0; white-space: nowrap; }
+.tag.eng { background: var(--accent-soft); color: var(--accent); }
+.tag.bld { background: var(--study-soft); color: var(--study); }
+.tag.cut { background: var(--cut-soft); color: var(--cut); }
+.tag.off { background: var(--off-soft); color: var(--off); }
+
+pre.code, pre.tree { background: var(--code-bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; overflow-x: auto; margin: 0; font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.55; color: var(--fg); }
+pre.mermaid { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; overflow-x: auto; margin: 0; }
+
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.grid2 > div { min-width: 0; }
+
+.adr { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; }
+.adr summary { cursor: pointer; font-family: var(--font-display); font-weight: 600; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; list-style: none; }
+.adr summary::-webkit-details-marker { display: none; }
+.adr summary::before { content: "+"; font-family: var(--font-mono); color: var(--accent); width: 12px; }
+.adr[open] summary::before { content: "−"; }
+.adr .adr-id { font-family: var(--font-mono); font-size: 0.74rem; color: var(--muted); font-weight: 500; }
+.adr dl { margin: 12px 0 0; display: grid; grid-template-columns: 130px 1fr; gap: 6px 14px; font-size: 0.92rem; }
+.adr dt { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); padding-top: 3px; }
+.adr dd { margin: 0; min-width: 0; }
+.adrs { display: grid; gap: 10px; }
+
+.checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.checks li label { display: flex; gap: 12px; align-items: flex-start; padding: 7px 10px; border-radius: 8px; cursor: pointer; }
+.checks li label:hover { background: var(--accent-soft); }
+.checks input { margin-top: 5px; accent-color: var(--accent); width: 16px; height: 16px; flex: none; }
+.checks input:checked + span { color: var(--muted); text-decoration: line-through; }
+.dod { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; }
+.subhead { font-family: var(--font-mono); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+
+.prio { list-style: none; margin: 0; padding: 0; counter-reset: p; display: grid; gap: 8px; }
+.prio li { counter-increment: p; display: grid; grid-template-columns: 34px 1fr; gap: 10px; align-items: baseline; }
+.prio li::before { content: counter(p); font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--accent); }
+.prio li.opt::before { color: var(--muted); }
+.resume { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; font-size: 0.95rem; }
+.resume ul { margin: 8px 0 0; padding-left: 18px; }
+.note { font-size: 0.86rem; color: var(--muted); }
+
+@media (max-width: 560px) {
+  .adr dl { grid-template-columns: 1fr; gap: 2px; }
+  .adr dd { margin-bottom: 8px; }
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+
+<div class="wrap">
+
+<header>
+  <span class="eyebrow">Design doc · Projeto de portfólio · Estágio GenAI iFood · Trilha AI Engineer</span>
+  <h1>Monta Meu Pedido</h1>
+  <p class="lead">Um assistente de IA que monta o pedido de comida pra você. Ele segue um workflow em que o código toma as decisões e o LLM entende e explica, apoiado num classificador próprio treinado e publicado no Hugging Face.</p>
+  <div class="meta">
+    <div><span>Status</span>Em construção</div>
+    <div><span>Versão do doc</span>1.0 · 15/11/2026</div>
+    <div><span>Trilha alvo</span>AI Engineer</div>
+    <div><span>Prazo</span>1 dia (hoje, até 23:00)</div>
+  </div>
+  <div class="example">
+    <div class="bubble"><b>Cliente</b>"Tô com R$ 40, quero algo leve, sem lactose, que chegue em 30 min."</div>
+    <div class="bubble"><b>Assistente</b>"Montei: Poke de salmão (R$ 32,90) + água de coco (R$ 6,00) = R$ 38,90, entrega em 25 min. Escolhi o poke porque é leve e não leva laticínio; o molho tarê também é sem lactose."</div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Índice">
+  <span class="subhead">Índice</span>
+  <ol>
+    <li><a href="#sobre">Sobre este documento</a></li>
+    <li><a href="#contexto">Contexto e problema</a></li>
+    <li><a href="#objetivos">Objetivos e não-objetivos</a></li>
+    <li><a href="#requisitos">Requisitos e metas</a></li>
+    <li><a href="#arquitetura">Arquitetura do produto</a></li>
+    <li><a href="#workflow">Workflow e contratos de dados</a></li>
+    <li><a href="#dados">Dados (datasheet)</a></li>
+    <li><a href="#modelo">Modelo (model card)</a></li>
+    <li><a href="#avaliacao">Avaliação</a></li>
+    <li><a href="#engenharia">Padrões de engenharia</a></li>
+    <li><a href="#seguranca">Segurança e IA responsável</a></li>
+    <li><a href="#decisoes">Decisões registradas (ADRs)</a></li>
+    <li><a href="#pronto">Definição de pronto</a></li>
+    <li><a href="#cronograma">Cronograma de hoje</a></li>
+    <li><a href="#vaga">Vaga, currículo e próximos passos</a></li>
+  </ol>
+</nav>
+
+<section id="sobre">
+  <span class="eyebrow">1 · Sobre este documento</span>
+  <h2>Que tipo de documento é este</h2>
+  <p>Este é um <b>design doc</b> (documento de design técnico), o formato que times de engenharia como Google, Uber e o próprio iFood usam antes de construir um sistema. Ele junta quatro práticas comuns em projetos de IA:</p>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>Prática</th><th>Para que serve</th><th>Onde aparece aqui</th></tr></thead>
+    <tbody>
+      <tr><td><b>Design doc</b></td><td>Registra o problema, os objetivos, o que fica de fora e como o sistema será construído, antes de escrever o código</td><td>Seções 2 a 6, 9 e 10</td></tr>
+      <tr><td><b>ADR</b> (Architecture Decision Record)</td><td>Registra cada decisão importante com contexto, alternativas e consequências. Quando uma decisão muda, cria-se um ADR novo em vez de apagar o antigo</td><td>Seção 12</td></tr>
+      <tr><td><b>Datasheet for Datasets</b> (Gebru et al., 2018)</td><td>Documenta de onde vieram os dados, como foram rotulados e suas limitações</td><td>Seção 7</td></tr>
+      <tr><td><b>Model Card</b> (Mitchell et al., 2019)</td><td>Documenta o modelo: uso pretendido, métricas, limitações e vieses. O Hugging Face usa esse formato</td><td>Seção 8</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">"Documento de visão" e PRD são documentos de produto: descrevem o que construir e por quê, do ponto de vista do usuário. Para a trilha Engineer, o design doc é mais adequado, porque também descreve como construir e como provar que funciona.</p>
+  <div class="rule">
+    <h3>Como usar este documento para decidir</h3>
+    <p>Antes de qualquer decisão no código, responda:</p>
+    <ol>
+      <li>Isso ajuda a cumprir algum <a href="#objetivos">objetivo</a>?</li>
+      <li>Isso fere algum <b>não-objetivo</b>? Se sim, não faça.</li>
+      <li>Isso contradiz algum <a href="#decisoes">ADR</a>? Se sim, escreva um ADR novo explicando por que mudou, ou não faça.</li>
+      <li>Isso segue os <a href="#engenharia">padrões de engenharia</a> e mantém os testes passando?</li>
+      <li>A entrega cumpre a <a href="#pronto">definição de pronto</a>?</li>
+    </ol>
+    <p>Se as cinco respostas forem boas, a decisão está de acordo com o documento.</p>
+  </div>
+</section>
+
+<section id="contexto">
+  <span class="eyebrow">2 · Contexto e problema</span>
+  <h2>Por que este sistema existe</h2>
+  <p>Escolher comida em um app de delivery exige cruzar várias condições ao mesmo tempo: quanto posso gastar, o que não posso comer, quanto tempo posso esperar e do que estou com vontade. Hoje o cliente faz isso sozinho, filtrando e comparando dezenas de pratos.</p>
+  <p><b>Problema:</b> dado um pedido em linguagem natural, montar um carrinho de um único restaurante que respeite orçamento, restrições alimentares e tempo de entrega, e explicar a escolha.</p>
+  <p><b>Dificuldade técnica central:</b> saber se um prato respeita uma restrição exige entender a descrição e os ingredientes. Um LLM faz isso bem, mas é caro e lento para rodar em milhares de pratos. A pergunta de pesquisa do projeto vem daí: <b>um modelo pequeno ajustado consegue substituir um LLM nessa classificação?</b></p>
+</section>
+
+<section id="objetivos">
+  <span class="eyebrow">3 · Objetivos e não-objetivos</span>
+  <h2>O que entra e o que fica de fora</h2>
+  <div class="grid2">
+    <div class="callout">
+      <h3>Objetivos</h3>
+      <ul class="plain">
+        <li><b>O1.</b> Treinar e publicar um classificador multi-label de 7 tags alimentares em português.</li>
+        <li><b>O2.</b> Comparar com evidência três abordagens: baseline clássico, modelo ajustado e LLM zero-shot.</li>
+        <li><b>O3.</b> Integrar o modelo num workflow com LLM que monta pedidos respeitando regras críticas.</li>
+        <li><b>O4.</b> Entregar código com qualidade de produção: tipado, testado, com CI e reprodutível.</li>
+        <li><b>O5.</b> Documentar tudo (README, relatório técnico, model card e datasheet) e deixar uma demo pública.</li>
+      </ul>
+    </div>
+    <div class="callout warn">
+      <h3>Não-objetivos</h3>
+      <ul class="plain">
+        <li>Não usa dados reais do iFood nem faz scraping de cardápios.</li>
+        <li>Não tem login, pagamento ou histórico de usuário.</li>
+        <li>Não usa agente autônomo nem multiagente (ver ADR-001).</li>
+        <li>Não tem automações de Builder: n8n, Telegram, dashboard de insights.</li>
+        <li>Não serve para alergias graves. É uma demonstração.</li>
+        <li>Não otimiza infraestrutura (Kubernetes, filas, escala).</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="requisitos">
+  <span class="eyebrow">4 · Requisitos e metas</span>
+  <h2>O que o sistema precisa fazer, e como saber se fez</h2>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>ID</th><th>Requisito</th><th>Como verificar</th></tr></thead>
+    <tbody>
+      <tr class="group"><td colspan="3">Funcionais</td></tr>
+      <tr><td class="nw">RF1</td><td>Aceitar um pedido em texto livre em português</td><td>Teste da API com 5 frases diferentes</td></tr>
+      <tr><td class="nw">RF2</td><td>Extrair orçamento, restrições, preferências e tempo máximo</td><td>Teste do passo 1 com LLM mockado</td></tr>
+      <tr><td class="nw">RF3</td><td>Perguntar ao cliente quando faltar o orçamento</td><td>Resposta com <code>status="precisa_info"</code></td></tr>
+      <tr><td class="nw">RF4</td><td>Montar um carrinho de um único restaurante com 1 prato principal e, se couber, 1 bebida ou sobremesa</td><td>Teste do montador</td></tr>
+      <tr><td class="nw">RF5</td><td>Explicar a escolha citando apenas itens do carrinho</td><td>Checagem automática no passo 5</td></tr>
+      <tr><td class="nw">RF6</td><td>Avisar e sugerir um ajuste quando nenhum prato servir</td><td>Resposta com <code>status="sem_opcao"</code></td></tr>
+      <tr class="group"><td colspan="3">Não funcionais</td></tr>
+      <tr><td class="nw">RNF1</td><td>Orçamento nunca ultrapassado</td><td>100% nos casos de teste, garantido em código</td></tr>
+      <tr><td class="nw">RNF2</td><td>Tempo de resposta do workflow abaixo de 8 s (p95)</td><td>Medido na avaliação</td></tr>
+      <tr><td class="nw">RNF3</td><td>Reprodutível: mesma seed e mesmos splits geram as mesmas métricas</td><td><code>make eval</code> roda do zero</td></tr>
+      <tr><td class="nw">RNF4</td><td>Provedor de LLM trocável sem mudar o workflow</td><td>Trocar <code>LLM_PROVIDER</code> no <code>.env</code></td></tr>
+      <tr><td class="nw">RNF5</td><td>Custo zero para rodar: só planos gratuitos</td><td>Gemini free tier, Colab, HF Spaces</td></tr>
+      <tr><td class="nw">RNF6</td><td>Nenhuma chave de API no repositório</td><td><code>.env</code> no <code>.gitignore</code></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="sub">
+    <h3>Metas de sucesso</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Métrica</th><th>Meta</th><th>Por que essa meta</th></tr></thead>
+      <tbody>
+        <tr><td>F1 macro do BERTimbau no teste</td><td class="num">≥ 0,80</td><td>Bom nível para 7 tags com ~400 exemplos</td></tr>
+        <tr><td>Ganho sobre o baseline TF-IDF</td><td class="num">≥ +0,05 F1</td><td>Justifica usar um transformer</td></tr>
+        <tr><td>Custo do BERTimbau vs. LLM zero-shot</td><td class="num">≥ 10x menor</td><td>É o argumento de negócio do modelo próprio</td></tr>
+        <tr><td>Workflow respeita restrições</td><td class="num">≥ 95% dos casos</td><td>Depende do classificador, por isso não é 100%</td></tr>
+        <tr><td>Workflow respeita orçamento e tempo</td><td class="num">100% dos casos</td><td>Regras em código não podem falhar</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="note">Se uma meta não for atingida, isso não é fracasso: vira análise no relatório. Um resultado negativo bem explicado também conta como pesquisa.</p>
+  </div>
+</section>
+
+<section id="arquitetura">
+  <span class="eyebrow">5 · Arquitetura do produto</span>
+  <h2>Quais peças existem e como se conectam</h2>
+  <p>É a planta da casa: mostra os cômodos, não a ordem em que você anda por eles. A ordem está na seção 6.</p>
+<pre class="mermaid">
+flowchart LR
+  U["Cliente"] --> D["Demo Gradio<br/>HF Spaces"]
+  D --> API["API FastAPI<br/>POST /pedido"]
+  API --> WF["Workflow<br/>orquestrado em código"]
+  WF <--> LLM["Camada de LLM<br/>Gemini, Claude ou GPT"]
+  WF --> S["Busca semântica<br/>embeddings + ChromaDB"]
+  WF --> C["Classificador<br/>seu BERTimbau"]
+  WF --> CR["Montador de carrinho<br/>código puro"]
+  S --> DB[("Cardápio<br/>pratos.json")]
+  C --> HUB[("Modelo no<br/>Hugging Face Hub")]
+</pre>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>Peça</th><th>Responsabilidade</th><th>Tecnologia</th><th>Módulo</th></tr></thead>
+    <tbody>
+      <tr><td>Demo</td><td>Só a tela: chat e carrinho. Não tem regra de negócio</td><td>Gradio</td><td><code>app.py</code></td></tr>
+      <tr><td>API</td><td>Porta de entrada: valida a entrada e chama o workflow</td><td>FastAPI</td><td><code>mmp/api.py</code></td></tr>
+      <tr><td>Workflow</td><td>Executa os 5 passos sempre na mesma ordem e trata os desvios</td><td>Python puro</td><td><code>mmp/pipeline/</code></td></tr>
+      <tr><td>Camada de LLM</td><td>Interface única para qualquer provedor</td><td>SDK do Gemini</td><td><code>mmp/llm/</code></td></tr>
+      <tr><td>Busca semântica</td><td>Encontra pratos parecidos com o pedido e aplica filtros de preço e tempo</td><td>sentence-transformers + ChromaDB</td><td><code>mmp/search.py</code></td></tr>
+      <tr><td>Classificador</td><td>Diz quais tags cada prato tem</td><td>transformers (BERTimbau)</td><td><code>mmp/models/</code></td></tr>
+      <tr><td>Montador</td><td>Escolhe a melhor combinação dentro do orçamento</td><td>Python puro</td><td><code>mmp/pipeline/steps.py</code></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="callout">
+    <h3>Regra de dependência</h3>
+    <p>As setas só apontam para dentro. A demo conhece a API, a API conhece o workflow e o workflow conhece as peças. Nenhuma peça conhece quem a chama. É isso que deixa trocar a demo, o provedor de LLM ou o modelo sem mexer no resto.</p>
+  </div>
+</section>
+
+<section id="workflow">
+  <span class="eyebrow">6 · Workflow e contratos de dados</span>
+  <h2>O caminho de um pedido</h2>
+  <p>A sequência é fixa e decidida pelo código. O LLM entra só em dois passos: para entender o texto do cliente e para escrever a explicação.</p>
+<pre class="mermaid">
+flowchart TD
+  IN["Mensagem do cliente"] --> P1["1. Interpretar<br/>LLM gera JSON"]
+  P1 --> V{"JSON válido<br/>e completo?"}
+  V -- "falta orçamento" --> Q["Pergunta ao cliente"]
+  V -- "sim" --> P2["2. Buscar<br/>busca semântica + filtros"]
+  P2 --> P3["3. Filtrar restrições<br/>seu BERTimbau"]
+  P3 --> E{"Sobrou<br/>algum prato?"}
+  E -- "não" --> NADA["Avisa e sugere<br/>relaxar um critério"]
+  E -- "sim" --> P4["4. Montar carrinho<br/>código, dentro do orçamento"]
+  P4 --> P5["5. Explicar<br/>LLM escreve o porquê"]
+  P5 --> OUT["Resposta: carrinho + explicação"]
+</pre>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>Passo</th><th>Quem faz</th><th>Entrada → saída</th><th>Proteção contra erro</th></tr></thead>
+    <tbody>
+      <tr><td>1. Interpretar</td><td><span class="tag bld">LLM</span></td><td>Texto → <code>PedidoInterpretado</code></td><td>Saída em JSON validada pelo Pydantic. Se o JSON vier inválido, tenta uma vez; se falhar de novo, pede ao cliente que reformule. Sem orçamento, o código pergunta</td></tr>
+      <tr><td>2. Buscar</td><td><span class="tag eng">Código</span></td><td><code>descricao_livre</code> + filtros → até 30 pratos</td><td>Preço máximo e tempo máximo aplicados como filtro no ChromaDB, nunca pelo LLM</td></tr>
+      <tr><td>3. Filtrar restrições</td><td><span class="tag eng">Seu modelo</span></td><td>Candidatos → só os que têm todas as tags exigidas</td><td>Limiar por tag ajustado na validação. Na dúvida, o prato sai</td></tr>
+      <tr><td>4. Montar carrinho</td><td><span class="tag eng">Código</span></td><td>Candidatos + orçamento → <code>Carrinho</code></td><td>Testa todas as combinações de 1 principal + 0 ou 1 extra do mesmo restaurante, descarta as que passam do orçamento e escolhe a de maior relevância na busca</td></tr>
+      <tr><td>5. Explicar</td><td><span class="tag bld">LLM</span></td><td><code>Carrinho</code> + pedido → texto</td><td>O LLM recebe o carrinho fechado. O código confere que o texto só cita pratos do carrinho; se citar outro, usa uma explicação padrão gerada em código</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="sub">
+    <h3>Restrição e preferência não são a mesma coisa</h3>
+    <p>As 7 tags se dividem em dois grupos com comportamentos diferentes no workflow:</p>
+    <ul class="plain">
+      <li><b>Restrições (obrigatórias):</b> <code>vegano</code>, <code>vegetariano</code>, <code>sem_lactose</code>, <code>sem_gluten</code>. Um prato que não tem a tag exigida sai no passo 3.</li>
+      <li><b>Preferências (desejáveis):</b> <code>fit</code>, <code>picante</code>, <code>doce</code>. Só aumentam a pontuação do prato no passo 4, sem eliminar ninguém.</li>
+    </ul>
+  </div>
+
+  <div class="sub">
+    <h3>Contratos de dados</h3>
+    <p>Cada passo recebe e devolve objetos Pydantic. Isso documenta o formato, valida em tempo de execução e permite testar cada passo sozinho.</p>
+<pre class="code">class Restricao(StrEnum):
+    VEGANO = "vegano"; VEGETARIANO = "vegetariano"
+    SEM_LACTOSE = "sem_lactose"; SEM_GLUTEN = "sem_gluten"
+
+class Preferencia(StrEnum):
+    FIT = "fit"; PICANTE = "picante"; DOCE = "doce"
+
+class PedidoInterpretado(BaseModel):          # saída do passo 1
+    orcamento: float | None = Field(None, gt=0)
+    restricoes: list[Restricao] = []
+    preferencias: list[Preferencia] = []
+    descricao_livre: str                      # ex.: "algo leve e refrescante"
+    tempo_max_min: int | None = Field(None, gt=0)
+
+class Prato(BaseModel):
+    id: str; restaurante_id: str; nome: str; descricao: str
+    ingredientes: list[str]; preco: float
+    tipo: Literal["principal", "bebida", "sobremesa"]
+
+class Carrinho(BaseModel):                    # saída do passo 4
+    restaurante_id: str; itens: list[Prato]
+    subtotal: float; taxa_entrega: float; total: float
+    tempo_entrega_min: int
+
+class Resposta(BaseModel):                    # saída da API
+    status: Literal["ok", "precisa_info", "sem_opcao"]
+    carrinho: Carrinho | None = None
+    mensagem: str</pre>
+  </div>
+
+  <div class="sub">
+    <h3>Camada de LLM trocável</h3>
+<pre class="code">class LLMClient(Protocol):
+    def gerar_json(self, system: str, user: str, schema: type[T]) -> T: ...
+    def gerar_texto(self, system: str, user: str) -> str: ...
+
+# mmp/llm/__init__.py
+def criar_cliente() -> LLMClient:
+    match settings.llm_provider:          # vem do .env
+        case "gemini": return GeminiClient(settings.gemini_model)
+        case "claude": return ClaudeClient(settings.claude_model)</pre>
+    <p class="note">O workflow só conhece <code>LLMClient</code>. Nos testes, entra um <code>FakeLLMClient</code> que devolve respostas fixas, sem chamar API nenhuma.</p>
+  </div>
+</section>
+
+<section id="dados">
+  <span class="eyebrow">7 · Dados (datasheet)</span>
+  <h2>De onde vêm os dados e como são rotulados</h2>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>Item</th><th>Decisão</th></tr></thead>
+    <tbody>
+      <tr><td>Fonte</td><td>Sintética, gerada pelo Gemini em lotes de 10 pratos por chamada</td></tr>
+      <tr><td>Tamanho</td><td>~30 restaurantes, ~400 pratos (cerca de 70% principais, 20% bebidas, 10% sobremesas)</td></tr>
+      <tr><td>Restaurante</td><td><code>id</code>, <code>nome</code>, <code>categoria</code> (japonesa, brasileira, saudável...), <code>taxa_entrega</code>, <code>tempo_entrega_min</code></td></tr>
+      <tr><td>Prato</td><td>Campos do contrato <code>Prato</code> + <code>tags</code> (lista com as 7 tags possíveis)</td></tr>
+      <tr><td>Texto de entrada do modelo</td><td><code>"{nome}. {descricao}. Ingredientes: {ingredientes}"</code></td></tr>
+      <tr><td>Validação</td><td>Cada item passa pelo Pydantic. Itens inválidos e nomes duplicados são descartados e contados no log</td></tr>
+      <tr><td>Regra de consistência</td><td>Todo prato <code>vegano</code> também é <code>vegetariano</code>. O script corrige e conta quantas vezes o LLM esqueceu</td></tr>
+      <tr><td>Revisão humana</td><td>50 pratos sorteados (seed 42) revisados à mão. A concordância entre o LLM e a revisão vira um número do relatório</td></tr>
+      <tr><td>Divisão</td><td>70% treino, 15% validação, 15% teste, estratificada pelas tags (<code>iterative-stratification</code>), seed 42. Os splits ficam salvos em arquivo e nunca são regerados</td></tr>
+      <tr><td>Publicação</td><td>Kaggle e HF Datasets, licença CC BY 4.0</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="sub">
+    <h3>Definição de cada tag</h3>
+    <p>Essas definições vão no prompt de geração e no dataset card. Sem elas, o rótulo vira opinião.</p>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Tag</th><th>Tipo</th><th>Definição</th></tr></thead>
+      <tbody>
+        <tr><td><code>vegano</code></td><td>restrição</td><td>Nenhum ingrediente de origem animal: carne, peixe, ovo, leite, mel</td></tr>
+        <tr><td><code>vegetariano</code></td><td>restrição</td><td>Sem carne, peixe ou frutos do mar. Pode ter ovo e laticínios</td></tr>
+        <tr><td><code>sem_lactose</code></td><td>restrição</td><td>Sem leite e derivados: queijo, manteiga, creme de leite, iogurte, leite condensado</td></tr>
+        <tr><td><code>sem_gluten</code></td><td>restrição</td><td>Sem trigo, cevada, centeio ou aveia comum. Massa, pão e empanados contam como glúten</td></tr>
+        <tr><td><code>fit</code></td><td>preferência</td><td>Leve: grelhado, cozido ou cru, sem fritura, até ~600 kcal estimadas</td></tr>
+        <tr><td><code>picante</code></td><td>preferência</td><td>Pimenta ou molho apimentado como característica do prato</td></tr>
+        <tr><td><code>doce</code></td><td>preferência</td><td>Sabor predominante doce: sobremesas e bebidas adoçadas</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="callout warn">
+    <h3>Limitações conhecidas</h3>
+    <p>Os dados são sintéticos: refletem o que o Gemini acha que é um cardápio brasileiro, com menos variedade e menos erros de digitação que cardápios reais. Os rótulos vêm do mesmo LLM que serve de baseline, o que pode favorecê-lo na comparação. As duas limitações vão no relatório.</p>
+  </div>
+</section>
+
+<section id="modelo">
+  <span class="eyebrow">8 · Modelo (model card)</span>
+  <h2>Os três classificadores</h2>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th></th><th>Baseline</th><th>Modelo principal</th><th>Referência</th></tr></thead>
+    <tbody>
+      <tr><td>Abordagem</td><td>TF-IDF (1 e 2-gramas) + regressão logística, uma por tag</td><td>Fine-tuning do <code>neuralmind/bert-base-portuguese-cased</code></td><td>Gemini zero-shot, com as definições das tags no prompt</td></tr>
+      <tr><td>Onde roda</td><td>CPU, segundos</td><td>Treino no Colab (GPU T4), inferência em CPU</td><td>API do Gemini</td></tr>
+      <tr><td>Por que existe</td><td>Mostra quanto o transformer realmente acrescenta</td><td>É o modelo usado no produto</td><td>Mostra o que um LLM faz sem treino, e a que custo</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="sub">
+    <h3>Configuração do fine-tuning</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Parâmetro</th><th>Valor</th><th>Motivo</th></tr></thead>
+      <tbody>
+        <tr><td>Tipo de problema</td><td><code>multi_label_classification</code></td><td>Um prato pode ter várias tags ao mesmo tempo</td></tr>
+        <tr><td>Função de perda</td><td>BCEWithLogits</td><td>Padrão para multi-label (já vem com o tipo acima)</td></tr>
+        <tr><td>Tamanho máximo</td><td class="num">128 tokens</td><td>Nome, descrição e ingredientes cabem com folga</td></tr>
+        <tr><td>Taxa de aprendizado</td><td class="num">2e-5</td><td>Valor recomendado para BERT</td></tr>
+        <tr><td>Batch / épocas</td><td class="num">16 / até 8</td><td>Com early stopping (paciência 2) pelo F1 macro da validação</td></tr>
+        <tr><td>Weight decay / seed</td><td class="num">0,01 / 42</td><td>Regularização leve e reprodutibilidade</td></tr>
+        <tr><td>Limiar de decisão</td><td>Um por tag, de 0,1 a 0,9, escolhido na validação</td><td>Tags raras precisam de limiar menor que 0,5</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="sub">
+    <h3>O que o model card no Hugging Face precisa ter</h3>
+    <ul class="plain">
+      <li>Descrição, uso pretendido e usos fora do escopo (não usar para alergias graves)</li>
+      <li>Dados de treino com link para o dataset</li>
+      <li>Hiperparâmetros da tabela acima</li>
+      <li>Métricas no teste: F1 micro, F1 macro e F1 por tag, comparadas com o baseline</li>
+      <li>Limitações e vieses (dados sintéticos, cozinha brasileira)</li>
+      <li>Exemplo de uso em 5 linhas de código</li>
+    </ul>
+  </div>
+</section>
+
+<section id="avaliacao">
+  <span class="eyebrow">9 · Avaliação</span>
+  <h2>Como provar que funciona</h2>
+  <p>O laboratório não atende cliente nenhum. É um script (<code>make eval</code>) que importa as mesmas peças do produto, roda casos de teste e gera os números do relatório e do currículo.</p>
+<pre class="mermaid">
+flowchart LR
+  TS[("Conjunto de teste<br/>nunca usado antes")] --> B["Baseline TF-IDF"]
+  TS --> M["Seu BERTimbau"]
+  TS --> Z["LLM zero-shot"]
+  B --> MET["F1, custo e latência"]
+  M --> MET
+  Z --> MET
+  CA[("30 pedidos de teste<br/>com regras conhecidas")] --> W["Workflow completo"]
+  W --> CHK["Checagem automática<br/>orçamento, restrição e tempo"]
+  MET --> R["RELATORIO.md"]
+  CHK --> R
+</pre>
+  <div class="grid2">
+    <div class="callout">
+      <h3>Pergunta A: o modelo vale a pena?</h3>
+      <ul class="plain">
+        <li>F1 micro, F1 macro e F1 por tag</li>
+        <li>Custo por 1.000 pratos: tokens × preço da API para o LLM; ~0 para os locais</li>
+        <li>Latência média por prato</li>
+        <li>Matriz de erros por tag e 10 exemplos de erro comentados</li>
+      </ul>
+    </div>
+    <div class="callout">
+      <h3>Pergunta B: o workflow respeita as regras?</h3>
+      <ul class="plain">
+        <li>30 casos: 10 simples, 10 com várias restrições, 5 sem orçamento, 5 impossíveis</li>
+        <li>% que respeita orçamento, restrições e tempo</li>
+        <li>% de status correto (<code>ok</code>, <code>precisa_info</code>, <code>sem_opcao</code>)</li>
+        <li>Latência p50 e p95</li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout warn">
+    <h3>Regras do protocolo</h3>
+    <ul class="plain">
+      <li>O conjunto de teste só é usado uma vez, no final. Toda escolha (limiar, épocas, prompt) é feita na validação.</li>
+      <li>Os três classificadores recebem exatamente os mesmos pratos.</li>
+      <li>Cada resultado é salvo em <code>evals/resultados/</code> com data, versão do modelo e seed.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="engenharia">
+  <span class="eyebrow">10 · Padrões de engenharia</span>
+  <h2>Como o código é escrito</h2>
+<pre class="tree">monta-meu-pedido/
+├── data/              raw/, processed/, splits/ (train, val, test)
+├── notebooks/         01_treino_bertimbau.ipynb
+├── src/mmp/
+│   ├── config.py      settings lidos do .env (pydantic-settings)
+│   ├── schemas.py     contratos da seção 6
+│   ├── data/          generate.py, validate.py, split.py
+│   ├── models/        baseline.py, bertimbau.py, llm_zero_shot.py
+│   ├── llm/           base.py (LLMClient), gemini.py, claude.py, fake.py
+│   ├── search.py      embeddings + ChromaDB
+│   ├── pipeline/      steps.py (os 5 passos), workflow.py, prompts.py
+│   └── api.py         FastAPI
+├── evals/             run_eval.py, casos_workflow.json, resultados/
+├── tests/             um arquivo por módulo
+├── app.py             demo Gradio
+├── .github/workflows/ci.yml
+├── Dockerfile · Makefile · pyproject.toml · .env.example
+└── README.md · RELATORIO.md</pre>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>Padrão</th><th>Regra</th></tr></thead>
+    <tbody>
+      <tr><td>Python</td><td>3.12, gerenciado com <code>uv</code>. Bibliotecas de ML costumam demorar a suportar a versão mais nova</td></tr>
+      <tr><td>Tipagem</td><td>Type hints em toda função pública. Dados entre módulos sempre como modelos Pydantic, nunca <code>dict</code> solto</td></tr>
+      <tr><td>Configuração</td><td>Tudo que muda entre ambientes (chaves, provedor, nomes de modelo) vem do <code>.env</code> via <code>config.py</code>. Nada fixo no código</td></tr>
+      <tr><td>Estilo</td><td><code>ruff</code> para lint e formatação</td></tr>
+      <tr><td>Testes</td><td><code>pytest</code>. Todo passo do workflow tem teste. Testes nunca chamam APIs reais: usam o <code>FakeLLMClient</code></td></tr>
+      <tr><td>Prompts</td><td>Ficam em <code>prompts.py</code>, versionados, nunca espalhados pelo código</td></tr>
+      <tr><td>Logs</td><td><code>logging</code> com o tempo e o resultado de cada passo. Nada de <code>print</code> no código de produção</td></tr>
+      <tr><td>Commits</td><td>Pequenos, no padrão Conventional Commits: <code>feat:</code>, <code>fix:</code>, <code>test:</code>, <code>docs:</code>, <code>chore:</code></td></tr>
+      <tr><td>CI</td><td>GitHub Actions em todo push: ruff, pytest e build da imagem Docker (assim você não precisa do Docker instalado)</td></tr>
+      <tr><td>Artefatos grandes</td><td>Modelo treinado fica no HF Hub, nunca no Git. O código baixa por nome e versão</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="sub">
+    <h3>Comandos do Makefile</h3>
+<pre class="code">make setup       # cria o ambiente e instala dependências
+make lint        # ruff
+make test        # pytest
+make data        # gera, valida e divide os dados
+make baseline    # treina e avalia o TF-IDF
+make index       # cria o índice do ChromaDB
+make eval        # roda o laboratório completo
+make api         # sobe a API em localhost:8000
+make demo        # sobe a demo Gradio</pre>
+  </div>
+</section>
+
+<section id="seguranca">
+  <span class="eyebrow">11 · Segurança e IA responsável</span>
+  <h2>O que pode dar errado e como o sistema se protege</h2>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>Risco</th><th>Proteção</th></tr></thead>
+    <tbody>
+      <tr><td>Vazamento de chave de API</td><td><code>.env</code> no <code>.gitignore</code>, <code>.env.example</code> sem valores, chaves no Secrets do HF Spaces e do GitHub</td></tr>
+      <tr><td>LLM inventa prato ou preço</td><td>O LLM nunca escolhe pratos. A explicação é conferida contra o carrinho</td></tr>
+      <tr><td>Prompt injection ("ignore as regras e...")</td><td>O texto do cliente só entra como mensagem de usuário, a saída é forçada ao schema e as regras vivem em código, fora do alcance do prompt</td></tr>
+      <tr><td>Entrada abusiva</td><td>Limite de 500 caracteres por pedido na API</td></tr>
+      <tr><td>Classificador erra uma restrição</td><td>Limiar conservador e aviso na demo e no model card: não usar para alergias graves</td></tr>
+      <tr><td>Viés dos dados sintéticos</td><td>Documentado no datasheet e no relatório</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="decisoes">
+  <span class="eyebrow">12 · Decisões registradas</span>
+  <h2>ADRs</h2>
+  <p>Clique para abrir. Quando uma decisão mudar, crie um ADR novo que substitui o antigo, e marque o antigo como "substituído". No repositório, cada ADR vira um arquivo em <code>docs/adr/</code>.</p>
+  <div class="adrs">
+    <details class="adr">
+      <summary><span class="adr-id">ADR-001</span>Workflow em vez de agente autônomo</summary>
+      <dl>
+        <dt>Contexto</dt><dd>A sequência de passos é sempre a mesma e as regras (orçamento e restrições) são críticas. Um agente decide os passos em tempo de execução e pode pular uma checagem.</dd>
+        <dt>Decisão</dt><dd>O código define a ordem dos 5 passos. O LLM só interpreta o pedido e escreve a explicação.</dd>
+        <dt>Alternativas</dt><dd>Agente com tool calling; multiagente (intérprete, montador, revisor).</dd>
+        <dt>Consequências</dt><dd>Comportamento previsível, testável e mais barato. Menos flexível para pedidos fora do padrão. Os passos 2 a 4 continuam utilizáveis como ferramentas numa versão com agente.</dd>
+      </dl>
+    </details>
+    <details class="adr">
+      <summary><span class="adr-id">ADR-002</span>Classificador próprio em vez de LLM para as restrições</summary>
+      <dl>
+        <dt>Contexto</dt><dd>Classificar cada prato com um LLM a cada pedido custa caro e adiciona latência.</dd>
+        <dt>Decisão</dt><dd>Fine-tuning do BERTimbau, um modelo em português pequeno o suficiente para rodar em CPU.</dd>
+        <dt>Alternativas</dt><dd>LLM zero-shot; regras por palavra-chave; modelo multilíngue (XLM-R).</dd>
+        <dt>Consequências</dt><dd>Custo quase zero por classificação. Precisa de dados rotulados e de retreino se as tags mudarem. A troca é medida na avaliação.</dd>
+      </dl>
+    </details>
+    <details class="adr">
+      <summary><span class="adr-id">ADR-003</span>Gemini como LLM padrão, atrás de uma interface</summary>
+      <dl>
+        <dt>Contexto</dt><dd>O projeto precisa custar zero e não pode ficar preso a um provedor.</dd>
+        <dt>Decisão</dt><dd>Gemini pelo plano gratuito do Google AI Studio, acessado só pela interface <code>LLMClient</code>.</dd>
+        <dt>Alternativas</dt><dd>Claude ou GPT direto; modelo aberto local (Ollama).</dd>
+        <dt>Consequências</dt><dd>Trocar de provedor é mudar o <code>.env</code>. O plano gratuito tem limite de requisições, então a geração de dados roda em lotes com pausa.</dd>
+      </dl>
+    </details>
+    <details class="adr">
+      <summary><span class="adr-id">ADR-004</span>Dados sintéticos com revisão humana por amostragem</summary>
+      <dl>
+        <dt>Contexto</dt><dd>Não há dataset público de cardápios brasileiros rotulados, e scraping de apps de delivery fere os termos de uso.</dd>
+        <dt>Decisão</dt><dd>Gerar com LLM, validar com Pydantic e revisar 50 itens à mão para medir a qualidade dos rótulos.</dd>
+        <dt>Alternativas</dt><dd>Rotular dados reais à mão (inviável em um dia); scraping.</dd>
+        <dt>Consequências</dt><dd>Dados limpos demais e possível vantagem para o LLM na comparação. Documentado como limitação.</dd>
+      </dl>
+    </details>
+    <details class="adr">
+      <summary><span class="adr-id">ADR-005</span>ChromaDB local para a busca semântica</summary>
+      <dl>
+        <dt>Contexto</dt><dd>São ~400 pratos. Não há necessidade de banco vetorial gerenciado.</dd>
+        <dt>Decisão</dt><dd>ChromaDB em disco com o modelo de embeddings <code>paraphrase-multilingual-MiniLM-L12-v2</code>, que é leve e entende português.</dd>
+        <dt>Alternativas</dt><dd>FAISS; Pinecone; busca só por palavra-chave.</dd>
+        <dt>Consequências</dt><dd>Zero infraestrutura e filtros por metadado (preço, tempo) prontos. Não escala para milhões de pratos, o que é um não-objetivo.</dd>
+      </dl>
+    </details>
+    <details class="adr">
+      <summary><span class="adr-id">ADR-006</span>Montador por busca exaustiva em código</summary>
+      <dl>
+        <dt>Contexto</dt><dd>O carrinho precisa respeitar o orçamento sempre.</dd>
+        <dt>Decisão</dt><dd>Agrupar os candidatos por restaurante, testar todas as combinações de 1 principal + 0 ou 1 extra, descartar as que passam do orçamento ou do tempo e escolher a de maior pontuação (relevância da busca + bônus por preferência atendida).</dd>
+        <dt>Alternativas</dt><dd>Deixar o LLM escolher; algoritmo guloso; programação linear.</dd>
+        <dt>Consequências</dt><dd>Com no máximo 30 candidatos são menos de 1.000 combinações, então roda instantâneo e o resultado é sempre correto. Não serve para carrinhos grandes, o que é um não-objetivo.</dd>
+      </dl>
+    </details>
+    <details class="adr">
+      <summary><span class="adr-id">ADR-007</span>Demo em Gradio no Hugging Face Spaces</summary>
+      <dl>
+        <dt>Contexto</dt><dd>A demo precisa ser pública e gratuita, e o foco é a trilha Engineer.</dd>
+        <dt>Decisão</dt><dd>Gradio hospedado no HF Spaces, ao lado do modelo e do dataset.</dd>
+        <dt>Alternativas</dt><dd>Streamlit Community Cloud; dashboard com insights; bot no Telegram via n8n.</dd>
+        <dt>Consequências</dt><dd>Modelo, dataset e demo ficam juntos no perfil do Hugging Face. Sem dashboard analítico, que fica para a versão 2.</dd>
+      </dl>
+    </details>
+  </div>
+</section>
+
+<section id="pronto">
+  <span class="eyebrow">13 · Definição de pronto</span>
+  <h2>Quando uma entrega está realmente pronta</h2>
+  <p>Marque conforme for fazendo (fica salvo neste navegador). Uma entrega sem todos os itens marcados não está pronta, mesmo que funcione.</p>
+  <div class="grid2">
+    <div class="dod">
+      <span class="subhead">Vale para toda entrega</span>
+      <ul class="checks">
+        <li><label><input type="checkbox" id="g-test"><span><code>make lint</code> e <code>make test</code> passando</span></label></li>
+        <li><label><input type="checkbox" id="g-ci"><span>CI verde no GitHub</span></label></li>
+        <li><label><input type="checkbox" id="g-key"><span>Nenhuma chave ou dado sensível no commit</span></label></li>
+        <li><label><input type="checkbox" id="g-commit"><span>Commit com mensagem no padrão</span></label></li>
+      </ul>
+    </div>
+    <div class="dod">
+      <span class="subhead">Dados</span>
+      <ul class="checks">
+        <li><label><input type="checkbox" id="p-d1"><span>~400 pratos válidos e splits salvos</span></label></li>
+        <li><label><input type="checkbox" id="p-d2"><span>50 rótulos revisados e concordância anotada</span></label></li>
+        <li><label><input type="checkbox" id="p-d3"><span>Dataset no Kaggle e no HF com datasheet</span></label></li>
+      </ul>
+    </div>
+    <div class="dod">
+      <span class="subhead">Modelos</span>
+      <ul class="checks">
+        <li><label><input type="checkbox" id="p-m1"><span>Baseline com F1 por tag salvo</span></label></li>
+        <li><label><input type="checkbox" id="p-m2"><span>BERTimbau publicado no HF com model card completo</span></label></li>
+        <li><label><input type="checkbox" id="p-m3"><span>Limiares por tag escolhidos na validação</span></label></li>
+      </ul>
+    </div>
+    <div class="dod">
+      <span class="subhead">Workflow e API</span>
+      <ul class="checks">
+        <li><label><input type="checkbox" id="p-w1"><span>Os 5 passos com teste próprio</span></label></li>
+        <li><label><input type="checkbox" id="p-w2"><span>Os 3 status (<code>ok</code>, <code>precisa_info</code>, <code>sem_opcao</code>) testados</span></label></li>
+        <li><label><input type="checkbox" id="p-w3"><span><code>POST /pedido</code> e <code>GET /health</code> funcionando em <code>/docs</code></span></label></li>
+      </ul>
+    </div>
+    <div class="dod">
+      <span class="subhead">Avaliação</span>
+      <ul class="checks">
+        <li><label><input type="checkbox" id="p-e1"><span>Tabela dos 3 classificadores com F1, custo e latência</span></label></li>
+        <li><label><input type="checkbox" id="p-e2"><span>30 casos do workflow com % por regra</span></label></li>
+        <li><label><input type="checkbox" id="p-e3"><span>RELATORIO.md com análise de erros e limitações</span></label></li>
+      </ul>
+    </div>
+    <div class="dod">
+      <span class="subhead">Vitrine</span>
+      <ul class="checks">
+        <li><label><input type="checkbox" id="p-v1"><span>Demo pública no HF Spaces</span></label></li>
+        <li><label><input type="checkbox" id="p-v2"><span>README com GIF, resultados no topo, links e ADRs</span></label></li>
+        <li><label><input type="checkbox" id="p-v3"><span>Repositório fixado no perfil do GitHub</span></label></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="cronograma">
+  <span class="eyebrow">14 · Cronograma de hoje · ajustado às 11:00</span>
+  <h2>O dia, bloco a bloco</h2>
+  <p>Em cada bloco eu escrevo o código e você roda, testa, entende e faz o commit.</p>
+  <div class="sub">
+    <div class="subhead">Antes do primeiro bloco</div>
+    <ul class="checks">
+      <li><label><input type="checkbox" id="c-gh"><span><b>GitHub</b> com foto e bio no perfil</span></label></li>
+      <li><label><input type="checkbox" id="c-hf"><span><b>Hugging Face</b> + Access Token com permissão <i>Write</i></span></label></li>
+      <li><label><input type="checkbox" id="c-kg"><span><b>Kaggle</b></span></label></li>
+      <li><label><input type="checkbox" id="c-ai"><span><b>Google AI Studio</b>: chave do Gemini</span></label></li>
+    </ul>
+  </div>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>Horário</th><th>Bloco</th><th>Eu faço</th><th>Você faz</th><th>Entrega</th></tr></thead>
+    <tbody>
+      <tr><td class="num">11:15–11:45</td><td><b>Setup</b></td><td>Estrutura, <code>pyproject.toml</code>, Makefile, CI, <code>config.py</code>, <code>schemas.py</code></td><td>Cria o repositório, roda <code>make test</code>, primeiro push</td><td>CI verde</td></tr>
+      <tr><td class="num">11:45–12:45</td><td><b>Dados</b></td><td>Geração, validação e divisão</td><td>Roda e revisa 50 rótulos</td><td><code>data/splits/</code></td></tr>
+      <tr><td class="num">12:45–13:15</td><td><b>Baseline</b></td><td>TF-IDF + regressão logística</td><td>Roda e anota o F1</td><td>1ª linha da tabela</td></tr>
+      <tr><td class="num">13:15–14:15</td><td><b>Fine-tuning</b> + almoço</td><td>Notebook de treino</td><td>Dispara no Colab e almoça. Lê o cap. 3 do HF LLM Course</td><td>Modelo treinado</td></tr>
+      <tr><td class="num">14:15–14:45</td><td><b>Publicar</b></td><td>Model card e datasheet</td><td><code>push_to_hub()</code>, sobe no Kaggle</td><td>Links do modelo e do dataset</td></tr>
+      <tr><td class="num">14:45–15:15</td><td><b>Busca</b></td><td><code>search.py</code> + teste</td><td>Testa buscas</td><td>Busca funcionando</td></tr>
+      <tr><td class="num">15:15–16:45</td><td><b>Workflow</b></td><td>Camada de LLM, 5 passos, testes</td><td>Testa 10 pedidos, ajusta prompts comigo</td><td>Workflow no terminal</td></tr>
+      <tr><td class="num">16:45–17:30</td><td><b>API</b></td><td>FastAPI, Dockerfile, build na CI</td><td>Testa em <code>/docs</code></td><td>API local + CI verde</td></tr>
+      <tr><td class="num">17:30–18:00</td><td><b>Avaliação</b></td><td><code>run_eval.py</code> e os 30 casos</td><td>Push e <code>make eval</code> rodando</td><td>Avaliação em andamento</td></tr>
+      <tr><td class="num">18:00–21:00</td><td colspan="4"><span class="tag off">Missa</span> A avaliação roda sozinha nesse tempo</td></tr>
+      <tr><td class="num">21:00–21:30</td><td><b>Demo</b></td><td><code>app.py</code> em Gradio</td><td>Cria o Space, configura o Secret, grava o GIF</td><td>Link da demo</td></tr>
+      <tr><td class="num">21:30–22:15</td><td><b>Relatório</b></td><td>RELATORIO.md com análise de erros</td><td>Confere os números</td><td>Relatório no repo e no Kaggle</td></tr>
+      <tr><td class="num">22:15–23:00</td><td><b>README</b></td><td>README e ADRs em <code>docs/adr/</code></td><td>Revisa e fixa o repositório</td><td>Projeto pronto</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="sub">
+    <h3>Se o dia apertar, corte de baixo para cima</h3>
+    <ol class="prio">
+      <li>Dados + baseline + BERTimbau publicado com model card</li>
+      <li>Avaliação comparativa e relatório técnico</li>
+      <li>Workflow completo com testes</li>
+      <li>README com resultados e links</li>
+      <li class="opt">Demo no HF Spaces</li>
+      <li class="opt">API, Dockerfile e build na CI</li>
+      <li class="opt">Kaggle e post no LinkedIn</li>
+    </ol>
+  </div>
+</section>
+
+<section id="vaga">
+  <span class="eyebrow">15 · Vaga, currículo e próximos passos</span>
+  <h2>Como o projeto conversa com a vaga</h2>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>O que a vaga pede</th><th>Trilha</th><th>Onde aparece</th></tr></thead>
+    <tbody>
+      <tr><td>GitHub com implementações de ML</td><td class="nw"><span class="tag eng">Engineer</span></td><td>Baseline, fine-tuning e avaliação (seções 8 e 9)</td></tr>
+      <tr><td>Modelos publicados no Hugging Face</td><td class="nw"><span class="tag eng">Engineer</span></td><td>BERTimbau com model card, dataset e demo no HF</td></tr>
+      <tr><td>Projetos de pesquisa</td><td class="nw"><span class="tag eng">Engineer</span></td><td>Pergunta de pesquisa e protocolo de avaliação</td></tr>
+      <tr><td>Artigos técnicos</td><td class="nw"><span class="tag eng">Engineer</span></td><td>RELATORIO.md e notebook no Kaggle</td></tr>
+      <tr><td>Kaggle</td><td class="nw"><span class="tag eng">Engineer</span></td><td>Dataset e notebook públicos</td></tr>
+      <tr><td>Ênfase em LLMs</td><td class="nw"><span class="tag eng">Engineer</span></td><td>LLM como rotulador, como baseline e dentro do workflow</td></tr>
+      <tr><td>Software para produtos de IA</td><td class="nw"><span class="tag eng">Engineer</span></td><td>Arquitetura em camadas, contratos, testes, CI e API</td></tr>
+      <tr><td>Prompt engineering, APIs, ferramenta deployada</td><td class="nw"><span class="tag bld">Builder</span></td><td>Bônus: prompts com saída estruturada, FastAPI e demo</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="sub">
+    <h3>Como entra no currículo</h3>
+    <div class="resume">
+      <strong>Monta Meu Pedido: classificador alimentar e assistente de IA para pedidos de comida</strong><br>
+      <span class="note">Python, PyTorch, Transformers, scikit-learn, Hugging Face, Gemini, FastAPI, ChromaDB, Docker, GitHub Actions</span>
+      <ul>
+        <li>Fine-tuning do BERTimbau para classificação multi-label de pratos em 7 tags alimentares (F1 macro de 0,XX contra 0,XX do baseline TF-IDF), com modelo e dataset publicados no Hugging Face e no Kaggle</li>
+        <li>Estudo comparativo entre modelo ajustado e LLM zero-shot: acerto equivalente com custo XXx menor e latência XXx menor, com análise de erros em relatório técnico</li>
+        <li>Workflow com LLM e busca semântica que respeita orçamento e restrições em XX% de 30 casos de teste: o LLM interpreta e explica, e as decisões críticas ficam em código</li>
+        <li>Projeto documentado com design doc e ADRs, código testado com pytest e CI no GitHub Actions, API em FastAPI e demo pública no Hugging Face Spaces</li>
+        <li>GitHub · Modelo · Relatório · Demo (links)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="sub">
+    <h3>Depois de hoje</h3>
+    <ul class="checks">
+      <li><label><input type="checkbox" id="d-ma"><span>Comparar no laboratório workflow, agente autônomo e multiagente (acerto, custo e tempo), reusando os passos 2, 3 e 4 como ferramentas</span></label></li>
+      <li><label><input type="checkbox" id="d-lora"><span>Fine-tuning com LoRA de um LLM pequeno (por exemplo, Qwen 0.5B) na mesma tarefa, e somar ao relatório</span></label></li>
+      <li><label><input type="checkbox" id="d-kg"><span>Entrar numa competição "Getting Started" do Kaggle e subir um notebook</span></label></li>
+      <li><label><input type="checkbox" id="d-cs"><span>Fazer o Agents Course do Hugging Face e o Building with the Claude API (Anthropic Academy)</span></label></li>
+      <li><label><input type="checkbox" id="d-v2"><span>Versão 2 com lado Builder: bot no Telegram via n8n e dashboard</span></label></li>
+    </ul>
+  </div>
+</section>
+
+</div>
+
+<script>
+(function () {
+  var boxes = document.querySelectorAll('.checks input[type="checkbox"]');
+  var KEY = 'mmp-checks';
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { state = {}; }
+  boxes.forEach(function (b) {
+    if (state[b.id]) b.checked = true;
+    b.addEventListener('change', function () {
+      state[b.id] = b.checked;
+      try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
+    });
+  });
+})();
+</script>

@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Instalar dependências (sem as de ML, para a CI ser rápida)
+        run: uv sync
+      - name: Lint
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+      - name: Testes
+        run: uv run pytest -q
+
+  docker:
+    runs-on: ubuntu-latest
+    needs: testes
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build da imagem da API
+        # Só roda depois que o Dockerfile existir (etapa da API).
+        if: hashFiles('Dockerfile') != ''
+        run: docker build -t monta-meu-pedido .
