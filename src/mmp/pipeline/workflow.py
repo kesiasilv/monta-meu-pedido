@@ -24,6 +24,7 @@ class Workflow:
     buscador: Buscador
     classificador: Classificador
     cardapio: Cardapio
+    usar_trava: bool = True
     tempos_ms: dict[str, float] = field(default_factory=dict)
 
     def _cronometrar(self, nome: str, inicio: float) -> None:
@@ -67,7 +68,9 @@ class Workflow:
 
         # 3. Filtrar restrições
         t = time.perf_counter()
-        candidatos = steps.filtrar_restricoes(candidatos, pedido, self.classificador)
+        candidatos = steps.filtrar_restricoes(
+            candidatos, pedido, self.classificador, self.usar_trava
+        )
         self._cronometrar("3_filtrar", t)
         if not any(c.prato.tipo == "principal" for c in candidatos):
             restricoes = ", ".join(r.value.replace("_", " ") for r in pedido.restricoes)
@@ -116,6 +119,7 @@ def criar_workflow(config: Settings) -> Workflow:
         buscador=criar_buscador(config, cardapio),
         classificador=criar_classificador(config),
         cardapio=cardapio,
+        usar_trava=config.trava_ingredientes,
     )
 
 

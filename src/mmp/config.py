@@ -21,6 +21,8 @@ class Settings(BaseSettings):
 
     classificador: Literal["baseline", "bertimbau"] = "baseline"
     hf_model_id: str = "seu-usuario/bertimbau-tags-pratos"
+    # Segunda camada para restrições: barra pratos com ingrediente proibido (ver pipeline/trava.py)
+    trava_ingredientes: bool = True
     embedding_model: str = "intfloat/multilingual-e5-small"
 
     data_dir: Path = RAIZ / "data"

@@ -15,6 +15,7 @@ from mmp import prompts
 from mmp.cardapio import Cardapio
 from mmp.llm import ErroLLM, LLMClient
 from mmp.models.base import Classificador
+from mmp.pipeline.trava import violacoes
 from mmp.schemas import Candidato, Carrinho, ItemCarrinho, PedidoInterpretado
 from mmp.search import Buscador
 
@@ -59,18 +60,33 @@ def buscar(
 
 
 def filtrar_restricoes(
-    candidatos: list[Candidato], pedido: PedidoInterpretado, classificador: Classificador
+    candidatos: list[Candidato],
+    pedido: PedidoInterpretado,
+    classificador: Classificador,
+    usar_trava: bool = True,
 ) -> list[Candidato]:
-    """Usa o classificador treinado para prever as tags e remove quem viola alguma restrição."""
+    """Remove quem viola alguma restrição, em duas camadas:
+
+    1. o classificador treinado precisa prever todas as tags exigidas;
+    2. a trava de ingredientes (regra em código) não pode encontrar termo proibido.
+    """
     if not candidatos:
         return []
     previstas = classificador.prever([c.prato.texto() for c in candidatos])
     exigidas = {r.value for r in pedido.restricoes}
-    filtrados = []
+    filtrados, barrados_pela_trava = [], 0
     for candidato, tags in zip(candidatos, previstas, strict=True):
         candidato.tags_previstas = tags
-        if exigidas <= tags:  # o prato precisa ter TODAS as tags exigidas
-            filtrados.append(candidato)
+        if not exigidas <= tags:  # o prato precisa ter TODAS as tags exigidas
+            continue
+        if usar_trava and violacoes(candidato.prato, exigidas):
+            barrados_pela_trava += 1
+            continue
+        filtrados.append(candidato)
+    if barrados_pela_trava:
+        log.info(
+            "Trava de ingredientes barrou %d prato(s) aprovados pelo modelo", barrados_pela_trava
+        )
     return filtrados
 
 
