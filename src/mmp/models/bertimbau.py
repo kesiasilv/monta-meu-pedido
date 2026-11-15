@@ -62,12 +62,16 @@ class BertimbauClassificador:
 def treinar(
     push_para: str | None = None,
     saida: Path | None = None,
-    epocas: int = 8,
-    taxa_aprendizado: float = 2e-5,
+    epocas: int = 20,
+    taxa_aprendizado: float = 5e-5,
     lote: int = 16,
     seed: int = 42,
 ) -> dict:
-    """Treina, ajusta limiares na validação, avalia uma vez no teste e publica no Hub."""
+    """Treina, ajusta limiares na validação, avalia uma vez no teste e publica no Hub.
+
+    Os padrões são os da rodada 2, a publicada. A rodada 1 (8 épocas, taxa 2e-5) ficou abaixo do
+    baseline na validação; as duas estão no RELATORIO.md.
+    """
     import torch
     from datasets import Dataset
     from transformers import (

@@ -49,7 +49,27 @@ O classificador sozinho deixou passar ovo, mel e trigo em 3 pedidos com restriç
 código, derivada das definições das tags, zerou as violações sem barrar nenhum prato correto.
 A análise completa, com limitações, está no [relatório](RELATORIO.md).
 
-## Como funciona
+## Arquitetura
+
+As peças se conectam numa só direção: a demo e a API chamam o workflow, e o workflow chama as
+peças. Por isso dá para trocar a interface (por um app, por exemplo), o provedor de LLM ou o
+classificador sem mexer no resto. Plano completo no [design doc](docs/design-doc.md).
+
+```mermaid
+flowchart LR
+  U["Cliente"] --> D["Demo Gradio"]
+  APP["App ou outro serviço"] --> API
+  D --> API["API FastAPI<br/>POST /pedido"]
+  API --> WF["Workflow<br/>orquestrado em código"]
+  WF <--> LLM["Camada de LLM<br/>Gemini ou Claude"]
+  WF --> S["Busca semântica<br/>embeddings + ChromaDB"]
+  WF --> C["Classificador<br/>BERTimbau + trava"]
+  WF --> CR["Montador de carrinho<br/>código puro"]
+  S --> DB[("Cardápio")]
+  C --> HUB[("Modelo no<br/>Hugging Face Hub")]
+```
+
+## Como funciona um pedido
 
 O código decide a ordem dos passos; o LLM só entende o pedido e escreve a explicação
 ([por quê](docs/adr/001-workflow-em-vez-de-agente.md)).
@@ -75,6 +95,33 @@ flowchart TD
 | Busca semântica | ChromaDB + `multilingual-e5-small` | `src/mmp/search.py` |
 | Classificador | BERTimbau ajustado + baseline TF-IDF | `src/mmp/models/` |
 | Avaliação | 3 classificadores + 30 pedidos com regras conhecidas | `evals/` |
+
+## Como o LLM (Gemini) é usado
+
+O LLM aparece em três papéis diferentes no projeto, e em nenhum deles decide preço, orçamento
+ou restrição:
+
+| Papel | Onde | Como |
+|---|---|---|
+| **Gerar os dados** | `src/mmp/data/generate.py` | Um restaurante por chamada, com as definições das tags no prompt e saída em JSON validada pelo Pydantic |
+| **Entender e explicar o pedido** | passos 1 e 5 do workflow | Passo 1: texto → `PedidoInterpretado` (schema JSON, few-shot, instrução para ignorar comandos dentro da mensagem). Passo 5: explica um carrinho já fechado, e o código confere que ele só citou itens do carrinho |
+| **Referência na avaliação** | `src/mmp/models/llm_zero_shot.py` | Classifica 10 pratos por chamada, para comparar precisão, custo e latência com o modelo próprio |
+
+**Engenharia em volta do LLM** (`src/mmp/llm/`):
+- **Interface única:** o resto do código só conhece `LLMClient`. Gemini e Claude implementam só
+  a chamada; trocar é uma linha do `.env`.
+- **Saída estruturada:** o schema do Pydantic vai no prompt, a resposta é validada e, se vier
+  inválida, o LLM recebe o erro e tem uma chance de corrigir.
+- **Erros temporários e definitivos:** limite de requisições (429), servidor ocupado (503) e rede
+  são repetidos com espera crescente; chave ou modelo inválidos (4xx) param na hora.
+- **Prompts versionados** num único arquivo: `src/mmp/prompts.py`.
+
+**O que aconteceu na prática**, com detalhes no [diário de bordo](docs/diario-de-bordo.md):
+o modelo planejado (`gemini-2.5-flash`) não estava disponível para contas novas; o
+`gemini-3.8-flash` gerou os dados até esgotar a cota diária gratuita (20 requisições), em 21 de
+30 restaurantes; o workflow e a avaliação passaram para o `gemini-3.5-flash-lite` (500 por dia).
+Cada troca foi uma linha no `.env`, sem mudar código
+([ADR-003](docs/adr/003-gemini-atras-de-interface.md)).
 
 ## Decisões de engenharia
 
@@ -126,8 +173,9 @@ src/mmp/
 ├── search.py   busca semântica
 ├── pipeline/   os 5 passos, o orquestrador e a trava de ingredientes
 └── api.py      FastAPI
+notebooks/      fine-tuning do BERTimbau no Google Colab
 evals/          casos de teste e resultados
-docs/           design doc, ADRs e diário de bordo
+docs/           design doc, ADRs, diário de bordo e card do dataset
 ```
 
 ## Limitações

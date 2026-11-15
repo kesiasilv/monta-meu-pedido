@@ -1,7 +1,7 @@
 # Diário de bordo
 
 Registro cronológico do que aconteceu durante a construção: decisões, problemas, como foram
-resolvidos e os números de cada experimento. O **design doc** (`docs/design-doc.html`) é o
+resolvidos e os números de cada experimento. O **design doc** (`docs/design-doc.md`) é o
 plano; este diário é o que de fato aconteceu. O `RELATORIO.md` resume os dois no fim.
 
 ---
@@ -9,9 +9,9 @@ plano; este diário é o que de fato aconteceu. O `RELATORIO.md` resume os dois 
 ## 15/11/2026
 
 ### Planejamento
-- **Trilha alvo: AI Engineer.** O plano original tinha mais itens de Builder (n8n, Telegram,
-  dashboard). Foram cortados para a versão 2, e o projeto passou a priorizar modelo treinado,
-  avaliação comparativa e qualidade de engenharia.
+- **Escopo:** o plano inicial tinha automações (bot no Telegram via n8n) e um dashboard de
+  insights. Ficaram para uma versão 2, e o projeto priorizou o modelo treinado, a avaliação
+  comparativa e a qualidade de engenharia.
 - **Workflow em vez de agente autônomo** (ADR-001). A sequência de passos é fixa e as regras
   são críticas, então o código decide a ordem e o LLM só interpreta e explica.
 
