@@ -21,6 +21,10 @@ class ErroLLM(Exception):
     """O LLM falhou ou devolveu algo que não segue o contrato, mesmo depois de tentar de novo."""
 
 
+class ErroDefinitivo(ErroLLM):
+    """Erro que não adianta repetir: chave inválida, modelo inexistente, pedido malformado."""
+
+
 @dataclass
 class Uso:
     """Tokens consumidos, para estimar custo na avaliação."""
@@ -69,6 +73,10 @@ class ClienteBase(ABC):
     def _completar(self, system: str, user: str, json_mode: bool, temperatura: float) -> str:
         """Faz uma chamada ao provedor e devolve o texto da resposta."""
 
+    def _eh_definitivo(self, erro: Exception) -> bool:
+        """Cada provedor diz quais erros não adianta repetir. Por padrão, todos são repetidos."""
+        return False
+
     def _chamar(self, system: str, user: str, json_mode: bool, temperatura: float) -> str:
         espera = self.espera_inicial_s
         for tentativa in range(1, self.tentativas_rede + 1):
@@ -76,6 +84,8 @@ class ClienteBase(ABC):
                 self.uso.chamadas += 1
                 return self._completar(system, user, json_mode, temperatura)
             except Exception as erro:  # erros de rede e limite de requisições
+                if self._eh_definitivo(erro):
+                    raise ErroDefinitivo(f"Erro que não adianta repetir: {erro}") from erro
                 if tentativa == self.tentativas_rede:
                     raise ErroLLM(f"Falha ao chamar o LLM: {erro}") from erro
                 log.warning("LLM falhou (%s). Nova tentativa em %.0f s.", erro, espera)

@@ -15,7 +15,7 @@ class Settings(BaseSettings):
 
     llm_provider: Literal["gemini", "claude"] = "gemini"
     gemini_api_key: str | None = None
-    gemini_model: str = "gemini-2.5-flash"
+    gemini_model: str = "gemini-3.8-flash"
     anthropic_api_key: str | None = None
     claude_model: str = "claude-haiku-5-5"
 

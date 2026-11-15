@@ -18,6 +18,7 @@ from sklearn.pipeline import Pipeline
 
 from mmp.config import settings
 from mmp.data.split import carregar_split
+from mmp.logs import configurar_logs
 from mmp.models.metrics import ajustar_limiares, aplicar_limiares, calcular_metricas
 from mmp.tags import binarizar, para_tags
 
@@ -71,7 +72,7 @@ class BaselineClassificador:
 
 
 def main() -> None:
-    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+    configurar_logs()
     treino, val = carregar_split("train"), carregar_split("val")
     y_treino = binarizar([r["tags"] for r in treino])
     y_val = binarizar([r["tags"] for r in val])

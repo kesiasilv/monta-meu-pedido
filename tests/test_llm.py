@@ -1,6 +1,6 @@
 import pytest
 
-from mmp.llm.base import ErroLLM, extrair_json
+from mmp.llm.base import ErroDefinitivo, ErroLLM, extrair_json
 from mmp.llm.fake import FakeLLMClient
 from mmp.schemas import PedidoInterpretado
 
@@ -39,3 +39,14 @@ def test_instrucao_json_vai_no_system_prompt():
     llm = FakeLLMClient(['{"descricao_livre": "x"}'])
     llm.gerar_json("Você extrai pedidos.", "user", PedidoInterpretado)
     assert "JSON Schema" in llm.chamadas[0]["system"]
+
+
+def test_erro_definitivo_nao_e_repetido():
+    class LLMComErroDefinitivo(FakeLLMClient):
+        def _eh_definitivo(self, erro):
+            return isinstance(erro, PermissionError)
+
+    llm = LLMComErroDefinitivo([PermissionError("modelo não existe"), "não deveria chegar aqui"])
+    with pytest.raises(ErroDefinitivo):
+        llm.gerar_texto("sys", "user")
+    assert llm.uso.chamadas == 1

@@ -8,6 +8,7 @@ Uso: uv run python -m mmp.data.generate
 
 import json
 import logging
+import sys
 import time
 from typing import Literal
 
@@ -17,6 +18,8 @@ from mmp import prompts
 from mmp.config import settings
 from mmp.data.validate import processar
 from mmp.llm import ErroLLM, criar_cliente
+from mmp.llm.base import ErroDefinitivo
+from mmp.logs import configurar_logs
 
 log = logging.getLogger(__name__)
 
@@ -52,8 +55,9 @@ class RestauranteGerado(BaseModel):
 
 
 def main() -> None:
-    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+    configurar_logs()
     llm = criar_cliente(settings)
+    log.info("Gerando com %s / %s", settings.llm_provider, getattr(llm, "modelo", "?"))
     raw_path = settings.data_dir / "raw" / "restaurantes_raw.jsonl"
     raw_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -74,6 +78,10 @@ def main() -> None:
             gerado = llm.gerar_json(
                 prompts.SYSTEM_GERAR_CARDAPIO, user, RestauranteGerado, temperatura=0.9
             )
+        except ErroDefinitivo as erro:
+            # Chave ou modelo errado: as outras 29 categorias falhariam do mesmo jeito.
+            log.error("Parando a geração. Confira o .env (chave e GEMINI_MODEL).\n%s", erro)
+            sys.exit(1)
         except ErroLLM as erro:
             log.error("Pulando %s: %s", categoria, erro)
             continue
@@ -83,6 +91,9 @@ def main() -> None:
         time.sleep(PAUSA_ENTRE_CHAMADAS_S)
 
     log.info("Tokens usados: %s", llm.uso)
+    if not raw_path.exists():
+        log.error("Nenhum restaurante foi gerado. Veja os erros acima.")
+        sys.exit(1)
     relatorio = processar(raw_path, settings.processed_dir)
     log.info("Dados prontos: %s", relatorio)
 

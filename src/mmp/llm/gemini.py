@@ -9,6 +9,13 @@ class GeminiClient(ClienteBase):
         self._cliente = genai.Client(api_key=api_key)
         self.modelo = modelo
 
+    def _eh_definitivo(self, erro: Exception) -> bool:
+        # Erros 4xx (chave inválida, modelo inexistente) não melhoram repetindo.
+        # O 429 (limite de requisições) é a exceção: esse vale esperar e tentar de novo.
+        from google.genai import errors
+
+        return isinstance(erro, errors.ClientError) and erro.code != 429
+
     def _completar(self, system: str, user: str, json_mode: bool, temperatura: float) -> str:
         from google.genai import types
 

@@ -15,6 +15,7 @@ from iterstrat.ml_stratifiers import MultilabelStratifiedShuffleSplit
 
 from mmp.cardapio import Cardapio
 from mmp.config import settings
+from mmp.logs import configurar_logs
 from mmp.schemas import Prato
 from mmp.tags import binarizar
 
@@ -55,7 +56,7 @@ def carregar_split(nome: str, pasta: Path | None = None) -> list[dict]:
 
 
 def main() -> None:
-    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+    configurar_logs()
     if (settings.splits_dir / "test.jsonl").exists() and "--force" not in sys.argv:
         log.info("Splits já existem e não serão regerados. Use --force se os dados mudaram.")
         return

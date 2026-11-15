@@ -9,6 +9,15 @@ class ClaudeClient(ClienteBase):
         self._cliente = anthropic.Anthropic(api_key=api_key)
         self.modelo = modelo
 
+    def _eh_definitivo(self, erro: Exception) -> bool:
+        import anthropic
+
+        return (
+            isinstance(erro, anthropic.APIStatusError)
+            and erro.status_code < 500
+            and erro.status_code != 429
+        )
+
     def _completar(self, system: str, user: str, json_mode: bool, temperatura: float) -> str:
         resposta = self._cliente.messages.create(
             model=self.modelo,
