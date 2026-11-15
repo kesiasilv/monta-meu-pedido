@@ -90,6 +90,7 @@ def checar_caso(caso: dict, resposta, cardapio: Cardapio) -> dict:
         "status_esperado": caso["status"],
         "status_obtido": resposta.status,
         "status_correto": resposta.status == caso["status"],
+        "tem_restricoes": bool(caso["restricoes"]),
     }
     if resposta.pedido is not None:
         checagem["orcamento_entendido"] = resposta.pedido.orcamento == caso["orcamento"]
@@ -128,20 +129,28 @@ def pergunta_b() -> dict:
         checagens.append(checar_caso(caso, resposta, workflow.cardapio))
         time.sleep(PAUSA_ENTRE_PEDIDOS_S)
 
-    def taxa(chave: str) -> float | None:
-        valores = [c[chave] for c in checagens if chave in c]
+    return resumir(checagens, latencias)
+
+
+def resumir(checagens: list[dict], latencias: list[float]) -> dict:
+    def taxa(chave: str, casos: list[dict] = checagens) -> float | None:
+        valores = [c[chave] for c in casos if chave in c]
         return round(sum(valores) / len(valores), 3) if valores else None
+
+    # Restrições só fazem sentido nos pedidos que têm restrição: os outros passariam sempre.
+    com_restricoes = [c for c in checagens if c["tem_restricoes"]]
 
     ordenadas = sorted(latencias)
     return {
-        "casos": len(casos),
+        "casos": len(checagens),
         "status_correto": taxa("status_correto"),
         "orcamento_entendido": taxa("orcamento_entendido"),
         "restricoes_entendidas": taxa("restricoes_entendidas"),
         "carrinhos_montados": sum("respeita_orcamento" in c for c in checagens),
         "respeita_orcamento": taxa("respeita_orcamento"),
         "respeita_tempo": taxa("respeita_tempo"),
-        "respeita_restricoes": taxa("respeita_restricoes"),
+        "respeita_restricoes": taxa("respeita_restricoes", com_restricoes),
+        "carrinhos_com_restricoes": sum("respeita_restricoes" in c for c in com_restricoes),
         "latencia_ms_p50": round(statistics.median(latencias)),
         "latencia_ms_p95": round(ordenadas[int(0.95 * (len(ordenadas) - 1))]),
         "por_caso": checagens,
@@ -155,7 +164,8 @@ def tabela_markdown(r: dict) -> str:
     linhas = [
         f"# Resultados da avaliação · {r['data']}",
         "",
-        f"LLM: `{r['llm']}` · classificador do workflow: `{r['classificador_workflow']}`",
+        f"LLM: `{r['llm']}` · classificador do workflow: `{r['classificador_workflow']}` · "
+        f"trava de ingredientes: `{r.get('trava_ingredientes', False)}`",
         "",
         "## A. Classificadores no conjunto de teste",
         "",
@@ -190,7 +200,8 @@ def tabela_markdown(r: dict) -> str:
             f"- Carrinhos montados: {w['carrinhos_montados']}",
             f"- Respeita orçamento: **{w['respeita_orcamento']:.0%}** · "
             f"tempo: **{w['respeita_tempo']:.0%}** · "
-            f"restrições: **{w['respeita_restricoes']:.0%}**",
+            f"restrições: **{w['respeita_restricoes']:.0%}** "
+            f"(nos {w['carrinhos_com_restricoes']} carrinhos de pedidos com restrição)",
             f"- Latência p50 {w['latencia_ms_p50']} ms · p95 {w['latencia_ms_p95']} ms",
             "",
             "| Caso | Categoria | Esperado | Obtido | Carrinho | Violações |",
@@ -220,6 +231,7 @@ def main() -> None:
         "data": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "llm": f"{settings.llm_provider}/{modelo_llm}",
         "classificador_workflow": settings.classificador,
+        "trava_ingredientes": settings.trava_ingredientes,
         "classificadores": pergunta_a(usar_llm=not args.sem_llm),
     }
     if not args.sem_llm and not args.sem_workflow:

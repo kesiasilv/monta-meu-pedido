@@ -105,3 +105,75 @@ sem_gluten 0,40 · fit 0,55 · picante 0,50 · doce 0,70.
   (0,853 contra 0,890). Com 203 exemplos e lote 16, a rodada 1 fez só ~100 atualizações de
   pesos. A decisão de ajustar foi tomada pela validação, não pelo teste.
 - **Regra de decisão:** fica a rodada com maior F1 macro na **validação**.
+
+### Avaliação completa (`make eval`, 15:45)
+Resultados em `evals/resultados.md`. LLM `gemini-3.5-flash-lite`, workflow com o BERTimbau.
+
+**A. Classificadores no teste (44 pratos)**
+
+| Modelo | F1 macro | Latência (ms/prato) | Custo estimado (USD/1.000 pratos) |
+|---|---|---|---|
+| Baseline TF-IDF | 0,898 | 0,13 | ~0 (CPU) |
+| BERTimbau | 0,884 | 32 (CPU do Mac) | ~0 (CPU) |
+| LLM zero-shot | **0,938** | 130 (em lotes de 10) | 0,11 |
+
+- O LLM zero-shot foi o mais preciso, mas **~1.000x mais lento que o baseline** e o único com
+  custo por uso.
+- **Viés conhecido a favor do LLM:** os rótulos de referência foram gerados pelo Gemini, e o
+  zero-shot também é um Gemini. Ele está, em parte, concordando consigo mesmo. Esta limitação
+  foi prevista no datasheet antes do experimento.
+- O custo usa os preços configurados no `.env`, que eram os do `gemini-2.5-flash`. É preciso
+  conferir o preço real do `gemini-3.5-flash-lite` antes de citar o número.
+
+**B. Workflow em 30 pedidos**
+- Status correto (ok / precisa_info / sem_opcao): **100%**. Orçamento e restrições entendidos
+  pelo LLM: **100%**.
+- Orçamento respeitado: **100%**. Tempo respeitado: **100%**. Latência p50 3,1 s · p95 6,8 s
+  (meta RNF2: abaixo de 8 s).
+- **Restrições respeitadas: 70%** (7 dos 10 carrinhos de pedidos com restrição).
+
+**Correção de métrica:** a primeira versão do relatório dizia 85%, porque contava os 20
+carrinhos, inclusive os 10 de pedidos sem restrição, que passam sempre. Corrigido para contar
+só os pedidos com restrição; a tabela foi regerada a partir dos mesmos dados, sem rodar de novo.
+
+**As 3 violações** (todas erros do BERTimbau, no sentido perigoso: ofereceu o que não podia):
+
+| Caso | Prato | Restrição violada | Ingrediente que denuncia |
+|---|---|---|---|
+| r05 | Virado à Paulista Vegetariano | vegano | ovo de galinha |
+| r06 | Tabule Fresco da Casa | sem_gluten | trigo fino para kibe |
+| r09 | Suco de Laranja Integral com Mel (bebida extra) | vegano | mel puro de abelha |
+
+- Os 3 ingredientes estão listados textualmente e aparecem nas **definições das tags** do
+  design doc. O modelo errou onde uma regra simples por palavra acertaria.
+- Contraste com a revisão dos rótulos: lá os erros do Gemini eram conservadores; aqui os erros
+  do classificador são permissivos, o que é pior para um sistema de restrição alimentar.
+
+### Trava de ingredientes (rodada 2 da avaliação)
+- **O que é:** segunda camada no passo 3 (`src/mmp/pipeline/trava.py`). Um prato só passa se o
+  classificador aprova **e** a lista de ingredientes não tem termo proibido pela definição da
+  restrição. Ligável por `TRAVA_INGREDIENTES` no `.env`, para permitir a comparação.
+- **Checagem contra os rótulos dos 291 pratos:** a primeira versão barrou indevidamente 12
+  pratos veganos e 11 sem lactose por ambiguidades da língua ("couve manteiga", "pimenta
+  calabresa", "chocolate sem leite", "ovo de galinha"). Depois de regras gerais para esses
+  falsos amigos: **0 pratos barrados indevidamente** nas 4 restrições, e a trava pega 99%
+  (vegano), 95% (vegetariano), 94% (sem lactose) e 91% (sem glúten) dos pratos não compatíveis.
+- **Ressalva metodológica:** essas regras foram ajustadas olhando o cardápio inteiro, que
+  inclui os pratos de teste. São regras gerais do português, não exceções por prato, mas o
+  ajuste não foi feito só com dados de treino.
+
+| | Rodada 1 (só o modelo) | Rodada 2 (modelo + trava) |
+|---|---|---|
+| Restrições respeitadas (10 carrinhos com restrição) | 70% | **100%** |
+| Orçamento / tempo respeitados | 100% / 100% | 100% / 100% |
+| Status correto | 100% | 97% |
+| Latência p50 / p95 | 3,1 s / 6,8 s | 3,0 s / 3,6 s |
+
+- **A queda de status (s03, "Me vê um hambúrguer até R$ 50") não tem relação com a trava:** o
+  pedido não tem restrição. A interpretação pelo LLM falhou nessa chamada e o workflow pediu
+  para reformular. Repetido 3 vezes depois, deu `ok` nas 3. Falha transitória do LLM.
+- **Melhoria futura:** salvar o motivo de cada falha na avaliação, para distinguir erro do LLM
+  de erro de regra sem precisar repetir o caso.
+- **Conclusão:** o modelo sozinho aprovou 3 pratos que violavam restrições. A trava, uma regra
+  de ~80 linhas escrita a partir das definições, eliminou as 3 violações sem barrar nenhum prato
+  correto do cardápio. Mesma filosofia do orçamento: regra crítica fica em código.

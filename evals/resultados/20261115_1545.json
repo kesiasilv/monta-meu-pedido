@@ -1,0 +1,662 @@
+{
+  "data": "2026-11-15 15:39",
+  "llm": "gemini/gemini-3.5-flash-lite",
+  "classificador_workflow": "bertimbau",
+  "classificadores": {
+    "baseline_tfidf": {
+      "f1_micro": 0.907,
+      "f1_macro": 0.898,
+      "acerto_exato": 0.568,
+      "por_tag": {
+        "vegano": {
+          "f1": 0.95,
+          "precisao": 0.95,
+          "recall": 0.95,
+          "suporte": 20
+        },
+        "vegetariano": {
+          "f1": 0.983,
+          "precisao": 0.967,
+          "recall": 1.0,
+          "suporte": 29
+        },
+        "sem_lactose": {
+          "f1": 0.873,
+          "precisao": 0.889,
+          "recall": 0.857,
+          "suporte": 28
+        },
+        "sem_gluten": {
+          "f1": 0.867,
+          "precisao": 0.812,
+          "recall": 0.929,
+          "suporte": 28
+        },
+        "fit": {
+          "f1": 0.815,
+          "precisao": 0.786,
+          "recall": 0.846,
+          "suporte": 13
+        },
+        "picante": {
+          "f1": 0.833,
+          "precisao": 1.0,
+          "recall": 0.714,
+          "suporte": 7
+        },
+        "doce": {
+          "f1": 0.963,
+          "precisao": 0.929,
+          "recall": 1.0,
+          "suporte": 13
+        }
+      },
+      "latencia_ms_por_prato": 0.13,
+      "custo_usd_por_1000_pratos": 0.0
+    },
+    "bertimbau": {
+      "f1_micro": 0.909,
+      "f1_macro": 0.884,
+      "acerto_exato": 0.545,
+      "por_tag": {
+        "vegano": {
+          "f1": 0.909,
+          "precisao": 0.833,
+          "recall": 1.0,
+          "suporte": 20
+        },
+        "vegetariano": {
+          "f1": 0.983,
+          "precisao": 0.967,
+          "recall": 1.0,
+          "suporte": 29
+        },
+        "sem_lactose": {
+          "f1": 0.915,
+          "precisao": 0.871,
+          "recall": 0.964,
+          "suporte": 28
+        },
+        "sem_gluten": {
+          "f1": 0.912,
+          "precisao": 0.897,
+          "recall": 0.929,
+          "suporte": 28
+        },
+        "fit": {
+          "f1": 0.769,
+          "precisao": 0.769,
+          "recall": 0.769,
+          "suporte": 13
+        },
+        "picante": {
+          "f1": 0.769,
+          "precisao": 0.833,
+          "recall": 0.714,
+          "suporte": 7
+        },
+        "doce": {
+          "f1": 0.929,
+          "precisao": 0.867,
+          "recall": 1.0,
+          "suporte": 13
+        }
+      },
+      "latencia_ms_por_prato": 32.14,
+      "custo_usd_por_1000_pratos": 0.0
+    },
+    "llm_zero_shot": {
+      "f1_micro": 0.929,
+      "f1_macro": 0.938,
+      "acerto_exato": 0.591,
+      "por_tag": {
+        "vegano": {
+          "f1": 0.974,
+          "precisao": 1.0,
+          "recall": 0.95,
+          "suporte": 20
+        },
+        "vegetariano": {
+          "f1": 0.863,
+          "precisao": 1.0,
+          "recall": 0.759,
+          "suporte": 29
+        },
+        "sem_lactose": {
+          "f1": 0.982,
+          "precisao": 1.0,
+          "recall": 0.964,
+          "suporte": 28
+        },
+        "sem_gluten": {
+          "f1": 0.906,
+          "precisao": 0.96,
+          "recall": 0.857,
+          "suporte": 28
+        },
+        "fit": {
+          "f1": 0.839,
+          "precisao": 0.722,
+          "recall": 1.0,
+          "suporte": 13
+        },
+        "picante": {
+          "f1": 1.0,
+          "precisao": 1.0,
+          "recall": 1.0,
+          "suporte": 7
+        },
+        "doce": {
+          "f1": 1.0,
+          "precisao": 1.0,
+          "recall": 1.0,
+          "suporte": 13
+        }
+      },
+      "latencia_ms_por_prato": 130.49,
+      "custo_usd_por_1000_pratos": 0.1114,
+      "tokens": {
+        "entrada": 6147,
+        "saida": 1223
+      }
+    }
+  },
+  "workflow": {
+    "casos": 30,
+    "status_correto": 1.0,
+    "orcamento_entendido": 1.0,
+    "restricoes_entendidas": 1.0,
+    "carrinhos_montados": 20,
+    "respeita_orcamento": 1.0,
+    "respeita_tempo": 1.0,
+    "respeita_restricoes": 0.7,
+    "carrinhos_com_restricoes": 10,
+    "latencia_ms_p50": 3133,
+    "latencia_ms_p95": 6794,
+    "por_caso": [
+      {
+        "id": "s01",
+        "categoria": "simples",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Tabule Fresco da Casa"
+        ],
+        "total": 36.5,
+        "tem_restricoes": false
+      },
+      {
+        "id": "s02",
+        "categoria": "simples",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Bowl Caprese & Pesto",
+          "Chá Mate Batido com Limão e Melado"
+        ],
+        "total": 62.5,
+        "tem_restricoes": false
+      },
+      {
+        "id": "s03",
+        "categoria": "simples",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Fit Burger no Prato",
+          "Refrigerante Guaraná Lata 350ml"
+        ],
+        "total": 49.0,
+        "tem_restricoes": false
+      },
+      {
+        "id": "s04",
+        "categoria": "simples",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Shimeji na Manteiga com Gohan",
+          "Chá Verde Sencha Gelado (400ml)"
+        ],
+        "total": 57.9,
+        "tem_restricoes": false
+      },
+      {
+        "id": "s05",
+        "categoria": "simples",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Bowl de Açaí Cremoso Puro com Frutas (400ml)"
+        ],
+        "total": 36.0,
+        "tem_restricoes": false
+      },
+      {
+        "id": "s06",
+        "categoria": "simples",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Virado à Paulista Vegetariano",
+          "Guaraná Antarctica Lata 350ml"
+        ],
+        "total": 49.9,
+        "tem_restricoes": false
+      },
+      {
+        "id": "s07",
+        "categoria": "simples",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Wrap de Atum com Maionese de Jalapeño",
+          "Suco Termogênico Detox 400ml"
+        ],
+        "total": 53.8,
+        "tem_restricoes": false
+      },
+      {
+        "id": "s08",
+        "categoria": "simples",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Quesadilla de Cogumelos e Queijo Oaxaca",
+          "Água de Jamaica Gelada 400ml"
+        ],
+        "total": 56.4,
+        "tem_restricoes": false
+      },
+      {
+        "id": "s09",
+        "categoria": "simples",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Bowl Mexicano Picante"
+        ],
+        "total": 45.5,
+        "tem_restricoes": false
+      },
+      {
+        "id": "s10",
+        "categoria": "simples",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Esfiha Aberta de Carne Harissa",
+          "Água Aromatizada com Cardamomo e Limão"
+        ],
+        "total": 28.5,
+        "tem_restricoes": false
+      },
+      {
+        "id": "r01",
+        "categoria": "restricoes",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Tabule Fresco da Casa",
+          "Água Aromatizada com Cardamomo e Limão"
+        ],
+        "total": 48.0,
+        "tem_restricoes": true
+      },
+      {
+        "id": "r02",
+        "categoria": "restricoes",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Crispy Chick'n Spicy",
+          "Suco Natural Laranja e Morango 500ml"
+        ],
+        "total": 64.4,
+        "tem_restricoes": true
+      },
+      {
+        "id": "r03",
+        "categoria": "restricoes",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Spicy Tuna Roll (8 unidades)",
+          "Chá Verde Sencha Gelado (400ml)"
+        ],
+        "total": 56.9,
+        "tem_restricoes": true
+      },
+      {
+        "id": "r04",
+        "categoria": "restricoes",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Shimeji na Manteiga com Gohan",
+          "Chá Verde Sencha Gelado (400ml)"
+        ],
+        "total": 57.9,
+        "tem_restricoes": true
+      },
+      {
+        "id": "r05",
+        "categoria": "restricoes",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": false,
+        "violacoes": [
+          "Virado à Paulista Vegetariano sem vegano"
+        ],
+        "carrinho": [
+          "Virado à Paulista Vegetariano",
+          "Guaraná Antarctica Lata 350ml"
+        ],
+        "total": 49.9,
+        "tem_restricoes": true
+      },
+      {
+        "id": "r06",
+        "categoria": "restricoes",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": false,
+        "violacoes": [
+          "Tabule Fresco da Casa sem sem_gluten"
+        ],
+        "carrinho": [
+          "Tabule Fresco da Casa",
+          "Água Aromatizada com Cardamomo e Limão"
+        ],
+        "total": 48.0,
+        "tem_restricoes": true
+      },
+      {
+        "id": "r07",
+        "categoria": "restricoes",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Vegan Garden Burger",
+          "Refrigerante Guaraná Lata 350ml"
+        ],
+        "total": 52.9,
+        "tem_restricoes": true
+      },
+      {
+        "id": "r08",
+        "categoria": "restricoes",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Nhoque Artesanal da Fortuna ao Sugo",
+          "Guaraná Antarctica Lata 350ml"
+        ],
+        "total": 51.9,
+        "tem_restricoes": true
+      },
+      {
+        "id": "r09",
+        "categoria": "restricoes",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": false,
+        "violacoes": [
+          "Suco de Laranja Integral com Mel sem vegano"
+        ],
+        "carrinho": [
+          "Moqueca Vegana Apimentada de Grão-de-Bico",
+          "Suco de Laranja Integral com Mel"
+        ],
+        "total": 53.0,
+        "tem_restricoes": true
+      },
+      {
+        "id": "r10",
+        "categoria": "restricoes",
+        "status_esperado": "ok",
+        "status_obtido": "ok",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "respeita_orcamento": true,
+        "respeita_tempo": true,
+        "respeita_restricoes": true,
+        "violacoes": [],
+        "carrinho": [
+          "Chili con Carne com Totopos",
+          "Água de Jamaica Gelada 400ml"
+        ],
+        "total": 61.0,
+        "tem_restricoes": true
+      },
+      {
+        "id": "o01",
+        "categoria": "sem_orcamento",
+        "status_esperado": "precisa_info",
+        "status_obtido": "precisa_info",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "tem_restricoes": false
+      },
+      {
+        "id": "o02",
+        "categoria": "sem_orcamento",
+        "status_esperado": "precisa_info",
+        "status_obtido": "precisa_info",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "tem_restricoes": true
+      },
+      {
+        "id": "o03",
+        "categoria": "sem_orcamento",
+        "status_esperado": "precisa_info",
+        "status_obtido": "precisa_info",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "tem_restricoes": false
+      },
+      {
+        "id": "o04",
+        "categoria": "sem_orcamento",
+        "status_esperado": "precisa_info",
+        "status_obtido": "precisa_info",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "tem_restricoes": true
+      },
+      {
+        "id": "o05",
+        "categoria": "sem_orcamento",
+        "status_esperado": "precisa_info",
+        "status_obtido": "precisa_info",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "tem_restricoes": false
+      },
+      {
+        "id": "i01",
+        "categoria": "impossivel",
+        "status_esperado": "sem_opcao",
+        "status_obtido": "sem_opcao",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "tem_restricoes": false
+      },
+      {
+        "id": "i02",
+        "categoria": "impossivel",
+        "status_esperado": "sem_opcao",
+        "status_obtido": "sem_opcao",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "tem_restricoes": false
+      },
+      {
+        "id": "i03",
+        "categoria": "impossivel",
+        "status_esperado": "sem_opcao",
+        "status_obtido": "sem_opcao",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "tem_restricoes": true
+      },
+      {
+        "id": "i04",
+        "categoria": "impossivel",
+        "status_esperado": "sem_opcao",
+        "status_obtido": "sem_opcao",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "tem_restricoes": false
+      },
+      {
+        "id": "i05",
+        "categoria": "impossivel",
+        "status_esperado": "sem_opcao",
+        "status_obtido": "sem_opcao",
+        "status_correto": true,
+        "orcamento_entendido": true,
+        "restricoes_entendidas": true,
+        "tem_restricoes": true
+      }
+    ]
+  }
+}
